@@ -60,8 +60,7 @@ for i in range(31):
     if i % 32 == 0:
         canvas.create_line(710, 30*i + 255,710,30*i + 735)
 
-canvas.create_line(710,495 ,850,495
-                   )
+canvas.create_line(710,495 ,850,495)
 
 root.update()
 canvas.config(scrollregion=canvas.bbox("all"))

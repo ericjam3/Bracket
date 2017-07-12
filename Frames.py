@@ -17,7 +17,7 @@ f3 = Frame(root)
 f4 = Frame(root)
 
 for frame in (f1, f2, f3, f4):
-    frame.grid(row=1, column=0, sticky='news')
+    frame.grid(row=0, column=0, sticky='news')
 
 Label(f1, text="FRAME 1").pack()
 Button(f1, text="Go to frame 2", command=lambda:raise_frame(f2)).pack()
