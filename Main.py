@@ -2,6 +2,8 @@ from Tkinter import *
 import tkMessageBox
 import Tkinter
 
+def set_frame(frame, size):
+    print "Work on this"
 
 # Creating the menu at the top of the window
 def create_menus(root):
@@ -25,11 +27,11 @@ def create_menus(root):
 
 if __name__ == "__main__":
     root = Tk()
-  #  Qdict = {}
+
     half = Frame(root)
     full = Frame(root)
     menubar = create_menus(root)
     raw = Menu(menubar, tearoff=0)
-    #create_frames(Qdict, root)
 
+    root.title('Bracket App')
     root.mainloop()
