@@ -2,14 +2,8 @@ from Tkinter import *
 import tkMessageBox
 import Tkinter
 
-def create_frames(Qdict, root):
-    Qdict["Murray"] = Frame(root)
-    Qdict["Nadal"] = Frame(root)
-    Qdict["Federer"] = Frame(root)
-    Qdict["Djokovic"] = Frame(root)
 
-
-
+# Creating the menu at the top of the window
 def create_menus(root):
     menudict = {}
     menubar = Menu(root)
@@ -26,15 +20,16 @@ def create_menus(root):
         menudict[key].add_command(label="Top Half")
         menudict[key].add_command(label="Bottom Half")
 
-
-
     root.config(menu=menubar)
-
+    return menubar
 
 if __name__ == "__main__":
     root = Tk()
   #  Qdict = {}
-    create_menus(root)
+    half = Frame(root)
+    full = Frame(root)
+    menubar = create_menus(root)
+    raw = Menu(menubar, tearoff=0)
     #create_frames(Qdict, root)
 
     root.mainloop()
