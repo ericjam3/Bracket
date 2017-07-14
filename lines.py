@@ -7,7 +7,6 @@ def func():
 
 root = Tk()
 scrollbar = Scrollbar(root)
-
 canvas = Canvas(root, yscrollcommand = scrollbar.set)
 scrollbar.config( command = canvas.yview )
 scrollbar.pack(side=RIGHT, fill=Y)
@@ -60,25 +59,23 @@ for i in range(31):
     if i % 32 == 0:
         canvas.create_line(710, 30*i + 255,710,30*i + 735)
 
-canvas.create_line(710,495 ,850,495)
+canvas.create_line(710,495 ,850,495
+                   )
 
 root.update()
 canvas.config(scrollregion=canvas.bbox("all"))
 
-menubar = Menu(root)
-teammenu = Menu(menubar, tearoff=0)
-teammenu.add_command(label="Select Team", command = func)
-teammenu.add_command(label="Add Team", command = func)
-teammenu.add_command(label="Remove Team", command = func)
 
-menubar.add_cascade(label="Team", menu=teammenu)
+w = Canvas(root, width=200, height=100)
+f1 = Frame(w)
+w.pack()
 
-playermenu = Menu(menubar, tearoff=0)
-playermenu.add_command(label="Select Player", command = func)
-playermenu.add_command(label="Add Player", command = func)
-playermenu.add_command(label="Remove Player", command = func)
+w.create_line(0, 0, 200, 100)
+w.create_line(0, 100, 200, 0, fill="red", dash=(4, 4))
 
-menubar.add_cascade(label="Player", menu=playermenu)
-root.config(menu=menubar)
+w.create_rectangle(50, 25, 150, 75, fill="blue")
+frame.destroy()
+#w.create_window(0,0,window=frame,anchor="nw")
+
 
 root.mainloop()

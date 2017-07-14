@@ -21,6 +21,7 @@ for frame in (f1, f2, f3, f4):
 
 Label(f1, text="FRAME 1").pack()
 Button(f1, text="Go to frame 2", command=lambda:raise_frame(f2)).pack()
+f1.create_line(0,0,30,30)
 
 Label(f2, text="FRAME 2").pack()
 Button(f2, text="Go to frame 3", command=lambda:raise_frame(f3)).pack()
@@ -51,5 +52,5 @@ playermenu.add_command(label="Remove Player", command = donothing)
 
 menubar.add_cascade(label="Player", menu=playermenu)
 root.config(menu=menubar)
-raise_frame(f1)
+#raise_frame(f1)
 root.mainloop()
