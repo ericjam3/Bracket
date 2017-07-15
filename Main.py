@@ -2,6 +2,8 @@ from Tkinter import *
 import tkMessageBox
 import Tkinter as tk
 import math
+from ttk import *
+import ttk
 
 class App(tk.Tk):
 
