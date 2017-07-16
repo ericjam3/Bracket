@@ -243,12 +243,12 @@ class Home(tk.Frame):
         Label(self, text="Bracket City", font=36).grid()
         self.create = Button(self, text="Create Tournament")
         self.create.bind("<Button-1>", self.create_tourney)
-        self.create.grid()
+        self.create.grid(sticky="we")
 
         # Load bracket button
         self.load = Button(self, text="Load Tournament")
         self.load.bind("<Button-1>", self.load_tourney)
-        self.load.grid()
+        self.load.grid(sticky="we")
 
     def create_tourney(self, event):
         createTeam = Create_Tournament(parent=self.parent, controller=self.controller)
