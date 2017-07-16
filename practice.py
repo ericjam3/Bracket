@@ -1,4 +1,1 @@
-var = "a"
-list = [var] * 5
-list[2] = "b"
-print list
+for i in range(1,10,1)
