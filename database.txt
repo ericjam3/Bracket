@@ -300,7 +300,7 @@ Pavlasek
 Escobedo
 Klizan
 Djokovic
-
+Federer
 Cilic
 Federer
 Querrey
@@ -385,14 +385,14 @@ Monteiro
 Khachanov
 Bedene
 Dzumhur
-Rosol
+Laaksonen
 Muller
 Nishikori
 Stakhovsky
-Gojowczyk
+Copil
 Bautista Agut
 Johnson
-Albot
+Bagnis
 Mayer
 Cilic
 Raonic

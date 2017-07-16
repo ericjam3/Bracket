@@ -113,6 +113,7 @@ class Bracket(tk.Frame):
         self.name = name
         self.type = type
         self.draw = draw
+        self.numTeams = numTeams
 
         cols = 1
         rem = numTeams
@@ -140,6 +141,8 @@ class Bracket(tk.Frame):
             self.labels.append(temp)
         ind = numTeams
         end = (numTeams * 2) - 1
+        score = 0
+        ppp = 10
 
         for c in range(cols):
             prev = sum
@@ -151,12 +154,15 @@ class Bracket(tk.Frame):
                                             30 + (30 * r) + 15 * (sum))
                     if type == "view":
                         label = Label(self.canvas, text=self.controller.brackets[name][draw][ind].get(), font="bold")
+                        # Color coordination and scoring for correct picks
                         if (c > 0 and draw == "entries" and self.controller.brackets[name]["actual"][ind].get() != ""
                             and self.controller.brackets[name]["entries"][ind].get() ==
                             self.controller.brackets[name]["actual"][ind].get()):
 
+                            score += ppp
                             label["background"] = "spring green"
 
+                        # Color coordination for incorrect picks
                         elif (c > 0 and draw == "entries" and self.controller.brackets[name]["actual"][ind].get() != ""
                             and self.controller.brackets[name]["entries"][ind].get() !=
                             self.controller.brackets[name]["actual"][ind].get()):
@@ -196,7 +202,17 @@ class Bracket(tk.Frame):
                     self.canvas.create_line(10 + (140 * (c + 1)), 30 + (30 * r) + 15 * (sum), 10 + (140 * (c + 1)),
                                             30 + (30 * r) + 15 * (sum + (2 ** (c + 1))))
 
+            if c > 0:
+                ppp *= 2
 
+
+        if type == "view":
+            l = Label(self.canvas, text="Score:", font="bold")
+            l.pack()
+            self.canvas.create_window(600, 15, window=l)
+            scoreLabel = Label(self.canvas, text=str(score) + " / " + str(numTeams * 5 * (cols - 1)), font="bold")
+            scoreLabel.pack()
+            self.canvas.create_window(600, 40, window=scoreLabel)
         if type == "edit" or type == "entry":
             button = Button(self.canvas, text="Submit")
             button.bind("<Button-1>", self.submit_entries)
@@ -214,7 +230,7 @@ class Bracket(tk.Frame):
 
     def submit_entries(self, event):
         if self.type == "entry":
-            for i in range(len(self.labels)):
+            for i in range(len(self.labels) - self.numTeams, len(self.labels), 1):
                 self.controller.brackets[self.name]["actual"][i] = self.controller.brackets[self.name]["entries"][i]
 
         self.controller.save()
@@ -310,6 +326,7 @@ class Load_Bracket(tk.Frame):
         self.controller = controller
         self.parent = parent
 
+        Label(self, text="Select a bracket from the dropdown below:").grid()
         self.team = StringVar()
         self.box = Combobox(self, textvariable=self.team)
         self.box.bind("<<ComboboxSelected>>", self.select)
@@ -318,7 +335,7 @@ class Load_Bracket(tk.Frame):
             teams.append(key)
 
         self.box['values'] = teams
-        self.box.grid()
+        self.box.grid(sticky="we")
 
     def select(self, event):
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.team.get())
