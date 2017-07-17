@@ -1,1 +1,3 @@
-for i in range(1,10,1)
+x = "1  0"
+x = x.split("  ")
+print x
