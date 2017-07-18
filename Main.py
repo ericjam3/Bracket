@@ -310,25 +310,24 @@ class Create_Tournament(tk.Frame):
         Label(self, text="Bracket Name:").grid(sticky="w")
         self.name = StringVar()
         entry1 = Entry(self, textvariable=self.name)
-        entry1.grid(row=0, column=1, sticky="w")
+        entry1.grid(row=0, column=1, sticky="we")
 
         Label(self, text="Draw size:").grid(row=1, column=0, sticky="w")
         self.numTeams = IntVar()
         entry2 = Combobox(self, textvariable=self.numTeams)
         entry2['values'] = [2,4,8,16,32,64,128]
-        entry2.grid(row=1, column=1)
+        entry2.grid(row=1, column=1, sticky="we")
 
         Label(self, text="Number of Seeds:").grid(row=2, column=0, sticky="w")
         self.numSeeds = IntVar()
-        entry3 = Combobox(self, textvariable=self.numSeeds)
-        entry3.grid(row=2, column=1)
+        entry3 = Entry(self, textvariable=self.numSeeds)
+        entry3.grid(row=2, column=1, sticky="we")
 
         button = Button(self, text="Done")
         button.bind("<Button-1>", self.done_button)
         button.grid()
 
     def done_button(self, event):
-        print "cheese"
         self.controller.brackets[self.name.get()] = {}
         self.controller.brackets[self.name.get()]["numTeams"] = self.numTeams.get()
         self.controller.brackets[self.name.get()]["numSeeds"] = self.numSeeds.get()

@@ -1,34 +1,18 @@
-A  8  0  15
-Nadal
-Cilic
-Nadal
-Federer
-Cilic
-Murray
-Nadal
-Federer
-Berdych
-Cilic
-Nisikori
-Djokovic
-Murray
-Sampras
-Nadal
+A  4  0  7
+D
 
+D
+A
+S
+D
+F
 
-
-Berdych
-Cilic
-Djokovic
-Nadal
-Federer
-Berdych
-Cilic
-Nisikori
-Djokovic
-Murray
-Sampras
-Nadal
+A
+F
+A
+S
+D
+F
 C  8  0  15
 
 
