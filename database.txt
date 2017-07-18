@@ -1,572 +1,650 @@
-A  4  7
-A  0
-A  0
-C  0
-A  0
-B  0
-C  0
-D  0
-C  0
-A  0
-C  0
-A  0
-B  0
-C  0
-D  0
-B  8  15
-h  0
-p  0
-h  0
-j  0
-p  0
-h  0
-c  0
-h  0
-j  0
-k  0
-p  0
-h  0
-g  0
-c  0
-d  0
-  0
-  0
-  0
-  0
-  0
-  0
-  0
-h  0
-j  0
-k  0
-p  0
-h  0
-g  0
-c  0
-d  0
-Big Four  4  7
-Nadal  0
-Nadal  0
-Federer  0
-Murray  1
-Nadal  4
-Djokovic  2
-Federer  3
-Federer  0
-Nadal  0
-Federer  0
-Murray  0
-Nadal  0
-Djokovic  0
-Federer  0
-Wimbledon  128  255
-Wawrinka  0
-Wawrinka  0
-Dimitrov  0
-Wawrinka  0
-Cilic  0
-Dimitrov  0
-Del Potro  0
-Kyrgios  0
-Wawrinka  0
-Nadal  0
-Cilic  0
-Raonic  0
-Dimitrov  0
-Gasquet  0
-Del Potro  0
-Murray  0
-Kyrgios  0
-Querrey  0
-Wawrinka  0
-Nadal  0
-Karlovic  0
-Nishikori  0
-Cilic  0
-Raonic  0
-Sock  0
-Dimitrov  0
-Federer  0
-Zeballos  0
-Gasquet  0
-Edmund  0
-Del Potro  0
-Murray  0
-Vesely  0
-Kyrgios  0
-Janowicz  0
-Tsonga  0
-Querrey  0
-Anderson  0
-Wawrinka  0
-Nadal  0
-Monteiro  0
-Karlovic  0
-Rosol  0
-Nishikori  0
-Bautista Agut  0
-Johnson  0
-Cilic  0
-Raonic  0
-Rublev  0
-Sock  0
-A. Zverev  0
-Dimitrov  0
-Isner  0
-Tomic  0
-Federer  0
-Pospisil  0
-Zeballos  0
-Gasquet  0
-Coric  0
-Edmund  0
-Lopez  0
-Del Potro  0
-Djokovic  0
-Murray  0
-Brown  0
-Vesely  0
-Fognini  0
-Kyrgios  0
-Dutra Silva  0
-Janowicz  0
-Pouille  0
-Tsonga  0
-Lu  0
-Berlocq  0
-Querrey  0
-Anderson  0
-Seppi  0
-Bemelmans  0
-Wawrinka  0
-Nadal  0
-Young  0
-Monteiro  0
-Kuznetsov  0
-Karlovic  0
-Olivo  0
-Rosol  0
-Muller  0
-Nishikori  0
-Benneteau  0
-Copil  0
-Bautista Agut  0
-Johnson  0
-Bagnis  0
-Troicki  0
-Cilic  0
-Raonic  0
-Youzhny  0
-Rublev  0
-Ramos-Vinolas  0
-Sock  0
-Bellucci  0
-Tiafoe  0
-A. Zverev  0
-Dimitrov  0
-J. Ward  0
-Sela  0
-Isner  0
-Tomic  0
-Kukushkin  0
-Tsitsipas  0
-Federer  0
-Pospisil  0
-Simon  0
-Donaldson  0
-Zeballos  0
-Gasquet  0
-Darcis  0
-Coric  0
-Berdych  0
-Monfils  0
-Edmund  0
-Sugita  0
-Lopez  0
-Del Potro  0
-Gulbis  0
-Escobedo  0
-Djokovic  0
-Murray  0
-Bublik  0
-Sousa  0
-Brown  0
-Vesely  0
-Marchenko  0
-Tursunov  0
-Fognini  0
-Kyrgios  0
-Herbert  0
-Dutra Silva  0
-Paire  0
-Shapovalov  0
-Janowicz  0
-Jaziri  0
-Pouille  0
-Tsonga  0
-Norrie  0
-Bolelli  0
-Lu  0
-Berlocq  0
-Basilashvili  0
-Fabbiano  0
-Querrey  0
-Verdasco  0
-Anderson  0
-Gombos  0
-Seppi  0
-Haas  0
-Bemelmans  0
-Medvedev  0
-Wawrinka  0
-Nadal  0
-Millman  0
-Young  0
-Istomin  0
-Monteiro  0
-Whittington  0
-Kuznetsov  0
-Khachanov  0
-Karlovic  0
-Bedene  0
-Dzumhur  0
-Olivo  0
-Rosol  0
-Laaksonen  0
-Fucsovics  0
-Muller  0
-Nishikori  0
-Cecchinato  0
-Benneteau  0
-Stakhovsky  0
-Gojowczyk  0
-Copil  0
-Haider-Maurer  0
-Bautista Agut  0
-Johnson  0
-Kicker  0
-Bagnis  0
-Albot  0
-Troicki  0
-Mayer  0
-Kohlschreiber  0
-Cilic  0
-Raonic  0
-Struff  0
-Youzhny  0
-Mahut  0
-Rublev  0
-Travaglia  0
-Thompson  0
-Ramos-Vinolas  0
-Sock  0
-Garin  0
-Bellucci  0
-Ofner  0
-Hasse  0
-Tiafoe  0
-Donskoy  0
-A. Zverev  0
-Dimitrov  0
-Schwartzman  0
-J. Ward  0
-Baghdatis  0
-Sela  0
-Granollers  0
-Fritz  0
-Isner  0
-M. Zverev  0
-Tomic  0
-Kukushkin  0
-Daniel  0
-Tsitsipas  0
-Lajovic  0
-Dolgopolov  0
-Federer  0
-Thiem  0
-Pospisil  0
-Simon  0
-Jarry  0
-Tipsarevic  0
-Donaldson  0
-Zeballos  0
-Lorenzi  0
-Gasquet  0
-Ferrer  0
-Darcis  0
-Berankis  0
-Coric  0
-Harrison  0
-Chardy  0
-Berdych  0
-Monfils  0
-Branks  0
-Edmund  0
-A. Ward  0
-Sugita  0
-Klein  0
-Mannarino  0
-Lopez  0
-Del Potro  0
-Kokkinakis  0
-Gulbis  0
-Estrella Burgos  0
-Pavlasek  0
-Escobedo  0
-Klizan  0
-Djokovic  0
-Federer  0
-Cilic  0
-Federer  0
-Querrey  0
-Cilic  0
-Federer  0
-Berdych  0
-Murray  0
-Querrey  0
-Muller  0
-Cilic  0
-Raonic  0
-Federer  0
-Berdych  0
-Djokovic  0
-Murray  0
-Paire  0
-Querrey  0
-Anderson  0
-Nadal  0
-Muller  0
-Bautista Agut  0
-Cilic  0
-Raonic  0
-A. Zverev  0
-Dimitrov  0
-Federer  0
-Thiem  0
-Berdych  0
-Mannarino  0
-Djokovic  0
-Murray  0
-Fognini  0
-Paire  0
-Janowicz  0
-Tsonga  0
-Querrey  0
-Anderson  0
-Bemelmans  0
-Nadal  0
-Khachanov  0
-Bedene  0
-Muller  0
-Nishikori  0
-Bautista Agut  0
-Johnson  0
-Cilic  0
-Raonic  0
-Ramos-Vinolas  0
-Ofner  0
-A. Zverev  0
-Dimitrov  0
-Sela  0
-M. Zverev  0
-Federer  0
-Thiem  0
-Donaldson  0
-Ferrer  0
-Berdych  0
-Monfils  0
-Mannarino  0
-Gulbis  0
-Djokovic  0
-Murray  0
-Brown  0
-Vesely  0
-Fognini  0
-Herbert  0
-Paire  0
-Janowicz  0
-Pouille  0
-Tsonga  0
-Bolelli  0
-Basilashvili  0
-Querrey  0
-Anderson  0
-Seppi  0
-Bemelmans  0
-Medvedev  0
-Nadal  0
-Young  0
-Monteiro  0
-Khachanov  0
-Bedene  0
-Dzumhur  0
-Laaksonen  0
-Muller  0
-Nishikori  0
-Stakhovsky  0
-Copil  0
-Bautista Agut  0
-Johnson  0
-Bagnis  0
-Mayer  0
-Cilic  0
-Raonic  0
-Youzhny  0
-Rublev  0
-Ramos-Vinolas  0
-Sock  0
-Ofner  0
-Tiafoe  0
-A. Zverev  0
-Dimitrov  0
-Baghdatis  0
-Sela  0
-Isner  0
-M. Zverev  0
-Kukushkin  0
-Lajovic  0
-Federer  0
-Thiem  0
-Simon  0
-Donaldson  0
-Lorenzi  0
-Ferrer  0
-Darcis  0
-Harrison  0
-Berdych  0
-Monfils  0
-Edmund  0
-Sugita  0
-Mannarino  0
-Del Potro  0
-Gulbis  0
-Pavlasek  0
-Djokovic  0
-Murray  0
-Bublik  0
-Sousa  0
-Brown  0
-Vesely  0
-Marchenko  0
-Tursunov  0
-Fognini  0
-Kyrgios  0
-Herbert  0
-Dutra Silva  0
-Paire  0
-Shapovalov  0
-Janowicz  0
-Jaziri  0
-Pouille  0
-Tsonga  0
-Norrie  0
-Bolelli  0
-Lu  0
-Berlocq  0
-Basilashvili  0
-Fabbiano  0
-Querrey  0
-Verdasco  0
-Anderson  0
-Gombos  0
-Seppi  0
-Haas  0
-Bemelmans  0
-Medvedev  0
-Wawrinka  0
-Nadal  0
-Millman  0
-Young  0
-Istomin  0
-Monteiro  0
-Whittington  0
-Kuznetsov  0
-Khachanov  0
-Karlovic  0
-Bedene  0
-Dzumhur  0
-Olivo  0
-Rosol  0
-Laaksonen  0
-Fucsovics  0
-Muller  0
-Nishikori  0
-Cecchinato  0
-Benneteau  0
-Stakhovsky  0
-Gojowczyk  0
-Copil  0
-Haider-Maurer  0
-Bautista Agut  0
-Johnson  0
-Kicker  0
-Bagnis  0
-Albot  0
-Troicki  0
-Mayer  0
-Kohlschreiber  0
-Cilic  0
-Raonic  0
-Struff  0
-Youzhny  0
-Mahut  0
-Rublev  0
-Travaglia  0
-Thompson  0
-Ramos-Vinolas  0
-Sock  0
-Garin  0
-Bellucci  0
-Ofner  0
-Hasse  0
-Tiafoe  0
-Donskoy  0
-A. Zverev  0
-Dimitrov  0
-Schwartzman  0
-J. Ward  0
-Baghdatis  0
-Sela  0
-Granollers  0
-Fritz  0
-Isner  0
-M. Zverev  0
-Tomic  0
-Kukushkin  0
-Daniel  0
-Tsitsipas  0
-Lajovic  0
-Dolgopolov  0
-Federer  0
-Thiem  0
-Pospisil  0
-Simon  0
-Jarry  0
-Tipsarevic  0
-Donaldson  0
-Zeballos  0
-Lorenzi  0
-Gasquet  0
-Ferrer  0
-Darcis  0
-Berankis  0
-Coric  0
-Harrison  0
-Chardy  0
-Berdych  0
-Monfils  0
-Branks  0
-Edmund  0
-A. Ward  0
-Sugita  0
-Klein  0
-Mannarino  0
-Lopez  0
-Del Potro  0
-Kokkinakis  0
-Gulbis  0
-Estrella Burgos  0
-Pavlasek  0
-Escobedo  0
-Klizan  0
-Djokovic  0
+A  8  0  15
+Nadal
+Cilic
+Nadal
+Federer
+Cilic
+Murray
+Nadal
+Federer
+Berdych
+Cilic
+Nisikori
+Djokovic
+Murray
+Sampras
+Nadal
+
+
+
+Berdych
+Cilic
+Djokovic
+Nadal
+Federer
+Berdych
+Cilic
+Nisikori
+Djokovic
+Murray
+Sampras
+Nadal
+C  8  0  15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+B  8  0  15
+h
+p
+h
+j
+p
+h
+c
+h
+j
+k
+p
+h
+g
+c
+d
+
+
+
+
+
+
+
+h
+j
+k
+p
+h
+g
+c
+d
+D  8  0  15
+Nadal
+Nadal
+Cilic
+Nadal
+Wawrinka
+Cilic
+Federer
+Nadal
+Murray
+Wawrinka
+Nishikori
+Cilic
+Djokovic
+Berdych
+Federer
+Cilic
+Wawrinka
+Cilic
+Murray
+Wawrinka
+Cilic
+Berdych
+Nadal
+Murray
+Wawrinka
+Nishikori
+Cilic
+Djokovic
+Berdych
+Federer
+Big Four  4  0  7
+4 Nadal
+4 Nadal
+3 Federer
+1 Murray
+4 Nadal
+3 Federer
+2 Djokovic
+
+1 Murray
+2 Djokovic
+1 Murray
+4 Nadal
+3 Federer
+2 Djokovic
+Wimbledon  128  0  255
+Wawrinka
+Wawrinka
+Dimitrov
+Wawrinka
+Cilic
+Dimitrov
+Del Potro
+Kyrgios
+Wawrinka
+Nadal
+Cilic
+Raonic
+Dimitrov
+Gasquet
+Del Potro
+Murray
+Kyrgios
+Querrey
+Wawrinka
+Nadal
+Karlovic
+Nishikori
+Cilic
+Raonic
+Sock
+Dimitrov
+Federer
+Zeballos
+Gasquet
+Edmund
+Del Potro
+Murray
+Vesely
+Kyrgios
+Janowicz
+Tsonga
+Querrey
+Anderson
+Wawrinka
+Nadal
+Monteiro
+Karlovic
+Rosol
+Nishikori
+Bautista Agut
+Johnson
+Cilic
+Raonic
+Rublev
+Sock
+A. Zverev
+Dimitrov
+Isner
+Tomic
+Federer
+Pospisil
+Zeballos
+Gasquet
+Coric
+Edmund
+Lopez
+Del Potro
+Djokovic
+Murray
+Brown
+Vesely
+Fognini
+Kyrgios
+Dutra Silva
+Janowicz
+Pouille
+Tsonga
+Lu
+Berlocq
+Querrey
+Anderson
+Seppi
+Bemelmans
+Wawrinka
+Nadal
+Young
+Monteiro
+Kuznetsov
+Karlovic
+Olivo
+Rosol
+Muller
+Nishikori
+Benneteau
+Copil
+Bautista Agut
+Johnson
+Bagnis
+Troicki
+Cilic
+Raonic
+Youzhny
+Rublev
+Ramos-Vinolas
+Sock
+Bellucci
+Tiafoe
+A. Zverev
+Dimitrov
+J. Ward
+Sela
+Isner
+Tomic
+Kukushkin
+Tsitsipas
+Federer
+Pospisil
+Simon
+Donaldson
+Zeballos
+Gasquet
+Darcis
+Coric
+Berdych
+Monfils
+Edmund
+Sugita
+Lopez
+Del Potro
+Gulbis
+Escobedo
+Djokovic
+Murray
+Bublik
+Sousa
+Brown
+Vesely
+Marchenko
+Tursunov
+Fognini
+Kyrgios
+Herbert
+Dutra Silva
+Paire
+Shapovalov
+Janowicz
+Jaziri
+Pouille
+Tsonga
+Norrie
+Bolelli
+Lu
+Berlocq
+Basilashvili
+Fabbiano
+Querrey
+Verdasco
+Anderson
+Gombos
+Seppi
+Haas
+Bemelmans
+Medvedev
+Wawrinka
+Nadal
+Millman
+Young
+Istomin
+Monteiro
+Whittington
+Kuznetsov
+Khachanov
+Karlovic
+Bedene
+Dzumhur
+Olivo
+Rosol
+Laaksonen
+Fucsovics
+Muller
+Nishikori
+Cecchinato
+Benneteau
+Stakhovsky
+Gojowczyk
+Copil
+Haider-Maurer
+Bautista Agut
+Johnson
+Kicker
+Bagnis
+Albot
+Troicki
+Mayer
+Kohlschreiber
+Cilic
+Raonic
+Struff
+Youzhny
+Mahut
+Rublev
+Travaglia
+Thompson
+Ramos-Vinolas
+Sock
+Garin
+Bellucci
+Ofner
+Hasse
+Tiafoe
+Donskoy
+A. Zverev
+Dimitrov
+Schwartzman
+J. Ward
+Baghdatis
+Sela
+Granollers
+Fritz
+Isner
+M. Zverev
+Tomic
+Kukushkin
+Daniel
+Tsitsipas
+Lajovic
+Dolgopolov
+Federer
+Thiem
+Pospisil
+Simon
+Jarry
+Tipsarevic
+Donaldson
+Zeballos
+Lorenzi
+Gasquet
+Ferrer
+Darcis
+Berankis
+Coric
+Harrison
+Chardy
+Berdych
+Monfils
+Branks
+Edmund
+A. Ward
+Sugita
+Klein
+Mannarino
+Lopez
+Del Potro
+Kokkinakis
+Gulbis
+Estrella Burgos
+Pavlasek
+Escobedo
+Klizan
+Djokovic
+Federer
+Cilic
+Federer
+Querrey
+Cilic
+Federer
+Berdych
+Murray
+Querrey
+Muller
+Cilic
+Raonic
+Federer
+Berdych
+Djokovic
+Murray
+Paire
+Querrey
+Anderson
+Nadal
+Muller
+Bautista Agut
+Cilic
+Raonic
+A. Zverev
+Dimitrov
+Federer
+Thiem
+Berdych
+Mannarino
+Djokovic
+Murray
+Fognini
+Paire
+Janowicz
+Tsonga
+Querrey
+Anderson
+Bemelmans
+Nadal
+Khachanov
+Bedene
+Muller
+Nishikori
+Bautista Agut
+Johnson
+Cilic
+Raonic
+Ramos-Vinolas
+Ofner
+A. Zverev
+Dimitrov
+Sela
+M. Zverev
+Federer
+Thiem
+Donaldson
+Ferrer
+Berdych
+Monfils
+Mannarino
+Gulbis
+Djokovic
+Murray
+Brown
+Vesely
+Fognini
+Herbert
+Paire
+Janowicz
+Pouille
+Tsonga
+Bolelli
+Basilashvili
+Querrey
+Anderson
+Seppi
+Bemelmans
+Medvedev
+Nadal
+Young
+Monteiro
+Khachanov
+Bedene
+Dzumhur
+Laaksonen
+Muller
+Nishikori
+Stakhovsky
+Copil
+Bautista Agut
+Johnson
+Bagnis
+Mayer
+Cilic
+Raonic
+Youzhny
+Rublev
+Ramos-Vinolas
+Sock
+Ofner
+Tiafoe
+A. Zverev
+Dimitrov
+Baghdatis
+Sela
+Isner
+M. Zverev
+Kukushkin
+Lajovic
+Federer
+Thiem
+Simon
+Donaldson
+Lorenzi
+Ferrer
+Darcis
+Harrison
+Berdych
+Monfils
+Edmund
+Sugita
+Mannarino
+Del Potro
+Gulbis
+Pavlasek
+Djokovic
+Murray
+Bublik
+Sousa
+Brown
+Vesely
+Marchenko
+Tursunov
+Fognini
+Kyrgios
+Herbert
+Dutra Silva
+Paire
+Shapovalov
+Janowicz
+Jaziri
+Pouille
+Tsonga
+Norrie
+Bolelli
+Lu
+Berlocq
+Basilashvili
+Fabbiano
+Querrey
+Verdasco
+Anderson
+Gombos
+Seppi
+Haas
+Bemelmans
+Medvedev
+Wawrinka
+Nadal
+Millman
+Young
+Istomin
+Monteiro
+Whittington
+Kuznetsov
+Khachanov
+Karlovic
+Bedene
+Dzumhur
+Olivo
+Rosol
+Laaksonen
+Fucsovics
+Muller
+Nishikori
+Cecchinato
+Benneteau
+Stakhovsky
+Gojowczyk
+Copil
+Haider-Maurer
+Bautista Agut
+Johnson
+Kicker
+Bagnis
+Albot
+Troicki
+Mayer
+Kohlschreiber
+Cilic
+Raonic
+Struff
+Youzhny
+Mahut
+Rublev
+Travaglia
+Thompson
+Ramos-Vinolas
+Sock
+Garin
+Bellucci
+Ofner
+Hasse
+Tiafoe
+Donskoy
+A. Zverev
+Dimitrov
+Schwartzman
+J. Ward
+Baghdatis
+Sela
+Granollers
+Fritz
+Isner
+M. Zverev
+Tomic
+Kukushkin
+Daniel
+Tsitsipas
+Lajovic
+Dolgopolov
+Federer
+Thiem
+Pospisil
+Simon
+Jarry
+Tipsarevic
+Donaldson
+Zeballos
+Lorenzi
+Gasquet
+Ferrer
+Darcis
+Berankis
+Coric
+Harrison
+Chardy
+Berdych
+Monfils
+Branks
+Edmund
+A. Ward
+Sugita
+Klein
+Mannarino
+Lopez
+Del Potro
+Kokkinakis
+Gulbis
+Estrella Burgos
+Pavlasek
+Escobedo
+Klizan
+Djokovic
