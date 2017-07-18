@@ -341,7 +341,10 @@ class Create_Tournament(tk.Frame):
             self.controller.brackets[self.name.get()]["actual"].append(StringVar(value=""))
 
         self.controller.save()
-        self.controller.home.tkraise()
+        self.create = Bracket(parent=self.parent, controller=self.controller, numTeams=self.numTeams.get() , type="entry",
+                              name=self.name.get(), draw="entries")
+        self.create.grid(row=0, column=0, sticky="nsew")
+        self.create.tkraise()
 
 
 class Load_Bracket(tk.Frame):
@@ -403,10 +406,6 @@ class Bracket_Home(tk.Frame):
         button5.grid(sticky="we")
 
     def create_button(self, event):
-      #  tempList = []
-       # for i in range(2 * self.numTeams.get()):
-       #     tempList.append(StringVar(value=""))
-       # self.controller.brackets[self.name]["entries"].append(tempList)
         self.create = Bracket(parent=self.parent, controller=self.controller, numTeams=self.numTeams , type="entry",
                               name=self.name, draw="entries")
         self.create.grid(row=0, column=0, sticky="nsew")

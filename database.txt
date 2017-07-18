@@ -1,18 +1,18 @@
 A  4  0  7
-D
+d
+s
+d
+a
+s
+d
+f
 
-D
-BYE
-BYE
-D
-F
 
-
-F
-BYE
-BYE
-D
-F
+f
+a
+s
+d
+f
 C  8  0  15
 
 
