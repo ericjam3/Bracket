@@ -63,10 +63,7 @@ class App(tk.Tk):
                 self.brackets[name]["numTeams"] = int(info[1])
                 self.brackets[name]["entries"] = []
                 self.brackets[name]["actual"] = []
-                self.brackets[name]["eSeeds"] = []
-                self.brackets[name]["aSeeds"] = []
-                self.brackets[name]["eSeeds"].append(IntVar(value=0))
-                self.brackets[name]["aSeeds"].append(IntVar(value=0))
+                self.brackets[name]["seeds"] = {}
                 num_entries = int(info[2])
                 if num_entries > 0:
                     lineNum = 1
@@ -80,7 +77,6 @@ class App(tk.Tk):
                     self.brackets[name]["actual"].append(StringVar(value=""))
 
                 self.brackets[name]["entries"].append(StringVar(value=info[0]))
-                self.brackets[name]["eSeeds"].append(IntVar(value=info[1]))
 
             elif lineNum == 2:
                 temp_entries -= 1
@@ -88,7 +84,9 @@ class App(tk.Tk):
                     lineNum = 0
 
                 self.brackets[name]["actual"].append(StringVar(value=info[0]))
-                self.brackets[name]["aSeeds"].append(IntVar(value=info[1]))
+                self.brackets[name]["seeds"][info[0]] = 0
+                if info[1] > 0:
+                    self.brackets[name]["seeds"][info[0]] = info[1]
 
         infile.close()
 
@@ -97,10 +95,10 @@ class App(tk.Tk):
         for key, value in self.brackets.iteritems():
             print_var += key + "  " + str(value["numTeams"]) + "  " + str(len(value["entries"]) - 1) + "\n"
             for i in range(1, len(value["entries"]), 1):
-                 print_var += str(value["entries"][i].get()) + "  " + str(value["eSeeds"][i].get()) + "\n"
+                 print_var += str(value["entries"][i].get()) + "  " + str(value["seeds"][i].get()) + "\n"
 
             for i in range(1, len(value["actual"]), 1):
-                print_var += str(value["actual"][i].get()) + "  " + str(value["aSeeds"][i].get()) + "\n"
+                print_var += str(value["actual"][i].get()) + "  " + str(value["seeds"][i].get()) + "\n"
 
         outfile = open("database.txt", "w")
         outfile.write(print_var)
@@ -146,6 +144,7 @@ class Bracket(tk.Frame):
         end = (numTeams * 2) - 1
         score = 0
         ppp = 10
+        self.seeds = []
 
         for c in range(cols):
             prev = sum
@@ -155,14 +154,14 @@ class Bracket(tk.Frame):
                 if r % 2 ** c == 0:
                     self.canvas.create_line(10 + (c * 140), 30 + (30 * r) + 15 * (sum), 10 + (c + 1) * 140,
                                             30 + (30 * r) + 15 * (sum))
-                    if type == "view":
-                        seed = ""
-                        d = "eSeeds"
-                        if draw == "actual":
-                            d = "aSeeds"
-                        if self.controller.brackets[name][d][ind].get() != 0:
-                            seed = str(self.controller.brackets[name][d][ind].get())
 
+                    seed = ""
+                    if (type == "view" or type == "edit"):
+                        player = self.controller.brackets[name][draw][ind].get()
+                        if self.controller.brackets[name]["seeds"][player] != 0:
+                            seed = str(self.controller.brackets[name]["seeds"][player])
+
+                    if type == "view":
                         label = Label(self.canvas, text=seed + " " + self.controller.brackets[name][draw][ind].get(),
                                       font="bold")
                         # Color coordination and scoring for correct picks
@@ -190,19 +189,24 @@ class Bracket(tk.Frame):
                         ind += 1
 
                     elif type == "entry" and c == 0:
-                        seedEntry = Entry(self.canvas, textvariable=self.controller.brackets[name]["eSeeds"][ind])
-                        seedEntry.pack()
                         entry = Entry(self.canvas, textvariable=self.controller.brackets[name]["entries"][ind])
                         entry.pack()
+                        var = IntVar()
+                        entry2 = Entry(self.canvas, textvariable=var)
+                        entry2.pack()
+                        self.seeds.append(entry2)
                         ind += 1
 
+
                         self.canvas.create_window(5 + (c * 140), 25 + (30 * r) + 15 * (sum),
-                                                  anchor=S, window=seedEntry, width=15)
+                                                  anchor=S, window=self.seeds[len(self.seeds) - 1], width=15)
                         self.canvas.create_window(85 + (c * 140), 25 + (30 * r) + 15 * (sum),
                                                   anchor=S, window=entry)
 
                     elif type == "edit":
-                        self.labels[ind] = Label(self.canvas, text=self.controller.brackets[name][draw][ind].get(), font="bold")
+                        self.labels[ind] = Label(self.canvas,
+                                                 text=seed + " " + self.controller.brackets[name][draw][ind].get(),
+                                                 font="bold")
                         self.labels[ind].bind("<Button-1>", functools.partial(self.advance, ind=ind))
                         self.labels[ind].pack()
                         self.canvas.create_window(80 + (c * 140), 25 + (30 * r) + 15 * (sum),
@@ -246,8 +250,13 @@ class Bracket(tk.Frame):
 
     def submit_entries(self, event):
         if self.type == "entry":
+            ind = 0
             for i in range(len(self.labels) - self.numTeams, len(self.labels), 1):
+                player = self.controller.brackets[self.name]["entries"][i]
+                self.controller.brackets[self.name]["seeds"][player] = self.seeds[ind]["textvariable"].get()
                 self.controller.brackets[self.name]["actual"][i] = self.controller.brackets[self.name]["entries"][i]
+                ind += 1
+
 
         self.controller.save()
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
@@ -328,13 +337,10 @@ class Create_Tournament(tk.Frame):
     def done_button(self):
         self.controller.brackets[self.name.get()] = {}
         self.controller.brackets[self.name.get()]["numTeams"] = self.numTeams.get()
-        self.controller.brackets[self.name.get()]["eSeeds"] = []
-        self.controller.brackets[self.name.get()]["aSeeds"] = []
+        self.controller.brackets[self.name.get()]["seeds"] = {}
         self.controller.brackets[self.name.get()]["entries"] = []
         self.controller.brackets[self.name.get()]["actual"] = []
         for i in range(2 * self.numTeams.get()):
-            self.controller.brackets[self.name.get()]["eSeeds"].append(IntVar(value=0))
-            self.controller.brackets[self.name.get()]["aSeeds"].append(IntVar(value=0))
             self.controller.brackets[self.name.get()]["entries"].append(StringVar(value=""))
             self.controller.brackets[self.name.get()]["actual"].append(StringVar(value=""))
 
