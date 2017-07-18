@@ -235,6 +235,8 @@ class Bracket(tk.Frame):
     def submit_entries(self, event):
         if self.type == "entry":
             for i in range(len(self.labels) - self.numTeams, len(self.labels), 1):
+                if self.controller.brackets[self.name]["entries"][i].get() == StringVar(value="").get():
+                    self.controller.brackets[self.name]["entries"][i] = StringVar(value="BYE")
                 self.controller.brackets[self.name]["actual"][i] = self.controller.brackets[self.name]["entries"][i]
 
             for i in range(len(self.labels) - 1, 2, -2):

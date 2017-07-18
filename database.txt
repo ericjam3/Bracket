@@ -2,15 +2,15 @@ A  4  0  7
 D
 
 D
-A
-S
+BYE
+BYE
 D
 F
 
-A
+
 F
-A
-S
+BYE
+BYE
 D
 F
 C  8  0  15
