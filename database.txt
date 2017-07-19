@@ -139,50 +139,20 @@ BYE
 BYE
 d
 Big Four  4  0  7
-4 Nadal
-4 Nadal
-3 Federer
-1 Murray
-4 Nadal
-3 Federer
 2 Djokovic
-
 1 Murray
 2 Djokovic
 1 Murray
-4 Nadal
+Nadal
 3 Federer
 2 Djokovic
-new  4  0  7
-
-
-
-a
-
-
-
-
-
-
-a
-
-
-
-Not  4  0  7
-
-
-
-Mier
-Parkes
-BYE
-BYE
-
-
-
-Mier
-Parkes
-BYE
-BYE
+2 Djokovic
+1 Murray
+2 Djokovic
+1 Murray
+Nadal
+3 Federer
+2 Djokovic
 New  8  0  15
 
 Klettner
@@ -214,6 +184,36 @@ Agarwal
 Lama
 Parkes
 Hench
+Not  4  0  7
+
+
+
+Mier
+Parkes
+BYE
+BYE
+
+
+
+Mier
+Parkes
+BYE
+BYE
+new  4  0  7
+
+
+
+a
+
+
+
+
+
+
+a
+
+
+
 Wimbledon  128  0  255
 Federer
 Cilic

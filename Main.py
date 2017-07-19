@@ -155,7 +155,10 @@ class Bracket(tk.Frame):
                     self.canvas.create_line(10 + (c * 140), 30 + (30 * r) + 15 * (sum), 10 + (c + 1) * 140,
                                             30 + (30 * r) + 15 * (sum))
                     if type == "view":
-                        label = Label(self.canvas, text=self.controller.brackets[name][draw][ind].get(), font="bold")
+                        team = self.controller.brackets[name][draw][ind].get()
+                        if len(team) > 0 and team[0].isalpha():
+                            team = "".ljust(4) + team
+                        label = Label(self.canvas, text=team, font="bold")
                         # Color coordination and scoring for correct picks
                         if (c > 0 and draw == "entries" and self.controller.brackets[name]["actual"][ind].get() != ""
                             and self.controller.brackets[name]["entries"][ind].get() ==
@@ -175,8 +178,8 @@ class Bracket(tk.Frame):
 
 
                         label.pack()
-                        self.canvas.create_window(80 + (c * 140), 25 + (30 * r) + 15 * (sum),
-                                                  anchor=S, window=label)
+                        self.canvas.create_window(30 + (c * 140), 25 + (30 * r) + 15 * (sum),
+                                                  anchor=SW, window=label)
                         if ind >= end:
                             end = ((ind + 1) / 2) - 1
                             ind = (ind + 1) / 4
@@ -191,11 +194,14 @@ class Bracket(tk.Frame):
                                                   anchor=S, window=entry)
 
                     elif type == "edit":
-                        self.labels[ind] = Label(self.canvas, text=self.controller.brackets[name][draw][ind].get(), font="bold")
+                        team = self.controller.brackets[name][draw][ind].get()
+                        if len(team) > 0 and team[0].isalpha():
+                            team = "".ljust(4) + team
+                        self.labels[ind] = Label(self.canvas, text=team, font="bold")
                         self.labels[ind].bind("<Button-1>", functools.partial(self.advance, ind=ind))
                         self.labels[ind].pack()
-                        self.canvas.create_window(80 + (c * 140), 25 + (30 * r) + 15 * (sum),
-                                                  anchor=S, window=self.labels[ind])
+                        self.canvas.create_window(30 + (c * 140), 25 + (30 * r) + 15 * (sum),
+                                                  anchor=SW, window=self.labels[ind])
                         if ind >= end:
                             end = ((ind + 1) / 2) - 1
                             ind = (ind + 1) / 4
