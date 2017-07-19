@@ -222,7 +222,7 @@ Tsonga
 Cilic
 Federer
 Del Potro
-Murray
+    Murray
 Tsonga
 Nadal
 Cilic
@@ -230,8 +230,8 @@ A. Zverev
 Federer
 Berdych
 Del Potro
-Murray
-Kyrgios
+    Murray
+    Paire
 Tsonga
 Wawrinka
 Nadal
@@ -248,7 +248,7 @@ Edmund
 Del Potro
 Murray
 Fognini
-Kyrgios
+    Paire
 Pouille
 Tsonga
 Querrey
@@ -282,8 +282,8 @@ Murray
 Sousa
 Vesely
 Fognini
-Kyrgios
-Dutra Silva
+    Herbert
+    Paire
 Janowicz
 Pouille
 Tsonga
