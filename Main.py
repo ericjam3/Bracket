@@ -5,6 +5,7 @@ import math
 from ttk import *
 import ttk
 import functools
+from random import *
 
 class App(tk.Tk):
 
@@ -219,12 +220,20 @@ class Bracket(tk.Frame):
             self.canvas.create_window(600, 40, window=scoreLabel)
         if type == "edit" or type == "entry":
             button = Button(self.canvas, text="Submit")
-            button.bind("<Button-1>", self.submit_entries)
+            button.bind("<Button-1>", functools.partial(self.submit_entries, rando=0))
             button.pack()
             self.canvas.create_window(800, 15, window=button)
+            if type == "entry":
+                lbl = Label(self.canvas, text="Enter the rest of the teams to be placed randomly")
+                lbl.pack()
+                button2 = Button(self.canvas, text="Randomize")
+                button2.bind("<Button-1>", functools.partial(self.submit_entries, rando=1))
+                button2.pack()
+                self.canvas.create_window(800, 40, window=button2)
+                self.canvas.create_window(850, 40, window= lbl, anchor="w")
         else:
             button = Button(self.canvas, text="Done Viewing")
-            button.bind("<Button-1>", self.submit_entries)
+            button.bind("<Button-1>", functools.partial(self.submit_entries, rando=0))
             button.pack()
             self.canvas.create_window(800, 15, window=button)
 
@@ -232,13 +241,11 @@ class Bracket(tk.Frame):
         self.canvas.config(scrollregion=self.canvas.bbox("all"))
 
 
-    def submit_entries(self, event):
-        rando = 0
+    def submit_entries(self, event, rando):
         if self.type == "entry":
             for i in range(len(self.labels) - self.numTeams, len(self.labels), 1):
                 if self.controller.brackets[self.name]["entries"][i].get() == StringVar(value="").get():
                     self.controller.brackets[self.name]["entries"][i] = StringVar(value="BYE")
-                    rando = 1
 
                 self.controller.brackets[self.name]["actual"][i] = self.controller.brackets[self.name]["entries"][i]
 
@@ -256,12 +263,14 @@ class Bracket(tk.Frame):
                     self.controller.brackets[self.name]["entries"][int(math.floor(i / 2))] = StringVar(value="")
 
         self.controller.save()
-        if rando == 1 and self.type == "entry":
-            print("work on this piece")
-
-        bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
-        bhome.grid(row=0, column=0, sticky="nsew")
-        bhome.tkraise()
+        if rando == 1:
+            rFrame = Random_Frame(parent=self.parent, controller=self.controller, name=self.name)
+            rFrame.grid(row=0, column=0, sticky="nsew")
+            rFrame.tkraise()
+        else:
+            bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
+            bhome.grid(row=0, column=0, sticky="nsew")
+            bhome.tkraise()
 
     def advance(self, event, ind):
         if ind != 1:
@@ -306,6 +315,34 @@ class Home(tk.Frame):
         loadTeam = Load_Bracket(parent=self.parent, controller=self.controller)
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()
+
+
+class Random_Frame(tk.Frame):
+
+    def __init__(self, parent, controller, name):
+        tk.Frame.__init__(self, parent)
+        self.controller = controller
+        self.parent = parent
+        self.name = name
+        self.teams = [StringVar()] * self.controller.brackets[name]["numTeams"]
+
+        button = Button(self, text="Submit")
+        button.bind("<Button-1>", self.pressed)
+        button.pack()
+
+        self.byes = []
+        self.count = 0
+        for i in range(len(self.controller.brackets[name]["entries"])):
+            if self.controller.brackets[name]["entries"][i].get() == "BYE":
+                Entry(self, textvariable=self.teams[self.count]).pack()
+                self.count += 1
+                self.byes.append(i)
+
+    def pressed(self, event):
+        for i in range(self.count, -1, -1):
+            ind = randint(0, i)
+            self.controller.brackets[self.name]["entries"][self.byes.pop(ind)] = self.teams[i]
+            self.controller.brackets[self.name]["actual"][self.byes.pop(ind)] = self.teams[i]
 
 
 class Create_Tournament(tk.Frame):
@@ -391,7 +428,7 @@ class Bracket_Home(tk.Frame):
 
         Label(self, text=name, font="Bold 36").grid()
 
-        button1 = Button(self, text="Create/Edit Original Draw")
+        button1 = Button(self, text="Edit Original Draw")
         button1.bind("<Button-1>", self.create_button)
         button1.grid(sticky="we")
 
