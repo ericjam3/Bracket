@@ -6,6 +6,21 @@ from ttk import *
 import ttk
 import functools
 
-list = [IntVar()] * 10
-for i in range(10):
-    entry =  Entry()
+
+def func():
+    for i in range(len(list)):
+        print list[i].get()
+
+root = Tk()
+button = Button(root, text="submit", command=func).pack()
+
+list = []
+for i in range(5):
+    entry = Entry(root)
+    entry.pack()
+    list.append(entry)
+
+
+
+
+root.mainloop()

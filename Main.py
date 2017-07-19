@@ -325,30 +325,25 @@ class Random_Frame(tk.Frame):
         self.parent = parent
         self.name = name
         self.teams = []
-        for i in range(self.controller.brackets[name]["numTeams"]):
-            temp = Entry()
-            temp.pack()
-            self.teams.append(temp)
 
-        button = Button(self, text="Submit")
-        button.bind("<Button-1>", self.pressed)
-        button.pack()
+        Button(self, text="Submit", command=self.pressed).pack()
 
         self.byes = []
-        self.count = 0
         for i in range(len(self.controller.brackets[name]["entries"])):
             if self.controller.brackets[name]["entries"][i].get() == "BYE":
-                team = StringVar()
-                self.teams[self.count] = Entry(self, textvariable=team).pack()
-                self.count += 1
+                entry = Entry(self)
+                entry.pack()
+                self.teams.append(entry)
                 self.byes.append(i)
 
-    def pressed(self, event):
-        for i in range(self.count - 1, -1, -1):
+    def pressed(self):
+        for i in range(len(self.byes) - 1, -1, -1):
             ind = randint(0, i)
-            self.controller.brackets[self.name]["entries"][self.byes.pop(ind)] = self.teams[i]["textvariable"]
-            self.controller.brackets[self.name]["actual"][self.byes.pop(ind)] = self.teams[i]["textvariable"]
+            ind = self.byes.pop(ind)
+            self.controller.brackets[self.name]["entries"][ind] = self.teams[i]
+            self.controller.brackets[self.name]["actual"][ind] = self.teams[i]
 
+        self.controller.save()
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
         bhome.grid(row=0, column=0, sticky="nsew")
         bhome.tkraise()
@@ -441,7 +436,7 @@ class Bracket_Home(tk.Frame):
         button1.bind("<Button-1>", self.create_button)
         button1.grid(sticky="we")
 
-        button2 = Button(self, text="Make Picks")
+        button2 = Button(self, text="Make/Edit Picks")
         button2.bind("<Button-1>", self.make_button)
         button2.grid(sticky="we")
 
