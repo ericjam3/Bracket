@@ -276,11 +276,18 @@ class Bracket(tk.Frame):
         if ind != 1:
             self.labels[int(math.floor(ind / 2))]["text"] = self.labels[ind]["text"]
             self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))] = StringVar(value=self.labels[ind]["text"])
-            while ind >= 2:
-                ind /= 2
-                if (self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))].get() !=
-                    self.controller.brackets[self.name][self.draw][ind].get()):
+
+            while ind > 3:
+                ind = int(math.floor(ind / 2))
+                pair = ind + 1
+                if ind % 2 == 1:
+                    pair -= 2
+                if ((self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))].get() !=
+                    self.controller.brackets[self.name][self.draw][ind].get()) and
+                    (self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))].get() !=
+                    self.controller.brackets[self.name][self.draw][pair].get())):
                     self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))] = StringVar(value="")
+                    self.labels[int(math.floor(ind / 2))]["text"] = ""
 
         self.controller.save()
 
@@ -340,8 +347,12 @@ class Random_Frame(tk.Frame):
         for i in range(len(self.byes) - 1, -1, -1):
             ind = randint(0, i)
             ind = self.byes.pop(ind)
-            self.controller.brackets[self.name]["entries"][ind] = self.teams[i]
-            self.controller.brackets[self.name]["actual"][ind] = self.teams[i]
+            if self.teams[i].get() != "":
+                self.controller.brackets[self.name]["entries"][ind] = StringVar(value=self.teams[i].get())
+                self.controller.brackets[self.name]["actual"][ind] = StringVar(value=self.teams[i].get())
+            else:
+                self.controller.brackets[self.name]["entries"][ind] = StringVar(value="BYE")
+                self.controller.brackets[self.name]["actual"][ind] = StringVar(value="BYE")
 
         self.controller.save()
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
