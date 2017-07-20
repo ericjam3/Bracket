@@ -7,8 +7,7 @@ import ttk
 import functools
 
 
-a = "sff"
-if a[0].isalpha():
-    print "yayyy"
+string = "1, 0, 1"
+print string.split(",")
 
 
