@@ -135,11 +135,12 @@ if __name__ == "__main__":
 
     rankDict = {}
     for key in pageDict:
-        #rankDict[key] = pageDict[key] + (1 * hitsDict[key])
-        rankDict[key] = hitsDict[key]
+        rankDict[key] = pageDict[key] + (1 * hitsDict[key])
+        #rankDict[key] = hitsDict[key]
+        #rankDict[key] = pageDict[key]
 
     print_var = ""
     for key, value in sorted(rankDict.iteritems(), key=lambda (v, k): (k, v)):
-        print_var = str(key) + ": " + str(value) + "\n" + print_var
+        print_var = str(key) + ": " + str(round(value,3)) + "\n" + print_var
 
     print print_var

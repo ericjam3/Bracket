@@ -1,18 +1,18 @@
 A  4  0  7
-d
-s
-d
-a
-s
-d
-f
 
 
-f
-a
-s
-d
-f
+
+BYE
+BYE
+BYE
+BYE
+
+
+
+BYE
+BYE
+BYE
+BYE
   0  0  -1
 C  8  0  15
 
@@ -107,6 +107,133 @@ Cilic
 Djokovic
 Berdych
 Federer
+32  32  0  63
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
 Random  8  0  15
 
 
@@ -138,21 +265,82 @@ BYE
 BYE
 BYE
 d
+prac  8  0  15
+
+
+
+
+
+
+
+Mier
+Hench
+Bob
+Drew
+a
+c
+d
+b
+
+
+
+
+
+
+
+Mier
+Hench
+Bob
+Drew
+a
+c
+d
+b
 Big Four  4  0  7
-2 Djokovic
-1 Murray
-2 Djokovic
-1 Murray
-Nadal
-3 Federer
-2 Djokovic
-2 Djokovic
-1 Murray
-2 Djokovic
-1 Murray
-Nadal
-3 Federer
-2 Djokovic
+[4] Nadal
+[4] Nadal
+[3] Federer
+[1] Murray
+[4] Nadal
+[3] Federer
+[2] Djokovic
+[3] Federer
+[4] Nadal
+[3] Federer
+[1] Murray
+[4] Nadal
+[3] Federer
+[2] Djokovic
+new  4  0  7
+
+
+
+a
+
+
+
+
+
+
+a
+
+
+
+Not  4  0  7
+
+
+
+Mier
+Parkes
+BYE
+BYE
+
+
+
+Mier
+Parkes
+BYE
+BYE
 New  8  0  15
 
 Klettner
@@ -184,33 +372,130 @@ Agarwal
 Lama
 Parkes
 Hench
-Not  4  0  7
-
-
-
-Mier
-Parkes
-BYE
-BYE
-
-
-
-Mier
-Parkes
-BYE
-BYE
-new  4  0  7
-
-
-
-a
+Pong  32  0  63
 
 
 
 
 
 
-a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
