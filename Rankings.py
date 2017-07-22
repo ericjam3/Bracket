@@ -85,9 +85,14 @@ class Rankings:
             for key, value in self.players.iteritems():
                 value["score"] = value["newscore"]
 
+        max = 0
+        for key, value in self.players.iteritems():
+            if value["wins"] + value["losses"] > max:
+                max = value["wins"] + value["losses"]
+
         rankDict = {}
         for key, value in self.players.iteritems():
-            rankDict[value["name"]] = value["score"]
+            rankDict[value["name"]] = value["score"] * (max / (value["wins"] + value["losses"]))
 
         print_var = ""
         for key, value in sorted(rankDict.iteritems(), key=lambda (v,k): (k,v)):
@@ -125,6 +130,7 @@ class Rankings:
         for key, value in sorted(rankDict.iteritems(), key=lambda (v, k): (k, v)):
             print_var = str(key) + ": " + str(value) + "\n" + print_var
 
+
         return rankDict
 
 
@@ -140,7 +146,10 @@ if __name__ == "__main__":
         #rankDict[key] = pageDict[key]
 
     print_var = ""
+    rank = len(rankDict)
     for key, value in sorted(rankDict.iteritems(), key=lambda (v, k): (k, v)):
-        print_var = str(key) + ": " + str(round(value,3)) + "\n" + print_var
+        print_var = str(rank).ljust(6) + str(key).ljust(20) + str(round(value,3)).ljust(10) + "\n" + print_var
+        rank -= 1
 
+    print "RANK".ljust(6) + "NAME".ljust(20) + "RATING".ljust(10)
     print print_var
