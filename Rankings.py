@@ -93,15 +93,13 @@ class Rankings:
         rankDict = {}
         for key, value in self.players.iteritems():
             rankDict[value["name"]] = value["score"] * (max / (value["wins"] + value["losses"]))
-
-        print_var = ""
-        for key, value in sorted(rankDict.iteritems(), key=lambda (v,k): (k,v)):
-            print_var = str(key) + ": " + str(value) + "\n" + print_var
+            if rankDict[value["name"]] < .001:
+                rankDict[value["name"]] = math.pow(rankDict[value["name"]], .2)
 
         return rankDict
 
     def hits(self):
-        for count in range(5):
+        for count in range(1):
             for row in range(self.numPlayers):
                 scorewins = 0
                 scorelosses = 0
@@ -123,13 +121,10 @@ class Rankings:
             den += value["wins"]
 
         rankDict = {}
+        tot = 0
         for key, value in self.players.iteritems():
             rankDict[value["name"]] = (value["wins"] - value["losses"]) / den
-
-        print_var = ""
-        for key, value in sorted(rankDict.iteritems(), key=lambda (v, k): (k, v)):
-            print_var = str(key) + ": " + str(value) + "\n" + print_var
-
+            tot += rankDict[value["name"]]
 
         return rankDict
 
