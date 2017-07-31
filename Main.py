@@ -63,39 +63,47 @@ class App(tk.Tk):
                 self.brackets[name] = {}
                 self.brackets[name]["numTeams"] = int(info[1])
                 self.brackets[name]["edit"] = int(info[2])
-                self.brackets[name]["entries"] = []
+                self.brackets[name]["entries"] = {}
                 self.brackets[name]["actual"] = []
                 num_entries = int(info[3])
-                if num_entries > 0:
-                    lineNum = 1
-                    self.brackets[name]["entries"].append(StringVar(value=""))
-                    temp_entries = num_entries
+                num_picks = int(info[4])
+                lineNum = 1
+                temp_entries = num_entries
             elif lineNum == 1:
+                picks_name = info[0]
+                self.brackets[name]["entries"][picks_name].append(StringVar(value=""))
+                lineNum = 2
+            elif lineNum == 2:
                 temp_entries -= 1
                 if temp_entries == 0:
-                    temp_entries = num_entries
-                    lineNum = 2
-                    self.brackets[name]["actual"].append(StringVar(value=""))
+                    num_picks -= 1
+                    if num_picks == 0:
+                        temp_entries = num_entries
+                        lineNum = 3
+                        self.brackets[name]["actual"].append(StringVar(value=""))
+                    else:
+                        temp_entries = num_entries
+                        lineNum = 1
 
-                self.brackets[name]["entries"].append(StringVar(value=line))
+                self.brackets[name]["entries"][picks_name].append(StringVar(value=line))
 
-            elif lineNum == 2:
+            elif lineNum == 3:
                 temp_entries -= 1
                 if temp_entries == 0:
                     lineNum = 0
 
                 self.brackets[name]["actual"].append(StringVar(value=line))
-
-
         infile.close()
 
     def save(self):
         print_var = ""
         for key, value in self.brackets.iteritems():
             print_var += key + str(value["numTeams"]) + "  " + str(value["edit"]) + "  "
-            print_var += str(len(value["entries"]) - 1) + "\n"
-            for i in range(1, len(value["entries"]), 1):
-                 print_var += str(value["entries"][i].get()) + "\n"
+            print_var += str(len(value["actual"]) - 1)
+            for entry in value["entries"]:
+                print_var += entry + "\n"
+                for i in range(1, len(value["entries"][entry]), 1):
+                    print_var += str(value["entries"][entry][i].get()) + "\n"
 
             for i in range(1, len(value["actual"]), 1):
                 print_var += str(value["actual"][i].get()) + "\n"
@@ -107,7 +115,7 @@ class App(tk.Tk):
 
 class Bracket(tk.Frame):
 
-    def __init__(self, parent, controller, numTeams, type, name, draw):
+    def __init__(self, parent, controller, numTeams, type, name, draw, picks="NONE"):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         self.parent = parent
@@ -115,6 +123,7 @@ class Bracket(tk.Frame):
         self.type = type
         self.draw = draw
         self.numTeams = numTeams
+        self.picks = picks
 
         cols = 1
         rem = numTeams
@@ -155,25 +164,28 @@ class Bracket(tk.Frame):
                     self.canvas.create_line(10 + (c * 140), 30 + (30 * r) + 15 * (sum), 10 + (c + 1) * 140,
                                             30 + (30 * r) + 15 * (sum))
                     if type == "view":
-                        team = self.controller.brackets[name][draw][ind].get()
+                        if draw == "actual":
+                            team = self.controller.brackets[name][draw][ind].get()
+                        else:
+                            team = self.controller.brackets[name][draw][picks][ind].get()
                         if len(team) > 0 and team[0].isalpha():
                             team = "".ljust(4) + team
                         label = Label(self.canvas, text=team, font="bold")
                         # Color coordination and scoring for correct picks
                         if (c > 0 and draw == "entries" and self.controller.brackets[name]["actual"][ind].get() != ""
-                            and self.controller.brackets[name]["entries"][ind].get() ==
+                            and self.controller.brackets[name]["entries"][picks][ind].get() ==
                             self.controller.brackets[name]["actual"][ind].get()):
 
                             score += ppp
                             label["background"] = "spring green"
 
                         # Color coordination for incorrect picks
-                        if c > 0 and self.controller.brackets[name]["entries"][ind].get() in wrongo:
+                        if c > 0 and self.controller.brackets[name]["entries"][picks][ind].get() in wrongo:
                             label["background"] = "tomato"
                         elif (c > 0 and draw == "entries" and self.controller.brackets[name]["actual"][ind].get() != ""
-                            and self.controller.brackets[name]["entries"][ind].get() !=
+                            and self.controller.brackets[name]["entries"][picks][ind].get() !=
                             self.controller.brackets[name]["actual"][ind].get()):
-                            wrongo[self.controller.brackets[name]["entries"][ind].get()] = 1
+                            wrongo[self.controller.brackets[name]["entries"][picks][ind].get()] = 1
                             label["background"] = "tomato"
 
 
@@ -187,14 +199,17 @@ class Bracket(tk.Frame):
                         ind += 1
 
                     elif type == "entry" and c == 0:
-                        entry = Entry(self.canvas, textvariable=self.controller.brackets[name]["entries"][ind])
+                        entry = Entry(self.canvas, textvariable=self.controller.brackets[name]["entries"][picks][ind])
                         entry.pack()
                         ind += 1
                         self.canvas.create_window(80 + (c * 140), 25 + (30 * r) + 15 * (sum),
                                                   anchor=S, window=entry)
 
                     elif type == "edit":
-                        team = self.controller.brackets[name][draw][ind].get()
+                        if draw == "actual":
+                            team = self.controller.brackets[name][draw][ind].get()
+                        else:
+                            team = self.controller.brackets[name][draw][picks][ind].get()
                         if len(team) > 0 and team[0].isalpha():
                             team = "".ljust(4) + team
                         self.labels[ind] = Label(self.canvas, text=team, font="bold")
@@ -248,12 +263,13 @@ class Bracket(tk.Frame):
 
 
     def submit_entries(self, event, rando):
+        picks = self.picks
         if self.type == "entry":
             for i in range(len(self.labels) - self.numTeams, len(self.labels), 1):
-                if self.controller.brackets[self.name]["entries"][i].get() == StringVar(value="").get():
-                    self.controller.brackets[self.name]["entries"][i] = StringVar(value="BYE")
+                if self.controller.brackets[self.name]["entries"][picks][i].get() == StringVar(value="").get():
+                    self.controller.brackets[self.name]["entries"][picks][i] = StringVar(value="BYE")
 
-                self.controller.brackets[self.name]["actual"][i] = self.controller.brackets[self.name]["entries"][i]
+                self.controller.brackets[self.name]["actual"][i] = self.controller.brackets[self.name]["entries"][picks][i]
 
             for i in range(len(self.labels) - 1, 2, -2):
                 if ((self.controller.brackets[self.name]["actual"][i].get() !=
@@ -262,11 +278,11 @@ class Bracket(tk.Frame):
                     self.controller.brackets[self.name]["actual"][int(math.floor(i / 2))].get())):
                     self.controller.brackets[self.name]["actual"][int(math.floor(i / 2))] = StringVar(value="")
 
-                if ((self.controller.brackets[self.name]["entries"][i].get() !=
-                    self.controller.brackets[self.name]["entries"][int(math.floor(i/2))].get()) and
-                   (self.controller.brackets[self.name]["entries"][i - 1].get() !=
-                    self.controller.brackets[self.name]["entries"][int(math.floor(i / 2))].get())):
-                    self.controller.brackets[self.name]["entries"][int(math.floor(i / 2))] = StringVar(value="")
+                if ((self.controller.brackets[self.name]["entries"][picks][i].get() !=
+                    self.controller.brackets[self.name]["entries"][picks][int(math.floor(i/2))].get()) and
+                   (self.controller.brackets[self.name]["entries"][picks][i - 1].get() !=
+                    self.controller.brackets[self.name]["entries"][picks][int(math.floor(i / 2))].get())):
+                    self.controller.brackets[self.name]["entries"][picks][int(math.floor(i / 2))] = StringVar(value="")
 
         self.controller.save()
         if rando == 1:
@@ -279,21 +295,36 @@ class Bracket(tk.Frame):
             bhome.tkraise()
 
     def advance(self, event, ind):
+        picks = self.picks
         if ind != 1:
             self.labels[int(math.floor(ind / 2))]["text"] = self.labels[ind]["text"]
-            self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))] = StringVar(value=self.labels[ind]["text"])
+            if self.draw == "actual":
+                self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))] = StringVar(
+                    value=self.labels[ind]["text"])
+            else:
+                self.controller.brackets[self.name][self.draw][picks][int(math.floor(ind / 2))] = StringVar(
+                    value=self.labels[ind]["text"])
 
             while ind > 3:
                 ind = int(math.floor(ind / 2))
                 pair = ind + 1
                 if ind % 2 == 1:
                     pair -= 2
-                if ((self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))].get() !=
-                    self.controller.brackets[self.name][self.draw][ind].get()) and
-                    (self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))].get() !=
-                    self.controller.brackets[self.name][self.draw][pair].get())):
-                    self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))] = StringVar(value="")
-                    self.labels[int(math.floor(ind / 2))]["text"] = ""
+
+                if self.draw == "actual":
+                    if ((self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))].get() !=
+                        self.controller.brackets[self.name][self.draw][ind].get()) and
+                        (self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))].get() !=
+                        self.controller.brackets[self.name][self.draw][pair].get())):
+                        self.controller.brackets[self.name][self.draw][int(math.floor(ind / 2))] = StringVar(value="")
+                        self.labels[int(math.floor(ind / 2))]["text"] = ""
+                else:
+                    if ((self.controller.brackets[self.name][self.draw][picks][int(math.floor(ind / 2))].get() !=
+                        self.controller.brackets[self.name][self.draw][picks][ind].get()) and
+                        (self.controller.brackets[self.name][self.draw][picks][int(math.floor(ind / 2))].get() !=
+                        self.controller.brackets[self.name][self.draw][picks][pair].get())):
+                        self.controller.brackets[self.name][self.draw][picks][int(math.floor(ind / 2))] = StringVar(value="")
+                        self.labels[int(math.floor(ind / 2))]["text"] = ""
 
         self.controller.save()
 
@@ -400,10 +431,9 @@ class Create_Tournament(tk.Frame):
         self.controller.brackets[self.name.get()]["numTeams"] = self.numTeams.get()
         self.controller.brackets[self.name.get()]["entries"] = {}
         self.controller.brackets[self.name.get()]["actual"] = []
-        #for i in range(2 * self.numTeams.get()):
-        #    self.controller.brackets[self.name.get()]["entries"].append(StringVar(value=""))
-        #for i in range(2 * self.numTeams.get()):
-        #    self.controller.brackets[self.name.get()]["actual"].append(StringVar(value=""))
+
+        for i in range(2 * self.numTeams.get()):
+            self.controller.brackets[self.name.get()]["actual"].append(StringVar(value=""))
 
         self.controller.save()
         self.create = Bracket(parent=self.parent, controller=self.controller, numTeams=self.numTeams.get() , type="entry",
@@ -434,20 +464,6 @@ class Load_Bracket(tk.Frame):
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.team.get())
         bhome.grid(row=0, column=0, sticky="nsew")
         bhome.tkraise()
-
-
-class View_Bracket(tk.Frame):
-
-    def __init__(self, parent, controller, type):
-        tk.Frame.__init__(self, parent)
-        self.controller = controller
-        self.parent = parent
-        self.type = type
-
-        Label(self, text="Select a team below to " + type + ":").pack()
-
-
-
 
 
 class Bracket_Home(tk.Frame):
@@ -552,15 +568,24 @@ class Create_Picks(tk.Frame):
         self.parent = parent
         self.name = name
 
-
+        Label(self, text="Name of Picks: ").grid()
+        self.entry = Entry(self)
+        self.entry.grid(row=0, sticky="we")
 
         button = Button(self, text="Submit")
         button.bind("<Button-1>", self.submit)
         button.grid(sticky="we")
 
     def submit(self, event):
-        print "cheese"
+        self.controller.brackets[self.name]["entries"][self.entry.get()] = []
 
+        for i in range(2 * self.numTeams.get()):
+            self.controller.brackets[self.name.get()]["entries"][self.entry.get()].append(StringVar(value=""))
+
+        self.controller.save()
+        bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
+        bhome.grid(row=0, column=0, sticky="nsew")
+        bhome.tkraise()
 
 if __name__ == "__main__":
     app = App()
