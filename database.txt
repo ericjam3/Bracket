@@ -1,0 +1,40 @@
+A  4  0  7  4
+Phil
+    D
+    A
+    D
+A
+B
+C
+D
+Jill
+    A
+    A
+    C
+A
+B
+C
+D
+Eric
+    C
+    A
+    C
+A
+B
+C
+D
+Bill
+    C
+    B
+    C
+A
+B
+C
+D
+    B
+    B
+    C
+A
+B
+C
+D
