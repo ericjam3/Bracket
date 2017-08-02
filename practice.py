@@ -6,8 +6,20 @@ from ttk import *
 import ttk
 import functools
 
+list = []
 
-string = "1, 0, 1"
-print string.split(",")
+list.append(10)
+list.append("hello")
+print list
+
+a = "phil".ljust(10) + "0".ljust(10)
+print a
+print a.split()[0]
+
+leaderboard = {}
+leaderboard["a"] = 5
+dict = leaderboard
+del leaderboard["a"]
+print dict
 
 

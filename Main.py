@@ -514,21 +514,49 @@ class Bracket_Home(tk.Frame):
             button7.bind("<Button-1>", self.open)
             button7.grid(sticky="we", row=0, column=5)
 
-        self.brackets = []
-        row = 2
-        col = 0
+
+        leaderboard = {}
+        backup = {}
+        noPicks = 1
         for pick in self.controller.brackets[name]["entries"]:
-            label = Label(self, text=pick, foreground="blue")
-            if self.controller.brackets[name]["edit"] == 0:
-                label.bind("<Button-1>", self.view_button)
-            else:
-                label.bind("<Button-1>", self.make_button)
-            label.grid(row=row, column=col)
-            self.brackets.append(label)
-            row += 1
-            if row > 10:
-                row = 2
-                col += 1
+            noPicks = 0
+            score = 0
+            points = 10 * self.numTeams / 2
+            next = 2
+            for i in range(1, self.numTeams, 1):
+                if i >= next:
+                    next *= 2
+                    points /= 2
+                if (self.controller.brackets[name]["entries"][pick][i].get() != "" and
+                    self.controller.brackets[name]["entries"][pick][i].get() ==
+                    self.controller.brackets[name]["actual"][i].get()):
+                    score += points
+            leaderboard[pick] = score
+            backup[pick] = score
+        if (noPicks == 0):
+            self.brackets = []
+            for i in range(len(backup)):
+                max = -1
+                place = ""
+                for pick in leaderboard:
+                    if leaderboard[pick] > max:
+                        max = leaderboard[pick]
+                        place = pick
+                self.brackets.append(place)
+                del leaderboard[place]
+
+            Label(self, text="BRACKET:").grid(row=2, padx=10)
+            Label(self, text="SCORE:").grid(row=2, column=1, padx=10)
+            for i in range(len(self.brackets)):
+                label = Label(self, text=self.brackets[i], foreground="blue")
+                if self.controller.brackets[name]["edit"] == 0:
+                    Label(self, text=str(backup[self.brackets[i]])).grid(row=i+3, column=1)
+                    label.bind("<Button-1>", self.view_button)
+                else:
+                    Label(self, text="0").grid(row=i + 3, column=1)
+                    label.bind("<Button-1>", self.make_button)
+                label.grid(row=i+3)
+                self.brackets.append(label)
 
     def create_button(self, event):
         self.create = Bracket(parent=self.parent, controller=self.controller, numTeams=self.numTeams , type="entry",
