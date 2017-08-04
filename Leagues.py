@@ -54,7 +54,7 @@ class App(tk.Tk):
 
 
     def load(self):
-        infile = open("database.txt", "r")
+        infile = open("leagueDB.txt", "r")
         lineNum = 0
         num_entries = 0
         for item in infile:
@@ -116,7 +116,7 @@ class App(tk.Tk):
             for i in range(1, len(value["actual"]), 1):
                 print_var += str(value["actual"][i].get()) + "\n"
 
-        outfile = open("database.txt", "w")
+        outfile = open("leagueDB.txt", "w")
         outfile.write(print_var)
         outfile.close()
 
