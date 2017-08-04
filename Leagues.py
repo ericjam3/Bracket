@@ -30,6 +30,8 @@ class App(tk.Tk):
 
         self.config(menu=menubar)
 
+        self.leagues = {}
+
         self.brackets = {}
         self.load()
 
@@ -341,17 +343,19 @@ class Bracket(tk.Frame):
         self.canvas.yview_scroll(-1 * (event.delta / 120), "units")
 
 
-class Home(tk.Frame):
+class League_Home(tk.Frame):
 
-    def __init__(self, parent, controller):
+    def __init__(self, parent, controller, name):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         self.parent = parent
+        self.name = name
 
         # Create bracket button
+        Label(self, text="Bracket City", font=36).grid()
         self.create = Button(self, text="Create Tournament")
         self.create.bind("<Button-1>", self.create_tourney)
-        self.create.grid(sticky="we", columnspan=2)
+        self.create.grid(sticky="we")
 
         # Load bracket button
         Label(self, text="Select Tournament: ").grid()
@@ -621,6 +625,57 @@ class Create_Picks(tk.Frame):
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
         bhome.grid(row=0, column=0, sticky="nsew")
         bhome.tkraise()
+
+
+######################### Below is for League Classes, above is Tournament ###############################
+
+class Home(tk.Frame):
+
+    def __init__(self, parent, controller):
+        tk.Frame.__init__(self, parent)
+        self.controller = controller
+        self.parent = parent
+
+        # Create league button
+        self.create = Button(self, text="Create League")
+        self.create.bind("<Button-1>", self.create_league)
+        self.create.grid(sticky="we")
+
+        # Load league button
+        Label(self, text="Select League: ").grid()
+        self.league = StringVar()
+        self.box = Combobox(self, textvariable=self.league)
+        self.box.bind("<<ComboboxSelected>>", self.load_league)
+        leagues = []
+        for key in self.controller.leagues:
+            leagues.append(key)
+
+        self.box['values'] = leagues
+        self.box.grid(row=1, column=1)
+
+    def create_league(self, event):
+        createLeague = Create_League(parent=self.parent, controller=self.controller)
+        createLeague.grid(row=0, column=0, sticky="nsew")
+        createLeague.tkraise()
+
+    def load_league(self, event):
+        loadTeam = League_Home(parent=self.parent, controller=self.controller, name=self.league)
+        loadTeam.grid(row=0, column=0, sticky="nsew")
+        loadTeam.tkraise()
+
+class Create_League(tk.Frame):
+    def __init__(self, parent, controller):
+        tk.Frame.__init__(self, parent)
+        self.controller = controller
+        self.parent = parent
+
+        Label(self, text="Name of League: ").grid()
+        self.entry = Entry(self).grid(row=0, column=1)
+        Button(self, text="Submit", command=self.pressed)
+
+    def pressed(self):
+        self.controller.leagues[self.entry["text"]] = {}
+
 
 if __name__ == "__main__":
     app = App()
