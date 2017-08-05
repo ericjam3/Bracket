@@ -176,7 +176,7 @@ class Bracket(tk.Frame):
                             team = self.controller.brackets[name][draw][picks][ind].get()
                         if len(team) > 0 and team[0].isalpha():
                             team = "".ljust(4) + team
-                        label = Label(self.canvas, text=team, font="bold")
+                        label = Label(self.canvas, text=team, font="bold, 8")
                         if draw == "entries":
                             # Color coordination and scoring for correct picks
                             if (c > 0 and draw == "entries" and self.controller.brackets[name]["actual"][ind].get() != ""
@@ -197,7 +197,7 @@ class Bracket(tk.Frame):
 
 
                         label.pack()
-                        self.canvas.create_window(30 + (c * 140), 25 + (30 * r) + 15 * (sum),
+                        self.canvas.create_window(11 + (c * 140), 25 + (30 * r) + 15 * (sum),
                                                   anchor=SW, window=label)
                         if ind >= end:
                             end = ((ind + 1) / 2) - 1
@@ -219,7 +219,7 @@ class Bracket(tk.Frame):
                             team = self.controller.brackets[name][draw][picks][ind].get()
                         if len(team) > 0 and team[0].isalpha():
                             team = "".ljust(4) + team
-                        self.labels[ind] = Label(self.canvas, text=team, font="bold")
+                        self.labels[ind] = Label(self.canvas, text=team, font="bold, 8")
                         self.labels[ind].bind("<Button-1>", functools.partial(self.advance, ind=ind))
                         self.labels[ind].pack()
                         self.canvas.create_window(30 + (c * 140), 25 + (30 * r) + 15 * (sum),
