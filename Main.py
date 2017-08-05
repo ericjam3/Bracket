@@ -176,7 +176,7 @@ class Bracket(tk.Frame):
                             team = self.controller.brackets[name][draw][picks][ind].get()
                         if len(team) > 0 and team[0].isalpha():
                             team = "".ljust(4) + team
-                        label = Label(self.canvas, text=team, font="bold, 8")
+                        label = Label(self.canvas, text=team, font="none, 8")
                         if draw == "entries":
                             # Color coordination and scoring for correct picks
                             if (c > 0 and draw == "entries" and self.controller.brackets[name]["actual"][ind].get() != ""
@@ -366,11 +366,13 @@ class Home(tk.Frame):
         self.box.grid(row=1, column=1)
 
     def create_tourney(self, event):
+        self.destroy()
         createTeam = Create_Tournament(parent=self.parent, controller=self.controller)
         createTeam.grid(row=0, column=0, sticky="nsew")
         createTeam.tkraise()
 
     def load_tourney(self, event):
+        self.destroy()
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.tourney.get())
         bhome.grid(row=0, column=0, sticky="nsew")
         bhome.tkraise()
