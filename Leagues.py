@@ -121,16 +121,16 @@ class App(tk.Tk):
 
 class Bracket(tk.Frame):
 
-    def __init__(self, parent, controller, numTeams, type, name, draw, picks="NONE"):
+    def __init__(self, parent, controller, numTeams, type, name, Lname):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         self.parent = parent
         self.name = name
         self.type = type
-        self.draw = draw
+        self.Lname = Lname
         self.numTeams = numTeams
-        self.picks = picks
 
+        # Determining how many rounds (columns) there will be
         cols = 1
         rem = numTeams
         while rem > 1:
@@ -251,14 +251,14 @@ class Bracket(tk.Frame):
             button.bind("<Button-1>", functools.partial(self.submit_entries, rando=0))
             button.pack()
             self.canvas.create_window(800, 15, window=button)
-            #if type == "entry":
-            #    lbl = Label(self.canvas, text="Enter the rest of the teams to be placed randomly")
-            #    lbl.pack()
-            #    button2 = Button(self.canvas, text="Randomize")
-            #    button2.bind("<Button-1>", functools.partial(self.submit_entries, rando=1))
-            #    button2.pack()
-            #    self.canvas.create_window(800, 40, window=button2)
-            #    self.canvas.create_window(850, 40, window= lbl, anchor="w")
+            if type == "entry":
+                lbl = Label(self.canvas, text="Enter the rest of the teams to be placed randomly")
+                lbl.pack()
+                button2 = Button(self.canvas, text="Randomize")
+                button2.bind("<Button-1>", functools.partial(self.submit_entries, rando=1))
+                button2.pack()
+                self.canvas.create_window(800, 40, window=button2)
+                self.canvas.create_window(850, 40, window= lbl, anchor="w")
         else:
             button = Button(self.canvas, text="Done Viewing")
             button.bind("<Button-1>", functools.partial(self.submit_entries, rando=0))
@@ -341,53 +341,6 @@ class Bracket(tk.Frame):
         self.canvas.yview_scroll(-1 * (event.delta / 120), "units")
 
 
-class League_Home(tk.Frame):
-
-    def __init__(self, parent, controller, Lname):
-        tk.Frame.__init__(self, parent)
-        self.controller = controller
-        self.parent = parent
-        self.Lname = Lname
-
-        Label(self, text=Lname, font=36).grid()
-        # Add players button
-        button = Button(self, text="Add players")
-        button.bind("<Button-1>", self.add)
-        button.grid(sticky="we")
-
-        # Create bracket button
-        self.create = Button(self, text="Create Tournament")
-        self.create.bind("<Button-1>", self.create_tourney)
-        self.create.grid(sticky="we")
-
-        # Load bracket button
-        Label(self, text="Select Tournament: ").grid()
-        self.tourney = StringVar()
-        self.box = Combobox(self, textvariable=self.tourney)
-        self.box.bind("<<ComboboxSelected>>", self.load_tourney)
-        tourneys = []
-        for key in self.controller.leagues[Lname]["Brackets"]:
-            tourneys.append(key)
-
-        self.box['values'] = tourneys
-        self.box.grid(row=3, column=1)
-
-    def create_tourney(self, event):
-        createTeam = Create_Tournament(parent=self.parent, controller=self.controller)
-        createTeam.grid(row=0, column=0, sticky="nsew")
-        createTeam.tkraise()
-
-    def load_tourney(self, event):
-        bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.tourney.get())
-        bhome.grid(row=0, column=0, sticky="nsew")
-        bhome.tkraise()
-
-    def add(self, event):
-        loadTeam = Add_Players(parent=self.parent, controller=self.controller, Lname=self.Lname)
-        loadTeam.grid(row=0, column=0, sticky="nsew")
-        loadTeam.tkraise()
-
-
 class Random_Frame(tk.Frame):
 
     def __init__(self, parent, controller, name):
@@ -429,13 +382,14 @@ class Random_Frame(tk.Frame):
         bhome.grid(row=0, column=0, sticky="nsew")
         bhome.tkraise()
 
-
+# Updated
 class Create_Tournament(tk.Frame):
 
-    def __init__(self, parent, controller):
+    def __init__(self, parent, controller, Lname):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         self.parent = parent
+        self.Lname = Lname
 
         Label(self, text="Bracket Name: ").grid(sticky="w")
         self.name = StringVar()
@@ -458,19 +412,17 @@ class Create_Tournament(tk.Frame):
         button.grid()
 
     def done_button(self, event):
-        self.controller.brackets[self.name.get()] = {}
-        self.controller.brackets[self.name.get()]["edit"] = 1
-        self.controller.brackets[self.name.get()]["numTeams"] = self.numTeams.get()
-        self.controller.brackets[self.name.get()]["entries"] = {}
-        self.controller.brackets[self.name.get()]["actual"] = []
-        self.controller.brackets[self.name.get()]["num_picks"] = 0
+        self.controller.leagues["Brackets"][self.name.get()] = {}
+        self.controller.leagues["Brackets"][self.name.get()]["numSeeds"] = 0
+        self.controller.leagues["Brackets"][self.name.get()]["numTeams"] = self.numTeams.get()
+        self.controller.leagues["Brackets"][self.name.get()]["actual"] = []
 
         for i in range(2 * self.numTeams.get()):
-            self.controller.brackets[self.name.get()]["actual"].append(StringVar(value=""))
+            self.controller.leagues["Brackets"][self.name.get()]["actual"].append(StringVar(value=""))
 
         self.controller.save()
         self.create = Bracket(parent=self.parent, controller=self.controller, numTeams=self.numTeams.get() , type="entry",
-                              name=self.name.get(), draw="entries")
+                              name=self.name.get(), Lname=self.Lname)
         self.create.grid(row=0, column=0, sticky="nsew")
         self.create.tkraise()
 
@@ -675,6 +627,54 @@ class Home(tk.Frame):
         loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.league)
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()
+
+
+class League_Home(tk.Frame):
+
+    def __init__(self, parent, controller, Lname):
+        tk.Frame.__init__(self, parent)
+        self.controller = controller
+        self.parent = parent
+        self.Lname = Lname
+
+        Label(self, text=Lname, font=36).grid()
+        # Add players button
+        button = Button(self, text="Add players")
+        button.bind("<Button-1>", self.add)
+        button.grid(sticky="we")
+
+        # Create bracket button
+        self.create = Button(self, text="Create Tournament")
+        self.create.bind("<Button-1>", self.create_tourney)
+        self.create.grid(sticky="we")
+
+        # Load bracket button
+        Label(self, text="Select Tournament: ").grid()
+        self.tourney = StringVar()
+        self.box = Combobox(self, textvariable=self.tourney)
+        self.box.bind("<<ComboboxSelected>>", self.load_tourney)
+        tourneys = []
+        for key in self.controller.leagues[Lname]["Brackets"]:
+            tourneys.append(key)
+
+        self.box['values'] = tourneys
+        self.box.grid(row=3, column=1)
+
+    def create_tourney(self, event):
+        createTeam = Create_Tournament(parent=self.parent, controller=self.controller, Lname=self.Lname)
+        createTeam.grid(row=0, column=0, sticky="nsew")
+        createTeam.tkraise()
+
+    def load_tourney(self, event):
+        bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.tourney.get())
+        bhome.grid(row=0, column=0, sticky="nsew")
+        bhome.tkraise()
+
+    def add(self, event):
+        loadTeam = Add_Players(parent=self.parent, controller=self.controller, Lname=self.Lname)
+        loadTeam.grid(row=0, column=0, sticky="nsew")
+        loadTeam.tkraise()
+
 
 class Create_League(tk.Frame):
     def __init__(self, parent, controller):
