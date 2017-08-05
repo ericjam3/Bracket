@@ -619,11 +619,13 @@ class Home(tk.Frame):
         self.box.grid(row=1, column=1)
 
     def create_league(self, event):
+        self.destroy()
         createLeague = Create_League(parent=self.parent, controller=self.controller)
         createLeague.grid(row=0, column=0, sticky="nsew")
         createLeague.tkraise()
 
     def load_league(self, event):
+        self.destroy()
         loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.league)
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()
@@ -661,16 +663,19 @@ class League_Home(tk.Frame):
         self.box.grid(row=3, column=1)
 
     def create_tourney(self, event):
+        self.destroy()
         createTeam = Create_Tournament(parent=self.parent, controller=self.controller, Lname=self.Lname)
         createTeam.grid(row=0, column=0, sticky="nsew")
         createTeam.tkraise()
 
     def load_tourney(self, event):
+        self.destroy()
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.tourney.get())
         bhome.grid(row=0, column=0, sticky="nsew")
         bhome.tkraise()
 
     def add(self, event):
+        self.destroy()
         loadTeam = Add_Players(parent=self.parent, controller=self.controller, Lname=self.Lname)
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()
