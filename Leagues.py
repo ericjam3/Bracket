@@ -59,6 +59,36 @@ class App(tk.Tk):
             line = item[0:-1]
             if lineNum == 0:
                 info = line.split("  ")
+                Lname = info[0]
+                numPlayers = info[1]
+                numBrackets = info[2]
+                numGames = info[3]
+                self.leagues[Lname] = {}
+                self.leagues[Lname]["numPlayers"] = info[1]
+                self.leagues[Lname]["numBrackets"] = info[2]
+                self.leagues[Lname]["numGames"] = info[3]
+                lineNum = 1
+            if lineNum == 1:
+                info = line.split("  ")
+                pname = info[0]
+                self.leagues[Lname]["Players"][pname] = info[1]
+                self.leagues[Lname]["rankings"]["official"][pname] = info[2]
+
+                numPlayers -= 1
+                if numPlayers == 0:
+                    if numGames > 0:
+                        lineNum = 2
+                    else:
+                        lineNum = 3
+            if lineNum == 2:
+                info = line.split("  ")
+                self.leagues[Lname]["Games"].append({info[0]:info[1]})
+
+                numGames -= 1
+                if numGames == 0:
+                    lineNum = 3
+            if lineNum == 3:
+                info = line.split("  ")
                 name = info[0]
                 self.brackets[name] = {}
                 self.brackets[name]["numTeams"] = int(info[1])
@@ -103,16 +133,18 @@ class App(tk.Tk):
 
     def save(self):
         print_var = ""
-        for key, value in self.brackets.iteritems():
-            print_var += key + "  " + str(value["numTeams"]) + "  " + str(value["edit"]) + "  "
-            print_var += str(len(value["actual"]) - 1) + "  " + str(value["num_picks"]) + "\n"
-            for entry in value["entries"]:
-                print_var += entry + "\n"
-                for i in range(1, len(value["entries"][entry]), 1):
-                    print_var += str(value["entries"][entry][i].get()) + "\n"
-
-            for i in range(1, len(value["actual"]), 1):
-                print_var += str(value["actual"][i].get()) + "\n"
+        for key, value in self.leagues.iteritems():
+            print_var += key + "  " + str(value["numPlayers"]) + "  " + str(value["numBrackets"]) + "  "
+            print_var += str(value["numGames"]) + "\n"
+            for player in value["Players"]:
+                print_var += player + "  " + value["Players"][player]["ID"] + "  "
+                print_var += value["rankings"]["official"][player] + "\n"
+            for wid, lid in value["Games"].iteritems():
+                print_var += wid + "  " + lid + "\n"
+            for Bname, Binfo in value["Brackets"].iteritems():
+                print_var += Bname + "  " + Binfo["numTeams"] + "\n"
+                for i in range(len(Binfo["actual"])):
+                    print_var += Binfo["actual"][i] + "\n"
 
         outfile = open("leagueDB.txt", "w")
         outfile.write(print_var)
@@ -412,13 +444,13 @@ class Create_Tournament(tk.Frame):
         button.grid()
 
     def done_button(self, event):
-        self.controller.leagues["Brackets"][self.name.get()] = {}
-        self.controller.leagues["Brackets"][self.name.get()]["numSeeds"] = 0
-        self.controller.leagues["Brackets"][self.name.get()]["numTeams"] = self.numTeams.get()
-        self.controller.leagues["Brackets"][self.name.get()]["actual"] = []
+        self.controller.leagues[self.Lname]["Brackets"][self.name.get()] = {}
+        self.controller.leagues[self.Lname]["Brackets"][self.name.get()]["numSeeds"] = 0
+        self.controller.leagues[self.Lname]["Brackets"][self.name.get()]["numTeams"] = self.numTeams.get()
+        self.controller.leagues[self.Lname]["Brackets"][self.name.get()]["actual"] = []
 
         for i in range(2 * self.numTeams.get()):
-            self.controller.leagues["Brackets"][self.name.get()]["actual"].append(StringVar(value=""))
+            self.controller.leagues[self.Lname]["Brackets"][self.name.get()]["actual"].append(StringVar(value=""))
 
         self.controller.save()
         self.create = Bracket(parent=self.parent, controller=self.controller, numTeams=self.numTeams.get() , type="entry",
@@ -703,7 +735,7 @@ class Create_League(tk.Frame):
         self.controller.leagues[self.Lname.get()]["numGames"] = 0
         self.controller.leagues[self.Lname.get()]["Players"] = {}
         self.controller.leagues[self.Lname.get()]["Brackets"] = {}
-        self.controller.leagues[self.Lname.get()]["Games"] = {}
+        self.controller.leagues[self.Lname.get()]["Games"] = []
 
         loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.Lname.get())
         loadTeam.grid(row=0, column=0, sticky="nsew")
@@ -739,8 +771,9 @@ class Add_Players(tk.Frame):
             pname = self.players[i]["text"].get()
             if pname != "":
                 self.controller.leagues[self.Lname]["numPlayers"] += 1
-                self.controller.leagues[self.Lname]["Players"][pname] = {}
-                self.controller.leagues[self.Lname]["rankings"]["official"] = (
+                self.controller.leagues[self.Lname]["Players"][pname] = (
+                    self.controller.leagues[self.Lname]["numPlayers"])
+                self.controller.leagues[self.Lname]["rankings"]["official"][pname] = (
                     self.controller.leagues[self.Lname]["numPlayers"])
 
         loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.Lname)
