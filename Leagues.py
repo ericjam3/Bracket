@@ -343,13 +343,13 @@ class Bracket(tk.Frame):
 
 class League_Home(tk.Frame):
 
-    def __init__(self, parent, controller, name):
+    def __init__(self, parent, controller, Lname):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         self.parent = parent
-        self.name = name
+        self.Lname = Lname
 
-        Label(self, text=name, font=36).grid()
+        Label(self, text=Lname, font=36).grid()
         # Add players button
         button = Button(self, text="Add players")
         button.bind("<Button-1>", self.add)
@@ -366,7 +366,7 @@ class League_Home(tk.Frame):
         self.box = Combobox(self, textvariable=self.tourney)
         self.box.bind("<<ComboboxSelected>>", self.load_tourney)
         tourneys = []
-        for key in self.controller.brackets:
+        for key in self.controller.leagues[Lname]["Brackets"]:
             tourneys.append(key)
 
         self.box['values'] = tourneys
@@ -383,7 +383,9 @@ class League_Home(tk.Frame):
         bhome.tkraise()
 
     def add(self, event):
-
+        loadTeam = Add_Players(parent=self.parent, controller=self.controller, Lname=self.Lname)
+        loadTeam.grid(row=0, column=0, sticky="nsew")
+        loadTeam.tkraise()
 
 
 class Random_Frame(tk.Frame):
@@ -435,16 +437,21 @@ class Create_Tournament(tk.Frame):
         self.controller = controller
         self.parent = parent
 
-        Label(self, text="Bracket Name:").grid(sticky="w")
+        Label(self, text="Bracket Name: ").grid(sticky="w")
         self.name = StringVar()
         entry1 = Entry(self, textvariable=self.name)
         entry1.grid(row=0, column=1, sticky="we")
 
-        Label(self, text="Draw size:").grid(row=1, column=0, sticky="w")
+        Label(self, text="Draw size: ").grid(row=1, column=0, sticky="w")
         self.numTeams = IntVar()
         entry2 = Combobox(self, textvariable=self.numTeams)
         entry2['values'] = [2,4,8,16,32,64,128]
         entry2.grid(row=1, column=1, sticky="we")
+
+        Label(self, text="Number of seeds: ").grid(row=2, column=0, sticky="w")
+        self.numSeeds = IntVar()
+        entry3 = Entry(self, textvariable=self.numSeeds)
+        entry3.grid(row=2, column=1, sticky="we")
 
         button = Button(self, text="Done")
         button.bind("<Button-1>", self.done_button)
@@ -665,7 +672,7 @@ class Home(tk.Frame):
         createLeague.tkraise()
 
     def load_league(self, event):
-        loadTeam = League_Home(parent=self.parent, controller=self.controller, name=self.league)
+        loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.league)
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()
 
@@ -676,19 +683,24 @@ class Create_League(tk.Frame):
         self.parent = parent
 
         Label(self, text="Name of League: ").grid()
-        self.entry = Entry(self).grid(row=0, column=1)
-        Button(self, text="Submit", command=self.pressed)
+        self.Lname = StringVar()
+        self.entry = Entry(self, textvariable=self.Lname).grid(row=0, column=1)
+        button = Button(self, text="Submit")
+        button.bind("<Button-1>", self.pressed)
+        button.grid()
 
-    def pressed(self):
-        self.controller.leagues[self.entry["text"]] = {}
-        self.controller.leagues[self.entry["text"]]["numPlayers"] = 0
-        self.controller.leagues[self.entry["text"]]["numBrackets"] = 0
-        self.controller.leagues[self.entry["text"]]["numGames"] = 0
-        self.controller.leagues[self.entry["text"]]["Players"] = {}
-        self.controller.leagues[self.entry["text"]]["Brackets"] = {}
-        self.controller.leagues[self.entry["text"]]["Games"] = {}
+    def pressed(self, event):
+        self.controller.leagues[self.Lname.get()] = {}
+        self.controller.leagues[self.Lname.get()]["rankings"] = {}
+        self.controller.leagues[self.Lname.get()]["rankings"]["official"] = {}
+        self.controller.leagues[self.Lname.get()]["numPlayers"] = 0
+        self.controller.leagues[self.Lname.get()]["numBrackets"] = 0
+        self.controller.leagues[self.Lname.get()]["numGames"] = 0
+        self.controller.leagues[self.Lname.get()]["Players"] = {}
+        self.controller.leagues[self.Lname.get()]["Brackets"] = {}
+        self.controller.leagues[self.Lname.get()]["Games"] = {}
 
-        loadTeam = League_Home(parent=self.parent, controller=self.controller, name=self.entry["text"])
+        loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.Lname.get())
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()
 
@@ -713,7 +725,22 @@ class Add_Players(tk.Frame):
             entry = Entry(self).grid(pady=5)
             self.players.append(entry)
 
+        button = Button(self, text="Submit")
+        button.bind("<Button-1>", self.submit)
+        button.grid()
 
+    def submit(self, event):
+        for i in range(self.numPlayers.get()):
+            pname = self.players[i]["text"].get()
+            if pname != "":
+                self.controller.leagues[self.Lname]["numPlayers"] += 1
+                self.controller.leagues[self.Lname]["Players"][pname] = {}
+                self.controller.leagues[self.Lname]["rankings"]["official"] = (
+                    self.controller.leagues[self.Lname]["numPlayers"])
+
+        loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.Lname)
+        loadTeam.grid(row=0, column=0, sticky="nsew")
+        loadTeam.tkraise()
 
 
 
