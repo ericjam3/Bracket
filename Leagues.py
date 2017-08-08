@@ -60,19 +60,24 @@ class App(tk.Tk):
             if lineNum == 0:
                 info = line.split("  ")
                 Lname = info[0]
-                numPlayers = info[1]
-                numBrackets = info[2]
-                numGames = info[3]
+                numPlayers = int(info[1])
+                numBrackets = int(info[2])
+                numGames = int(info[3])
                 self.leagues[Lname] = {}
-                self.leagues[Lname]["numPlayers"] = info[1]
-                self.leagues[Lname]["numBrackets"] = info[2]
-                self.leagues[Lname]["numGames"] = info[3]
+                self.leagues[Lname]["numPlayers"] = int(info[1])
+                self.leagues[Lname]["numBrackets"] = int(info[2])
+                self.leagues[Lname]["numGames"] = int(info[3])
+                self.leagues[Lname]["rankings"] = {}
+                self.leagues[Lname]["rankings"]["official"] = {}
+                self.leagues[Lname]["Players"] = {}
+                self.leagues[Lname]["Brackets"] = {}
+                self.leagues[Lname]["Games"] = []
                 lineNum = 1
-            if lineNum == 1:
+            elif lineNum == 1:
                 info = line.split("  ")
                 pname = info[0]
-                self.leagues[Lname]["Players"][pname] = info[1]
-                self.leagues[Lname]["rankings"]["official"][pname] = info[2]
+                self.leagues[Lname]["Players"][pname] = int(info[1])
+                self.leagues[Lname]["rankings"]["official"][pname] = int(info[2])
 
                 numPlayers -= 1
                 if numPlayers == 0:
@@ -80,55 +85,29 @@ class App(tk.Tk):
                         lineNum = 2
                     else:
                         lineNum = 3
-            if lineNum == 2:
+            elif lineNum == 2:
                 info = line.split("  ")
-                self.leagues[Lname]["Games"].append({info[0]:info[1]})
+                pair = {"wid":info[0], "lid":info[1]}
+                self.leagues[Lname]["Games"].append(pair)
 
                 numGames -= 1
                 if numGames == 0:
                     lineNum = 3
-            if lineNum == 3:
+            elif lineNum == 3:
                 info = line.split("  ")
                 name = info[0]
-                self.brackets[name] = {}
-                self.brackets[name]["numTeams"] = int(info[1])
-                self.brackets[name]["edit"] = int(info[2])
-                self.brackets[name]["entries"] = {}
-                self.brackets[name]["actual"] = []
-                num_entries = int(info[3])
-                num_picks = int(info[4])
-                self.brackets[name]["num_picks"] = num_picks
-                if num_picks > 0:
-                    lineNum = 1
-                else:
+                self.leagues["Brackets"][name] = {}
+                self.leagues["Brackets"][name]["numTeams"] = int(info[1])
+                self.leagues["Brackets"][name]["numSeeds"] = int(info[2])
+                self.leagues["Brackets"][name]["actual"] = []
+                num_entries = 2 * int(info[1]) - 1
+                self.leagues["Brackets"][name]["actual"].append(StringVar(value=""))
+                lineNum = 4
+            elif lineNum == 4:
+                self.leagues["Brackets"][name]["actual"].append(StringVar(value=line))
+                num_entries -= 1
+                if num_entries ==0:
                     lineNum = 3
-                    self.brackets[name]["actual"].append(StringVar(value=""))
-                temp_entries = num_entries
-            elif lineNum == 1:
-                picks_name = line
-                self.brackets[name]["entries"][picks_name] = []
-                self.brackets[name]["entries"][picks_name].append(StringVar(value=""))
-                lineNum = 2
-            elif lineNum == 2:
-                temp_entries -= 1
-                if temp_entries == 0:
-                    num_picks -= 1
-                    if num_picks == 0:
-                        temp_entries = num_entries
-                        lineNum = 3
-                        self.brackets[name]["actual"].append(StringVar(value=""))
-                    else:
-                        temp_entries = num_entries
-                        lineNum = 1
-
-                self.brackets[name]["entries"][picks_name].append(StringVar(value=line))
-
-            elif lineNum == 3:
-                temp_entries -= 1
-                if temp_entries == 0:
-                    lineNum = 0
-
-                self.brackets[name]["actual"].append(StringVar(value=line))
         infile.close()
 
     def save(self):
@@ -139,10 +118,10 @@ class App(tk.Tk):
             for player in value["Players"]:
                 print_var += player + "  " + value["Players"][player]["ID"] + "  "
                 print_var += value["rankings"]["official"][player] + "\n"
-            for wid, lid in value["Games"].iteritems():
-                print_var += wid + "  " + lid + "\n"
+            for i in range(value["numGames"]):
+                print_var += value["Games"][i]["wid"] + "  " + value["Games"][i]["lid"] + "\n"
             for Bname, Binfo in value["Brackets"].iteritems():
-                print_var += Bname + "  " + Binfo["numTeams"] + "\n"
+                print_var += Bname + "  " + Binfo["numTeams"] + "  " + Binfo["numSeeds"] + "\n"
                 for i in range(len(Binfo["actual"])):
                     print_var += Binfo["actual"][i] + "\n"
 
@@ -658,7 +637,7 @@ class Home(tk.Frame):
 
     def load_league(self, event):
         self.destroy()
-        loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.league)
+        loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.league.get())
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()
 
@@ -737,6 +716,7 @@ class Create_League(tk.Frame):
         self.controller.leagues[self.Lname.get()]["Brackets"] = {}
         self.controller.leagues[self.Lname.get()]["Games"] = []
 
+        self.controller.save()
         loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.Lname.get())
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()
@@ -751,7 +731,7 @@ class Add_Players(tk.Frame):
 
         Label(self, text="Number of players to add: ").grid()
         self.numPlayers = IntVar()
-        self.entry = Entry(self)
+        entry = Entry(self, textvariable=self.numPlayers).grid(row=0, column=1)
         button = Button(self, text="Ready")
         button.bind("<Button-1>", self.add)
         button.grid()
@@ -759,8 +739,9 @@ class Add_Players(tk.Frame):
     def add(self, event):
         self.players = []
         for i in range(self.numPlayers.get()):
-            entry = Entry(self).grid(pady=5)
-            self.players.append(entry)
+            temp = StringVar()
+            self.players.append(temp)
+            entry = Entry(self, textvariable=self.players[i]).grid(pady=5)
 
         button = Button(self, text="Submit")
         button.bind("<Button-1>", self.submit)
@@ -768,7 +749,7 @@ class Add_Players(tk.Frame):
 
     def submit(self, event):
         for i in range(self.numPlayers.get()):
-            pname = self.players[i]["text"].get()
+            pname = self.players[i].get()
             if pname != "":
                 self.controller.leagues[self.Lname]["numPlayers"] += 1
                 self.controller.leagues[self.Lname]["Players"][pname] = (
@@ -776,6 +757,7 @@ class Add_Players(tk.Frame):
                 self.controller.leagues[self.Lname]["rankings"]["official"][pname] = (
                     self.controller.leagues[self.Lname]["numPlayers"])
 
+        self.controller.save()
         loadTeam = League_Home(parent=self.parent, controller=self.controller, Lname=self.Lname)
         loadTeam.grid(row=0, column=0, sticky="nsew")
         loadTeam.tkraise()

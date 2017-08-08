@@ -1,15 +1,15 @@
 A  4  0  7  4
-Phil
-    B
-    B
+Jill
+    A
+    A
     C
 A
 B
 C
 D
-Jill
-    A
-    A
+Phil
+    B
+    B
     C
 A
 B
@@ -134,77 +134,77 @@ Fish
 Belson
 Varilek
 Mier
-Montreal 1000  64  1  127  2
+Montreal 1000  64  0  127  2
 Eric
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1 Nadal
+1 Nadal
+2 Federer
+1 Nadal
+4 A. Zverev
+7 Dimitrov
+2 Federer
+1 Nadal
+6 Raonic
+4 A. Zverev
+11 Carreno Busta
+7 Dimitrov
+3 Thiem
+5 Nishikori
+2 Federer
+1 Nadal
+    Del Potro
+    Lopez
+6 Raonic
+4 A. Zverev
+    Lorenzi
+11 Carreno Busta
+8 Tsonga
+7 Dimitrov
+10 Berdych
+    Young
+3 Thiem
+5 Nishikori
+12 Bautista Agut
+15 Sock
+2 Federer
+1 Nadal
+    Coric
+    Shapovalov
+    Del Potro
+9 Goffin
+    Lopez
+    Medvedev
+6 Raonic
+4 A. Zverev
+    Gasquet
+    Lorenzi
+    Troicki
+11 Carreno Busta
+    Anderson
+    Querrey
+8 Tsonga
+7 Dimitrov
+    M. Zverev
+    Ramos-Vinolas
+10 Berdych
+13 Pouille
+    Young
+    Schwartzman
+3 Thiem
+5 Nishikori
+    Johnson
+    Harrison
+12 Bautista Agut
+15 Sock
+    Ferrer
+    Pospisil
+2 Federer
 1 Nadal
 BYE
 Coric
-Qualifier
+Youzhny
 Shapovalov
-Qualifier
+Dutra Silva
 Del Potro
 14 Isner
 9 Goffin
@@ -226,7 +226,7 @@ Troicki
 11 Carreno Busta
 Khachanov
 Anderson
-Qualifier
+Sela
 Querrey
 Muller
 BYE
@@ -234,7 +234,7 @@ BYE
 7 Dimitrov
 BYE
 M. Zverev
-Qualifier
+Gombos
 Ramos-Vinolas
 Hasse
 Basilashvili
@@ -244,19 +244,19 @@ Donaldson
 Young
 Paire
 Schwartzman
-Qualifier
+Opelka
 BYE
 3 Thiem
 5 Nishikori
 BYE
 Johnson
 Monfils
-Qualifier
+Fabbiano
 Harrison
-Qualifier
+Smyczek
 12 Bautista Agut
 15 Sock
-Qualifier
+Herbert
 Ferrer
 Edmund
 Pospisil
@@ -330,9 +330,9 @@ Hench
 1 Nadal
 BYE
 Coric
-Qualifier
+Youzhny
 Shapovalov
-Qualifier
+Dutra Silva
 Del Potro
 14 Isner
 9 Goffin
@@ -354,7 +354,7 @@ Troicki
 11 Carreno Busta
 Khachanov
 Anderson
-Qualifier
+Sela
 Querrey
 Muller
 BYE
@@ -362,7 +362,7 @@ BYE
 7 Dimitrov
 BYE
 M. Zverev
-Qualifier
+Gombos
 Ramos-Vinolas
 Hasse
 Basilashvili
@@ -372,19 +372,19 @@ Donaldson
 Young
 Paire
 Schwartzman
-Qualifier
+Opelka
 BYE
 3 Thiem
 5 Nishikori
 BYE
 Johnson
 Monfils
-Qualifier
+Fabbiano
 Harrison
-Qualifier
+Smyczek
 12 Bautista Agut
 15 Sock
-Qualifier
+Herbert
 Ferrer
 Edmund
 Pospisil
@@ -422,44 +422,44 @@ BYE
 
 
 
+1 Nadal
+
+
+    Del Potro
+
+
+    Mannarino
+6 Raonic
+4 A. Zverev
+    Gasquet
+
+16 Kyrgios
 
 
 
+8 Tsonga
+7 Dimitrov
+    M. Zverev
+    Hasse
+
+    Donaldson
+    Paire
+    Schwartzman
+3 Thiem
+5 Nishikori
+    Monfils
+    Harrison
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    Ferrer
+    Polansky
+2 Federer
 1 Nadal
 BYE
 Coric
-Qualifier
+Youzhny
 Shapovalov
-Qualifier
+Dutra Silva
 Del Potro
 14 Isner
 9 Goffin
@@ -481,7 +481,7 @@ Troicki
 11 Carreno Busta
 Khachanov
 Anderson
-Qualifier
+Sela
 Querrey
 Muller
 BYE
@@ -489,7 +489,7 @@ BYE
 7 Dimitrov
 BYE
 M. Zverev
-Qualifier
+Gombos
 Ramos-Vinolas
 Hasse
 Basilashvili
@@ -499,19 +499,19 @@ Donaldson
 Young
 Paire
 Schwartzman
-Qualifier
+Opelka
 BYE
 3 Thiem
 5 Nishikori
 BYE
 Johnson
 Monfils
-Qualifier
+Fabbiano
 Harrison
-Qualifier
+Smyczek
 12 Bautista Agut
 15 Sock
-Qualifier
+Herbert
 Ferrer
 Edmund
 Pospisil
