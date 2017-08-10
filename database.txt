@@ -160,7 +160,7 @@ Eric
 11 Carreno Busta
 8 Tsonga
 7 Dimitrov
-10 Berdych
+    Ramos-Vinolas
     Young
 3 Thiem
 5 Nishikori
@@ -186,7 +186,7 @@ Eric
 7 Dimitrov
     M. Zverev
     Ramos-Vinolas
-10 Berdych
+    Basilashvili
 13 Pouille
     Young
     Schwartzman
@@ -238,7 +238,7 @@ Gombos
 Ramos-Vinolas
 Hasse
 Basilashvili
-10 Berdych
+    Escobedo
 13 Pouille
 Donaldson
 Young
@@ -264,69 +264,69 @@ Polansky
 BYE
 2 Federer
 Hench
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+5 Nishikori
+6 Raonic
+5 Nishikori
+6 Raonic
+4 A. Zverev
+3 Thiem
+5 Nishikori
+1 Nadal
+6 Raonic
+4 A. Zverev
+    Anderson
+    Ramos-Vinolas
+3 Thiem
+5 Nishikori
+2 Federer
+1 Nadal
+14 Isner
+    Sugita
+6 Raonic
+4 A. Zverev
+    Tiafoe
+    Anderson
+    Querrey
+    M. Zverev
+    Ramos-Vinolas
+    Young
+3 Thiem
+5 Nishikori
+    Harrison
+    Ferrer
+2 Federer
+1 Nadal
+    Coric
+    Dutra Silva
+14 Isner
+    Sugita
+    Lopez
+    Mannarino
+6 Raonic
+4 A. Zverev
+    Gasquet
+    Tiafoe
+16 Kyrgios
+    Khachanov
+    Anderson
+    Querrey
+8 Tsonga
+7 Dimitrov
+    M. Zverev
+    Ramos-Vinolas
+    Basilashvili
+    Donaldson
+    Young
+    Opelka
+3 Thiem
+5 Nishikori
+    Monfils
+    Harrison
+12 Bautista Agut
+15 Sock
+    Ferrer
+    Pospisil
+2 Federer
 1 Nadal
 BYE
 Coric
@@ -366,7 +366,7 @@ Gombos
 Ramos-Vinolas
 Hasse
 Basilashvili
-10 Berdych
+Escobedo
 13 Pouille
 Donaldson
 Young
@@ -406,42 +406,42 @@ BYE
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 1 Nadal
-
-
+    Shapovalov
+    Chung
+    Mannarino
+4 A. Zverev
+16 Kyrgios
+    Anderson
+    Querrey
+7 Dimitrov
+    Hasse
+    Donaldson
+    Schwartzman
+    Monfils
+12 Bautista Agut
+    Ferrer
+2 Federer
+1 Nadal
+    Coric
+    Shapovalov
     Del Potro
-
-
+9 Goffin
+    Chung
     Mannarino
 6 Raonic
 4 A. Zverev
     Gasquet
-
+    Lorenzi
 16 Kyrgios
-
-
-
+11 Carreno Busta
+    Anderson
+    Querrey
 8 Tsonga
 7 Dimitrov
     M. Zverev
     Hasse
-
+    Escobedo
     Donaldson
     Paire
     Schwartzman
@@ -449,8 +449,8 @@ BYE
 5 Nishikori
     Monfils
     Harrison
-
-
+12 Bautista Agut
+15 Sock
     Ferrer
     Polansky
 2 Federer
@@ -493,7 +493,7 @@ Gombos
 Ramos-Vinolas
 Hasse
 Basilashvili
-10 Berdych
+Escobedo
 13 Pouille
 Donaldson
 Young

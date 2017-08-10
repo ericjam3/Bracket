@@ -21,7 +21,6 @@ class App(tk.Tk):
         container.grid_columnconfigure(0, weight=1)
         self.container = container
 
-
         menubar = Menu(self)
         M = Menu(menubar, tearoff=0)
         menubar.add_cascade(label="Menu", menu=M)
@@ -158,6 +157,7 @@ class Bracket(tk.Frame):
         ind = numTeams
         end = (numTeams * 2) - 1
         score = 0
+        ppr = 0
         ppp = 10
         wrongo = {}
 
@@ -194,6 +194,8 @@ class Bracket(tk.Frame):
                                 self.controller.brackets[name]["actual"][ind].get()):
                                 wrongo[self.controller.brackets[name]["entries"][picks][ind].get()] = 1
                                 label["background"] = "tomato"
+
+                            # Points remaining calculation
 
 
                         label.pack()
