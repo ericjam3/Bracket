@@ -196,6 +196,9 @@ class Bracket(tk.Frame):
                                 label["background"] = "tomato"
 
                             # Points remaining calculation
+                            if (c > 0 and draw == "entries" and self.controller.brackets[name]["actual"][ind].get() == ""
+                                and self.controller.brackets[name]["entries"][picks][ind].get() not in wrongo):
+                                ppr += ppp
 
 
                         label.pack()
@@ -248,6 +251,13 @@ class Bracket(tk.Frame):
             scoreLabel = Label(self.canvas, text=str(score) + " / " + str(numTeams * 5 * (cols - 1)), font="bold")
             scoreLabel.pack()
             self.canvas.create_window(600, 40, window=scoreLabel)
+
+            l1 = Label(self.canvas, text="PPR:", font="bold")
+            l1.pack()
+            self.canvas.create_window(700, 15, window=l1)
+            pprLabel = Label(self.canvas, text=str(ppr), font="bold")
+            pprLabel.pack()
+            self.canvas.create_window(700, 40, window=pprLabel)
         if type == "edit" or type == "entry":
             button = Button(self.canvas, text="Submit")
             button.bind("<Button-1>", functools.partial(self.submit_entries, rando=0))
