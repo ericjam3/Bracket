@@ -22,7 +22,7 @@ Hench
 (3) Dominic Thiem
 (15) Sam Querrey
 (11) Pablo Carreno Busta
-(5) Kei Nishikori
+David Ferrer
 (6) Milos Raonic
     Jared Donaldson
 (14) John Isner
@@ -46,7 +46,7 @@ Hench
 (11) Pablo Carreno Busta
     Mischa Zverev
     David Ferrer
-(5) Kei Nishikori
+(LL) Janko Tipsarevic
 (6) Milos Raonic
     Borna Coric
     Christopher Eubanks
@@ -94,7 +94,7 @@ Fernando Verdasco
 Steve Johnson
 David Ferrer
 BYE
-(5) Kei Nishikori
+(LL) Janko Tipsarevic
 (6) Milos Raonic
 BYE
 Nikoloz Basilashvili
@@ -171,9 +171,9 @@ BYE
 
 (15) Sam Querrey
 
+    Mischa Zverev
 
-
-(5) Kei Nishikori
+(LL) Janko Tipsarevic
 (6) Milos Raonic
 
 (LL) Ramkumar Ramanathan
@@ -221,7 +221,7 @@ Fernando Verdasco
 Steve Johnson
 David Ferrer
 BYE
-(5) Kei Nishikori
+(LL) Janko Tipsarevic
 (6) Milos Raonic
 BYE
 Nikoloz Basilashvili
