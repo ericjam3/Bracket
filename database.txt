@@ -1,396 +1,132 @@
-A  4  0  7  4
-Phil
-    B
-    B
-    C
-A
-B
-C
-D
-Jill
-    A
-    A
-    C
-A
-B
-C
-D
-Eric
-    D
-    B
-    D
-A
-B
-C
-D
-Bill
-    C
-    B
-    C
-A
-B
-C
-D
-    A
-    A
-    C
-A
-B
-C
-D
-Test  16  0  31  2
-Eric
-    Hench
-    Hench
-    Mier
-    Hench
-    Davis
-    Rapanos
-    Mier
-    Hench
-    AJ
-    Davis
-    Greenzo
-    Lil Hench
-    Rapanos
-    Fish
-    Mier
+Cincinnati  64  0  127  1
 Hench
-Greiner
-AJ
-Luzar
-Davis
-Dom
-Korn
-Greenzo
-Lil Hench
-Dostal
-Rapanos
-Rajewski
-Fish
-Belson
-Varilek
-Mier
-Hench
-    Mier
-    Hench
-    Mier
-    Hench
-    Davis
-    Rajewski
-    Mier
-    Hench
-    Luzar
-    Davis
-    Korn
-    Lil Hench
-    Rajewski
-    Belson
-    Mier
-Hench
-Greiner
-AJ
-Luzar
-Davis
-Dom
-Korn
-Greenzo
-Lil Hench
-Dostal
-Rapanos
-Rajewski
-Fish
-Belson
-Varilek
-Mier
-    Hench
-    Hench
-    Lil Hench
-    Hench
-    Korn
-    Lil Hench
-    Mier
-    Hench
-    AJ
-    Davis
-    Korn
-    Lil Hench
-    Rapanos
-    Fish
-    Mier
-Hench
-Greiner
-AJ
-Luzar
-Davis
-Dom
-Korn
-Greenzo
-Lil Hench
-Dostal
-Rapanos
-Rajewski
-Fish
-Belson
-Varilek
-Mier
-Montreal 1000  64  0  127  2
-Eric
-1 Nadal
-1 Nadal
-2 Federer
-1 Nadal
-4 A. Zverev
-7 Dimitrov
-2 Federer
-1 Nadal
-6 Raonic
-4 A. Zverev
-11 Carreno Busta
-7 Dimitrov
-3 Thiem
-5 Nishikori
-2 Federer
-1 Nadal
-    Del Potro
-    Lopez
-6 Raonic
-4 A. Zverev
-    Lorenzi
-11 Carreno Busta
-8 Tsonga
-7 Dimitrov
-    Ramos-Vinolas
-    Young
-3 Thiem
-5 Nishikori
-12 Bautista Agut
-15 Sock
-2 Federer
-1 Nadal
-    Coric
-    Shapovalov
-    Del Potro
-9 Goffin
-    Lopez
-    Medvedev
-6 Raonic
-4 A. Zverev
-    Gasquet
-    Lorenzi
-    Troicki
-11 Carreno Busta
-    Anderson
-    Querrey
-8 Tsonga
-7 Dimitrov
-    M. Zverev
-    Ramos-Vinolas
-    Basilashvili
-13 Pouille
-    Young
-    Schwartzman
-3 Thiem
-5 Nishikori
-    Johnson
-    Harrison
-12 Bautista Agut
-15 Sock
-    Ferrer
-    Pospisil
-2 Federer
-1 Nadal
+(1) Rafael Nadal
+(1) Rafael Nadal
+(7) Grigor Dimitrov
+(1) Rafael Nadal
+(11) Pablo Carreno Busta
+(6) Milos Raonic
+(7) Grigor Dimitrov
+(1) Rafael Nadal
+(8) Jo-Wilfried Tsonga
+(15) Sam Querrey
+(11) Pablo Carreno Busta
+(6) Milos Raonic
+(14) John Isner
+(7) Grigor Dimitrov
+    Karen Khachanov
+(1) Rafael Nadal
+(16) Gilles Muller
+    Nick Kyrgios
+(8) Jo-Wilfried Tsonga
+(3) Dominic Thiem
+(15) Sam Querrey
+(11) Pablo Carreno Busta
+(5) Kei Nishikori
+(6) Milos Raonic
+    Jared Donaldson
+(14) John Isner
+    Frances Tiafoe
+(7) Grigor Dimitrov
+    Juan Martin del Potro
+(13) Jack Sock
+    Karen Khachanov
+(1) Rafael Nadal
+    Richard Gasquet
+    Albert Ramos-Vinolas
+(16) Gilles Muller
+    Nick Kyrgios
+    Kevin Anderson
+    Ivo Karlovic
+(8) Jo-Wilfried Tsonga
+(3) Dominic Thiem
+    Daniil Medvedev
+    Robin Haase
+(15) Sam Querrey
+(11) Pablo Carreno Busta
+    Mischa Zverev
+    David Ferrer
+(5) Kei Nishikori
+(6) Milos Raonic
+    Borna Coric
+    Christopher Eubanks
+    Jared Donaldson
+(14) John Isner
+    Tommy Paul
+    Frances Tiafoe
+(4) Alexander Zverev
+(7) Grigor Dimitrov
+    Feliciano Lopez
+    Benoit Paire
+    Juan Martin del Potro
+(13) Jack Sock
+    Kyle Edmund
+    Karen Khachanov
+(LL) Thomas Fabbiano
+(1) Rafael Nadal
 BYE
-Coric
-Youzhny
-Shapovalov
-Dutra Silva
-Del Potro
-14 Isner
-9 Goffin
-Sugita
-Lopez
-Chung
-Medvedev
-Mannarino
+Richard Gasquet
+John-Patrick Smith
+Albert Ramos-Vinolas
+Mikhail Youzhny
+Ryan Harrison
+(16) Gilles Muller
+(9) David Goffin
+Nick Kyrgios
+Kevin Anderson
+Alexandr Dolgopolov
+Ivo Karlovic
+Jiri Vesely
 BYE
-6 Raonic
-4 A. Zverev
+(8) Jo-Wilfried Tsonga
+(3) Dominic Thiem
 BYE
-Shnur
-Gasquet
-Lorenzi
-Tiafoe
-Troicki
-16 Kyrgios
-11 Carreno Busta
-Khachanov
-Anderson
-Sela
-Querrey
-Muller
+Fabio Fognini
+Daniil Medvedev
+Robin Haase
+Adrian Mannarino
+Stefan Kozlov
+(15) Sam Querrey
+(11) Pablo Carreno Busta
+Paolo Lorenzi
+Mischa Zverev
+Fernando Verdasco
+Steve Johnson
+David Ferrer
 BYE
-8 Tsonga
-7 Dimitrov
+(5) Kei Nishikori
+(6) Milos Raonic
 BYE
-M. Zverev
-Gombos
-Ramos-Vinolas
-Hasse
-Basilashvili
-    Escobedo
-13 Pouille
-Donaldson
-Young
-Paire
-Schwartzman
-Opelka
+Nikoloz Basilashvili
+Borna Coric
+Christopher Eubanks
+(LL) Ramkumar Ramanathan
+Jared Donaldson
+(12) Roberto Bautista Agut
+(14) John Isner
+Viktor Troicki
+Donald Young
+Tommy Paul
+Frances Tiafoe
+Maximillian Marterer
 BYE
-3 Thiem
-5 Nishikori
+(4) Alexander Zverev
+(7) Grigor Dimitrov
 BYE
-Johnson
-Monfils
-Fabbiano
-Harrison
-Smyczek
-12 Bautista Agut
-15 Sock
-Herbert
-Ferrer
-Edmund
-Pospisil
-Polansky
+Feliciano Lopez
+Hyeon Chung
+Mitchell Krueger
+Benoit Paire
+Juan Martin del Potro
+(10) Tomas Berdych
+(13) Jack Sock
+Yuichi Sugita
+Kyle Edmund
+Joao Sousa
+Diego Schwartzman
+Karen Khachanov
 BYE
-2 Federer
-Hench
-5 Nishikori
-6 Raonic
-5 Nishikori
-6 Raonic
-4 A. Zverev
-3 Thiem
-5 Nishikori
-1 Nadal
-6 Raonic
-4 A. Zverev
-    Anderson
-    Ramos-Vinolas
-3 Thiem
-5 Nishikori
-2 Federer
-1 Nadal
-14 Isner
-    Sugita
-6 Raonic
-4 A. Zverev
-    Tiafoe
-    Anderson
-    Querrey
-    M. Zverev
-    Ramos-Vinolas
-    Young
-3 Thiem
-5 Nishikori
-    Harrison
-    Ferrer
-2 Federer
-1 Nadal
-    Coric
-    Dutra Silva
-14 Isner
-    Sugita
-    Lopez
-    Mannarino
-6 Raonic
-4 A. Zverev
-    Gasquet
-    Tiafoe
-16 Kyrgios
-    Khachanov
-    Anderson
-    Querrey
-8 Tsonga
-7 Dimitrov
-    M. Zverev
-    Ramos-Vinolas
-    Basilashvili
-    Donaldson
-    Young
-    Opelka
-3 Thiem
-5 Nishikori
-    Monfils
-    Harrison
-12 Bautista Agut
-15 Sock
-    Ferrer
-    Pospisil
-2 Federer
-1 Nadal
-BYE
-Coric
-Youzhny
-Shapovalov
-Dutra Silva
-Del Potro
-14 Isner
-9 Goffin
-Sugita
-Lopez
-Chung
-Medvedev
-Mannarino
-BYE
-6 Raonic
-4 A. Zverev
-BYE
-Shnur
-Gasquet
-Lorenzi
-Tiafoe
-Troicki
-16 Kyrgios
-11 Carreno Busta
-Khachanov
-Anderson
-Sela
-Querrey
-Muller
-BYE
-8 Tsonga
-7 Dimitrov
-BYE
-M. Zverev
-Gombos
-Ramos-Vinolas
-Hasse
-Basilashvili
-Escobedo
-13 Pouille
-Donaldson
-Young
-Paire
-Schwartzman
-Opelka
-BYE
-3 Thiem
-5 Nishikori
-BYE
-Johnson
-Monfils
-Fabbiano
-Harrison
-Smyczek
-12 Bautista Agut
-15 Sock
-Herbert
-Ferrer
-Edmund
-Pospisil
-Polansky
-BYE
-2 Federer
+(LL) Thomas Fabbiano
 
 
 
@@ -406,123 +142,115 @@ BYE
 
 
 
-1 Nadal
-    Shapovalov
-    Chung
-    Mannarino
-4 A. Zverev
-16 Kyrgios
-    Anderson
-    Querrey
-7 Dimitrov
-    Hasse
-    Donaldson
-    Schwartzman
-    Monfils
-12 Bautista Agut
-    Ferrer
-2 Federer
-1 Nadal
-    Coric
-    Shapovalov
-    Del Potro
-9 Goffin
-    Chung
-    Mannarino
-6 Raonic
-4 A. Zverev
-    Gasquet
-    Lorenzi
-16 Kyrgios
-11 Carreno Busta
-    Anderson
-    Querrey
-8 Tsonga
-7 Dimitrov
-    M. Zverev
-    Hasse
-    Escobedo
-    Donaldson
-    Paire
-    Schwartzman
-3 Thiem
-5 Nishikori
-    Monfils
-    Harrison
-12 Bautista Agut
-15 Sock
-    Ferrer
-    Polansky
-2 Federer
-1 Nadal
-BYE
-Coric
-Youzhny
-Shapovalov
-Dutra Silva
-Del Potro
-14 Isner
-9 Goffin
-Sugita
-Lopez
-Chung
-Medvedev
-Mannarino
-BYE
-6 Raonic
-4 A. Zverev
-BYE
-Shnur
-Gasquet
-Lorenzi
-Tiafoe
-Troicki
-16 Kyrgios
-11 Carreno Busta
-Khachanov
-Anderson
-Sela
-Querrey
-Muller
-BYE
-8 Tsonga
-7 Dimitrov
-BYE
-M. Zverev
-Gombos
-Ramos-Vinolas
-Hasse
-Basilashvili
-Escobedo
-13 Pouille
-Donaldson
-Young
-Paire
-Schwartzman
-Opelka
-BYE
-3 Thiem
-5 Nishikori
-BYE
-Johnson
-Monfils
-Fabbiano
-Harrison
-Smyczek
-12 Bautista Agut
-15 Sock
-Herbert
-Ferrer
-Edmund
-Pospisil
-Polansky
-BYE
-2 Federer
-B  4  1  7  0
 
 
 
-A
-F
-J
-L
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1) Rafael Nadal
+
+
+
+
+
+
+(8) Jo-Wilfried Tsonga
+(3) Dominic Thiem
+
+
+
+
+
+
+(5) Kei Nishikori
+(6) Milos Raonic
+
+
+
+
+
+
+(4) Alexander Zverev
+(7) Grigor Dimitrov
+
+
+
+
+
+
+(LL) Thomas Fabbiano
+(1) Rafael Nadal
+BYE
+Richard Gasquet
+John-Patrick Smith
+Albert Ramos-Vinolas
+Mikhail Youzhny
+Ryan Harrison
+(16) Gilles Muller
+(9) David Goffin
+Nick Kyrgios
+Kevin Anderson
+Alexandr Dolgopolov
+Ivo Karlovic
+Jiri Vesely
+BYE
+(8) Jo-Wilfried Tsonga
+(3) Dominic Thiem
+BYE
+Fabio Fognini
+Daniil Medvedev
+Robin Haase
+Adrian Mannarino
+Stefan Kozlov
+(15) Sam Querrey
+(11) Pablo Carreno Busta
+Paolo Lorenzi
+Mischa Zverev
+Fernando Verdasco
+Steve Johnson
+David Ferrer
+BYE
+(5) Kei Nishikori
+(6) Milos Raonic
+BYE
+Nikoloz Basilashvili
+Borna Coric
+Christopher Eubanks
+(LL) Ramkumar Ramanathan
+Jared Donaldson
+(12) Roberto Bautista Agut
+(14) John Isner
+Viktor Troicki
+Donald Young
+Tommy Paul
+Frances Tiafoe
+Maximillian Marterer
+BYE
+(4) Alexander Zverev
+(7) Grigor Dimitrov
+BYE
+Feliciano Lopez
+Hyeon Chung
+Mitchell Krueger
+Benoit Paire
+Juan Martin del Potro
+(10) Tomas Berdych
+(13) Jack Sock
+Yuichi Sugita
+Kyle Edmund
+Joao Sousa
+Diego Schwartzman
+Karen Khachanov
+BYE
+(LL) Thomas Fabbiano
