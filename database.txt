@@ -11,7 +11,7 @@ Mierzo
     Kevin Anderson
     Adrian Mannarino
     Mischa Zverev
-(6) Milos Raonic
+    Jared Donaldson
 (4) Alexander Zverev
     Juan Martin del Potro
 (13) Jack Sock
@@ -23,7 +23,7 @@ Mierzo
     Adrian Mannarino
     Mischa Zverev
     Steve Johnson
-(6) Milos Raonic
+    Borna Coric
     Jared Donaldson
 (14) John Isner
 (4) Alexander Zverev
@@ -47,7 +47,7 @@ Mierzo
     Mischa Zverev
     Steve Johnson
 (LL) Janko Tipsarevic
-(6) Milos Raonic
+(LL) Christian Harrison
     Borna Coric
     Christopher Eubanks
     Jared Donaldson
@@ -95,7 +95,7 @@ Steve Johnson
 David Ferrer
 BYE
 (LL) Janko Tipsarevic
-(6) Milos Raonic
+(LL) Christian Harrison
 BYE
 Nikoloz Basilashvili
 Borna Coric
@@ -133,13 +133,13 @@ Hench
 (7) Grigor Dimitrov
 (1) Rafael Nadal
 (11) Pablo Carreno Busta
-(6) Milos Raonic
+(14) John Isner
 (7) Grigor Dimitrov
 (1) Rafael Nadal
 (8) Jo-Wilfried Tsonga
 (15) Sam Querrey
 (11) Pablo Carreno Busta
-(6) Milos Raonic
+    Jared Donaldson
 (14) John Isner
 (7) Grigor Dimitrov
     Karen Khachanov
@@ -151,7 +151,7 @@ Hench
 (15) Sam Querrey
 (11) Pablo Carreno Busta
 David Ferrer
-(6) Milos Raonic
+    Borna Coric
     Jared Donaldson
 (14) John Isner
     Frances Tiafoe
@@ -175,7 +175,7 @@ David Ferrer
     Mischa Zverev
     David Ferrer
 (LL) Janko Tipsarevic
-(6) Milos Raonic
+(LL) Christian Harrison
     Borna Coric
     Christopher Eubanks
     Jared Donaldson
@@ -223,7 +223,7 @@ Steve Johnson
 David Ferrer
 BYE
 (LL) Janko Tipsarevic
-(6) Milos Raonic
+(LL) Christian Harrison
 BYE
 Nikoloz Basilashvili
 Borna Coric
@@ -272,40 +272,40 @@ BYE
 
 
 
+    Nick Kyrgios
+    Ivo Karlovic
+(3) Dominic Thiem
+
+(11) Pablo Carreno Busta
+    David Ferrer
 
 
+(14) John Isner
 
-
-
-
-
-
-
-
-
-
-
-
+(7) Grigor Dimitrov
+    Juan Martin del Potro
+    Yuichi Sugita
+    Karen Khachanov
 (1) Rafael Nadal
     Richard Gasquet
-
+    Albert Ramos-Vinolas
 (16) Gilles Muller
-
-
+    Nick Kyrgios
+    Alexandr Dolgopolov
     Ivo Karlovic
 (8) Jo-Wilfried Tsonga
 (3) Dominic Thiem
     Fabio Fognini
-
+    Adrian Mannarino
 (15) Sam Querrey
-
+(11) Pablo Carreno Busta
     Mischa Zverev
-
+    David Ferrer
 (LL) Janko Tipsarevic
-(6) Milos Raonic
-
+(LL) Christian Harrison
+    Nikoloz Basilashvili
 (LL) Ramkumar Ramanathan
-
+    Jared Donaldson
 (14) John Isner
     Tommy Paul
     Frances Tiafoe
@@ -313,10 +313,10 @@ BYE
 (7) Grigor Dimitrov
     Feliciano Lopez
     Mitchell Krueger
-
-
+    Juan Martin del Potro
+    Yuichi Sugita
     Joao Sousa
-
+    Karen Khachanov
 (LL) Thomas Fabbiano
 (1) Rafael Nadal
 BYE
@@ -350,7 +350,7 @@ Steve Johnson
 David Ferrer
 BYE
 (LL) Janko Tipsarevic
-(6) Milos Raonic
+(LL) Christian Harrison
 BYE
 Nikoloz Basilashvili
 Borna Coric
