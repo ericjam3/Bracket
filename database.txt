@@ -1,260 +1,132 @@
-US Open  128  1  255  0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Cincinnati  64  0  127  2
+Mierzo
+(4) Alexander Zverev
 (1) Rafael Nadal
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-(Seed)
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-PLAYER
-(Seed)
-Cincinnati  64  0  127  1
+(4) Alexander Zverev
+(1) Rafael Nadal
+    Adrian Mannarino
+(4) Alexander Zverev
+(13) Jack Sock
+(1) Rafael Nadal
+    Kevin Anderson
+    Adrian Mannarino
+    Mischa Zverev
+    Jared Donaldson
+(4) Alexander Zverev
+    Juan Martin del Potro
+(13) Jack Sock
+(1) Rafael Nadal
+    Albert Ramos-Vinolas
+    Kevin Anderson
+(8) Jo-Wilfried Tsonga
+(3) Dominic Thiem
+    Adrian Mannarino
+    Mischa Zverev
+    Steve Johnson
+    Borna Coric
+    Jared Donaldson
+(14) John Isner
+(4) Alexander Zverev
+(7) Grigor Dimitrov
+    Juan Martin del Potro
+(13) Jack Sock
+    Diego Schwartzman
+(1) Rafael Nadal
+    Richard Gasquet
+    Albert Ramos-Vinolas
+(16) Gilles Muller
+    Nick Kyrgios
+    Kevin Anderson
+    Jiri Vesely
+(8) Jo-Wilfried Tsonga
+(3) Dominic Thiem
+    Fabio Fognini
+    Adrian Mannarino
+(15) Sam Querrey
+(11) Pablo Carreno Busta
+    Mischa Zverev
+    Steve Johnson
+(LL) Janko Tipsarevic
+(LL) Christian Harrison
+    Borna Coric
+    Christopher Eubanks
+    Jared Donaldson
+(14) John Isner
+    Donald Young
+    Frances Tiafoe
+(4) Alexander Zverev
+(7) Grigor Dimitrov
+    Hyeon Chung
+    Benoit Paire
+    Juan Martin del Potro
+(13) Jack Sock
+    Kyle Edmund
+    Diego Schwartzman
+(LL) Thomas Fabbiano
+(1) Rafael Nadal
+BYE
+Richard Gasquet
+John-Patrick Smith
+Albert Ramos-Vinolas
+Mikhail Youzhny
+Ryan Harrison
+(16) Gilles Muller
+(9) David Goffin
+Nick Kyrgios
+Kevin Anderson
+Alexandr Dolgopolov
+Ivo Karlovic
+Jiri Vesely
+BYE
+(8) Jo-Wilfried Tsonga
+(3) Dominic Thiem
+BYE
+Fabio Fognini
+Daniil Medvedev
+Robin Haase
+Adrian Mannarino
+Stefan Kozlov
+(15) Sam Querrey
+(11) Pablo Carreno Busta
+Paolo Lorenzi
+Mischa Zverev
+Fernando Verdasco
+Steve Johnson
+David Ferrer
+BYE
+(LL) Janko Tipsarevic
+(LL) Christian Harrison
+BYE
+Nikoloz Basilashvili
+Borna Coric
+Christopher Eubanks
+(LL) Ramkumar Ramanathan
+Jared Donaldson
+(12) Roberto Bautista Agut
+(14) John Isner
+Viktor Troicki
+Donald Young
+Tommy Paul
+Frances Tiafoe
+Maximillian Marterer
+BYE
+(4) Alexander Zverev
+(7) Grigor Dimitrov
+BYE
+Feliciano Lopez
+Hyeon Chung
+Mitchell Krueger
+Benoit Paire
+Juan Martin del Potro
+(10) Tomas Berdych
+(13) Jack Sock
+Yuichi Sugita
+Kyle Edmund
+Joao Sousa
+Diego Schwartzman
+Karen Khachanov
+BYE
+(LL) Thomas Fabbiano
 Hench
 (1) Rafael Nadal
 (1) Rafael Nadal
@@ -278,7 +150,7 @@ Hench
 (3) Dominic Thiem
 (15) Sam Querrey
 (11) Pablo Carreno Busta
-    David Ferrer
+David Ferrer
     Borna Coric
     Jared Donaldson
 (14) John Isner
@@ -400,20 +272,20 @@ BYE
 
 
 
-
+    Nick Kyrgios
     Ivo Karlovic
 (3) Dominic Thiem
 
-
-
+(11) Pablo Carreno Busta
+    David Ferrer
 
 
 (14) John Isner
 
 (7) Grigor Dimitrov
-
-
-
+    Juan Martin del Potro
+    Yuichi Sugita
+    Karen Khachanov
 (1) Rafael Nadal
     Richard Gasquet
     Albert Ramos-Vinolas
