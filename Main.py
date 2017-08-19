@@ -686,6 +686,7 @@ class Bracket_Home(tk.Frame):
 
     def delete(self, event):
         del self.controller.brackets[self.name]["entries"][self.dpicks.get()]
+        self.controller.brackets[self.name]["num_picks"] -= 1
         self.controller.save()
         self.destroy()
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)

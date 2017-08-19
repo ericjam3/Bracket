@@ -1,4 +1,4 @@
-Cincinnati  64  0  127  3
+Cincinnati  64  0  127  2
 Mierzo
 (4) Alexander Zverev
 (1) Rafael Nadal
@@ -257,7 +257,7 @@ BYE
 (LL) Thomas Fabbiano
 
 
-
+(7) Grigor Dimitrov
     Nick Kyrgios
     David Ferrer
 (14) John Isner
