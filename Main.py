@@ -160,15 +160,17 @@ class Bracket(tk.Frame):
         ppr = 0
         ppp = 10
         wrongo = {}
+        round_num = 2
 
         for c in range(cols):
             prev = sum
+            current_points = 0
             if c != 0:
                 sum = 2 ** (c - 1) + prev
             for r in range(rows):
                 if r % 2 ** c == 0:
-                    self.canvas.create_line(10 + (c * 140), 30 + (30 * r) + 15 * (sum), 10 + (c + 1) * 140,
-                                            30 + (30 * r) + 15 * (sum))
+                    self.canvas.create_line(10 + (c * 140), 120 + (30 * r) + 15 * (sum), 10 + (c + 1) * 140,
+                                            120 + (30 * r) + 15 * (sum))
                     if type == "view":
                         if draw == "actual":
                             team = self.controller.brackets[name][draw][ind].get()
@@ -184,6 +186,7 @@ class Bracket(tk.Frame):
                                 self.controller.brackets[name]["actual"][ind].get()):
 
                                 score += ppp
+                                current_points += ppp
                                 label["background"] = "spring green"
 
                             # Color coordination for incorrect picks
@@ -202,7 +205,7 @@ class Bracket(tk.Frame):
 
 
                         label.pack()
-                        self.canvas.create_window(11 + (c * 140), 25 + (30 * r) + 15 * (sum),
+                        self.canvas.create_window(11 + (c * 140), 115 + (30 * r) + 15 * (sum),
                                                   anchor=SW, window=label)
                         if ind >= end:
                             end = ((ind + 1) / 2) - 1
@@ -214,7 +217,7 @@ class Bracket(tk.Frame):
                         entry = Entry(self.canvas, textvariable=self.controller.brackets[name]["actual"][ind])
                         entry.pack()
                         ind += 1
-                        self.canvas.create_window(80 + (c * 140), 25 + (30 * r) + 15 * (sum),
+                        self.canvas.create_window(80 + (c * 140), 115 + (30 * r) + 15 * (sum),
                                                   anchor=S, window=entry)
 
                     elif type == "edit":
@@ -227,7 +230,7 @@ class Bracket(tk.Frame):
                         self.labels[ind] = Label(self.canvas, text=team, font="bold, 8")
                         self.labels[ind].bind("<Button-1>", functools.partial(self.advance, ind=ind))
                         self.labels[ind].pack()
-                        self.canvas.create_window(30 + (c * 140), 25 + (30 * r) + 15 * (sum),
+                        self.canvas.create_window(30 + (c * 140), 115 + (30 * r) + 15 * (sum),
                                                   anchor=SW, window=self.labels[ind])
                         if ind >= end:
                             end = ((ind + 1) / 2) - 1
@@ -237,45 +240,63 @@ class Bracket(tk.Frame):
 
 
                 if (r % 2 ** (c + 1) == 0) and (c < cols - 1):
-                    self.canvas.create_line(10 + (140 * (c + 1)), 30 + (30 * r) + 15 * (sum), 10 + (140 * (c + 1)),
-                                            30 + (30 * r) + 15 * (sum + (2 ** (c + 1))))
+                    self.canvas.create_line(10 + (140 * (c + 1)), 120 + (30 * r) + 15 * (sum), 10 + (140 * (c + 1)),
+                                            120 + (30 * r) + 15 * (sum + (2 ** (c + 1))))
 
-            if c > 0:
+            if c > 0 and type == "view" and draw != "actual":
                 ppp *= 2
+                if round_num == cols - 3:
+                    round = "Quarters:"
+                elif round_num == cols - 2:
+                    round = "Semis:"
+                elif round_num == cols - 1:
+                    round = "Finals:"
+                elif round_num == cols:
+                    round = "Champion:"
+                else:
+                    round = "Round " + str(round_num) + ":"
 
+                l2 = Label(self.canvas, text=round)
+                l2.pack()
+                self.canvas.create_window(65 + (c * 140), 15, window=l2)
+                slabel = Label(self.canvas, text=str(current_points) + " / " + str(numTeams * 5))
+                slabel.pack()
+                self.canvas.create_window(65 + (c * 140), 40, window=slabel)
+                round_num += 1
+
+        if draw == "actual":
+            nameLabel = Label(self.canvas, text="OFFICIAL", font="Bold 16")
+            nameLabel.pack()
+            self.canvas.create_window(5, 10, window=nameLabel, anchor="w")
+        else:
+            nameLabel = Label(self.canvas, text=picks, font="Bold 16")
+            nameLabel.pack()
+            self.canvas.create_window(5, 10, window=nameLabel, anchor="w")
 
         if type == "view" and draw != "actual":
-            l = Label(self.canvas, text="Score:", font="bold")
+            l = Label(self.canvas, text="Score:", font="Bold 10")
             l.pack()
-            self.canvas.create_window(600, 15, window=l)
-            scoreLabel = Label(self.canvas, text=str(score) + " / " + str(numTeams * 5 * (cols - 1)), font="bold")
+            self.canvas.create_window(35, 30, window=l)
+            scoreLabel = Label(self.canvas, text=str(score) + " / " + str(numTeams * 5 * (cols - 1)), font="Bold 10")
             scoreLabel.pack()
-            self.canvas.create_window(600, 40, window=scoreLabel)
+            self.canvas.create_window(35, 50, window=scoreLabel)
 
-            l1 = Label(self.canvas, text="PPR:", font="bold")
+            l1 = Label(self.canvas, text="PPR:", font="bold 10")
             l1.pack()
-            self.canvas.create_window(700, 15, window=l1)
-            pprLabel = Label(self.canvas, text=str(ppr), font="bold")
+            self.canvas.create_window(100, 30, window=l1)
+            pprLabel = Label(self.canvas, text=str(ppr), font="bold 10")
             pprLabel.pack()
-            self.canvas.create_window(700, 40, window=pprLabel)
+            self.canvas.create_window(100, 50, window=pprLabel)
         if type == "edit" or type == "entry":
             button = Button(self.canvas, text="Submit")
             button.bind("<Button-1>", functools.partial(self.submit_entries, rando=0))
             button.pack()
-            self.canvas.create_window(800, 15, window=button)
-            #if type == "entry":
-            #    lbl = Label(self.canvas, text="Enter the rest of the teams to be placed randomly")
-            #    lbl.pack()
-            #    button2 = Button(self.canvas, text="Randomize")
-            #    button2.bind("<Button-1>", functools.partial(self.submit_entries, rando=1))
-            #    button2.pack()
-            #    self.canvas.create_window(800, 40, window=button2)
-            #    self.canvas.create_window(850, 40, window= lbl, anchor="w")
+            self.canvas.create_window(40, 75, window=button)
         else:
-            button = Button(self.canvas, text="Done Viewing")
+            button = Button(self.canvas, text="Done")
             button.bind("<Button-1>", functools.partial(self.submit_entries, rando=0))
             button.pack()
-            self.canvas.create_window(800, 15, window=button)
+            self.canvas.create_window(40, 75, window=button)
 
         self.update()
         self.canvas.config(scrollregion=self.canvas.bbox("all"))
@@ -291,18 +312,18 @@ class Bracket(tk.Frame):
                     self.controller.brackets[self.name]["entries"][pick][i] = self.controller.brackets[self.name]["actual"][i]
 
             for i in range(len(self.labels) - 1, 2, -2):
-                if ((self.controller.brackets[self.name]["actual"][i].get() !=
-                    self.controller.brackets[self.name]["actual"][int(math.floor(i/2))].get()) and
-                   (self.controller.brackets[self.name]["actual"][i - 1].get() !=
-                    self.controller.brackets[self.name]["actual"][int(math.floor(i / 2))].get())):
+                if ((self.controller.brackets[self.name]["actual"][i].get().lstrip() !=
+                    self.controller.brackets[self.name]["actual"][int(math.floor(i/2))].get().lstrip()) and
+                   (self.controller.brackets[self.name]["actual"][i - 1].get().lstrip() !=
+                    self.controller.brackets[self.name]["actual"][int(math.floor(i / 2))].get().lstrip())):
                     self.controller.brackets[self.name]["actual"][int(math.floor(i / 2))] = StringVar(value="")
 
             for pick in self.controller.brackets[self.name]["entries"]:
                 for i in range(len(self.labels) - 1, 2, -2):
-                    if ((self.controller.brackets[self.name]["entries"][pick][i].get() !=
-                        self.controller.brackets[self.name]["entries"][pick][int(math.floor(i/2))].get()) and
-                       (self.controller.brackets[self.name]["entries"][pick][i - 1].get() !=
-                        self.controller.brackets[self.name]["entries"][pick][int(math.floor(i / 2))].get())):
+                    if ((self.controller.brackets[self.name]["entries"][pick][i].get().lstrip() !=
+                        self.controller.brackets[self.name]["entries"][pick][int(math.floor(i/2))].get().lstrip()) and
+                       (self.controller.brackets[self.name]["entries"][pick][i - 1].get().lstrip() !=
+                        self.controller.brackets[self.name]["entries"][pick][int(math.floor(i / 2))].get().lstrip())):
                         self.controller.brackets[self.name]["entries"][pick][int(math.floor(i / 2))] = StringVar(value="")
 
         self.controller.save()
@@ -365,6 +386,7 @@ class Home(tk.Frame):
         self.create.bind("<Button-1>", self.create_tourney)
         self.create.grid(sticky="we", columnspan=2)
 
+        Label(self, text="").grid()
         # Load bracket button
         Label(self, text="Select Tournament: ").grid()
         self.tourney = StringVar()
@@ -375,7 +397,16 @@ class Home(tk.Frame):
             tourneys.append(key)
 
         self.box['values'] = tourneys
-        self.box.grid(row=1, column=1)
+        self.box.grid(row=2, column=1)
+
+        Label(self, text="").grid()
+        # Delete bracket button
+        Label(self, text="Delete Tournament: ").grid()
+        self.dtourney = StringVar()
+        self.dbox = Combobox(self, textvariable=self.dtourney)
+        self.dbox.bind("<<ComboboxSelected>>", self.delete_tourney)
+        self.dbox['values'] = tourneys
+        self.dbox.grid(row=4, column=1)
 
     def create_tourney(self, event):
         self.destroy()
@@ -388,6 +419,29 @@ class Home(tk.Frame):
         bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.tourney.get())
         bhome.grid(row=0, column=0, sticky="nsew")
         bhome.tkraise()
+
+    def delete_tourney(self, event):
+        button1 = Button(self, text="Delete " + self.dtourney.get())
+        button1.bind("<Button-1>", self.delete)
+        button1.grid()
+
+        button2 = Button(self, text="Just Kidding")
+        button2.bind("<Button-1>", self.jk)
+        button2.grid()
+
+    def delete(self, event):
+        del self.controller.brackets[self.dtourney.get()]
+        self.controller.save()
+        self.destroy()
+        self.home = Home(parent=self.parent, controller=self.controller)
+        self.home.grid(row=0, column=0, sticky="nsew")
+        self.home.tkraise()
+
+    def jk(self, event):
+        self.destroy()
+        self.home = Home(parent=self.parent, controller=self.controller)
+        self.home.grid(row=0, column=0, sticky="nsew")
+        self.home.tkraise()
 
 
 class Random_Frame(tk.Frame):
@@ -467,7 +521,7 @@ class Create_Tournament(tk.Frame):
 
         self.controller.save()
         self.create = Bracket(parent=self.parent, controller=self.controller, numTeams=self.numTeams.get() , type="entry",
-                              name=self.name.get(), draw="entries")
+                              name=self.name.get(), draw="actual")
         self.create.grid(row=0, column=0, sticky="nsew")
         self.create.tkraise()
 
@@ -510,6 +564,18 @@ class Bracket_Home(tk.Frame):
             button7.bind("<Button-1>", self.open)
             button7.grid(sticky="we", row=0, column=5)
 
+        # Delete picks button
+        Label(self, text="Delete Picks: ").grid(row=0, column=6)
+        self.dpicks = StringVar()
+        self.dbox = Combobox(self, textvariable=self.dpicks)
+        self.dbox.bind("<<ComboboxSelected>>", self.delete_picks)
+        picks = []
+        for key in self.controller.brackets[self.name]["entries"]:
+            picks.append(key)
+
+        self.dbox['values'] = picks
+        self.dbox.grid(row=0, column=7)
+
 
         leaderboard = {}
         backup = {}
@@ -541,22 +607,28 @@ class Bracket_Home(tk.Frame):
                 self.brackets.append(place)
                 del leaderboard[place]
 
-            Label(self, text="BRACKET:").grid(row=2, padx=10)
-            Label(self, text="SCORE:").grid(row=2, column=1, padx=10)
+            Label(self, text="BRACKET:").grid(row=2, padx=10, column=1)
+            if self.controller.brackets[name]["edit"] == 0:
+                Label(self, text="SCORE:").grid(row=2, column=2, padx=10)
+                Label(self, text="RANK:").grid(row=2, column=0, sticky="E")
+            rank = 1
             for i in range(len(self.brackets)):
                 label = Label(self, text=self.brackets[i], foreground="blue")
                 if self.controller.brackets[name]["edit"] == 0:
-                    Label(self, text=str(backup[self.brackets[i]])).grid(row=i+3, column=1)
+                    Label(self, text=str(backup[self.brackets[i]])).grid(row=i+3, column=2)
+                    if i != 0 and (backup[self.brackets[i]] != backup[self.brackets[i-1]]):
+                        rank = i + 1
+
+                    Label(self, text=str(rank) + "    ").grid(row = i + 3, column=0, sticky="E")
                     label.bind("<Button-1>", self.view_button)
                 else:
-                    Label(self, text="0").grid(row=i + 3, column=1)
                     label.bind("<Button-1>", self.make_button)
-                label.grid(row=i+3)
+                label.grid(row=i+3, column=1)
                 self.brackets.append(label)
 
     def create_button(self, event):
         self.create = Bracket(parent=self.parent, controller=self.controller, numTeams=self.numTeams , type="entry",
-                              name=self.name, draw="entries")
+                              name=self.name, draw="actual")
         self.create.grid(row=0, column=0, sticky="nsew")
         self.create.tkraise()
     def make_button(self, event):
@@ -602,6 +674,31 @@ class Bracket_Home(tk.Frame):
         create.grid(row=0, column=0, sticky="nsew")
         self.controller.save()
         create.tkraise()
+
+    def delete_picks(self, event):
+        button1 = Button(self, text="Delete " + self.dpicks.get())
+        button1.bind("<Button-1>", self.delete)
+        button1.grid(row=1, column=7)
+
+        button2 = Button(self, text="Just Kidding")
+        button2.bind("<Button-1>", self.jk)
+        button2.grid(row=2, column=7)
+
+    def delete(self, event):
+        del self.controller.brackets[self.name]["entries"][self.dpicks.get()]
+        self.controller.brackets[self.name]["num_picks"] -= 1
+        self.controller.save()
+        self.destroy()
+        bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
+        bhome.grid(row=0, column=0, sticky="nsew")
+        bhome.tkraise()
+
+    def jk(self, event):
+        self.destroy()
+        bhome = Bracket_Home(parent=self.parent, controller=self.controller, name=self.name)
+        bhome.grid(row=0, column=0, sticky="nsew")
+        bhome.tkraise()
+
 
 
 class Create_Picks(tk.Frame):
