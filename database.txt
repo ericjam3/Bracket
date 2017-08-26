@@ -1,3 +1,515 @@
+United States Open  128  1  255  1
+Mierzo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1) R. Nadal
+D. Lajovic
+T. Daniel
+T. Paul
+Y. Sugita
+G. Blancaneaux
+Q
+(26) R. Gasquet
+(22) F. Fognini
+Q
+V. Troicki
+N. Gombos
+J. Struff
+A. Dolgopolov
+R. Harrison
+(15) T. Berdych
+(9) D. Goffin
+J. Benneteau
+S. Darcis
+G. Pella
+Q
+D. Young
+J. Chardy
+(18) G. Monfils
+(27) P. Cuevas
+D. Dzumhur
+Q
+N. Kicker
+A. Bedene
+A. Rublev
+Q
+(7) G. Dimitrov
+(3) R. Federer
+F. Tiafoe
+B. Kavcic
+M. Youzhny
+F. Verdasco
+V. Pospisil
+A. Kuznetsov
+(31) F. Lopez
+(17) S. Querrey
+Q
+Q
+S. Giraldo
+M. Jaziri
+T. Monteiro
+J. Millman
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+A. Seppi
+D. Brown
+T. Bellucci
+P. Kypson
+Q
+H. Laaksonen
+(24) J. del Potro
+(30) A. Mannarino
+R. Berkanis
+B. Fratangelo
+I. Karlovic
+M. Baghdatis
+T. Fritz
+A. de Minaur
+(6) D. Thiem
+(5) M. Cilic
+G. Simon
+C. Eubanks
+D. Sela
+Q
+E.Escobedo
+Y. Lu
+(25) K. Khachanov
+(23) M. Zverev
+T. Kwiatowski
+P. Kohlschreiber
+B. Paire
+H. Zeballos
+H. Chung
+P. Herbert
+(10) J. Isner
+(13) J. Sock
+J. Thompson
+Q
+T. Fabbiano
+J. Sousa
+P. Lorenzi
+B. Tomic
+(19) G. Muller
+(28) K. Anderson
+Q
+A. Giannessi
+E. Gulbis
+J. Vesely
+B. Coric
+Q
+(4) A. Zverev
+(8) J. Tsonga
+M. Copil
+Q
+D. Medvedev
+N. Almagro
+S. Johnson
+K. Edmund
+(32) R. Haase
+(20) A. Ramos-Vinolas
+D. Istomin
+M. Fucsovics
+Q
+D. Tursunov
+Q
+Q
+(12) P. Carreno Busta
+(16) L. Pouille
+R. Bemelmans
+J. Donalson
+N. Basilashvili
+A. Haider-Maurer
+E. Donskoy
+Q
+(21) D. Ferrer
+(29) D. Schwartzman
+C. Berlocq
+T. Kokkinakis
+J. Tipsarevic
+R. Dutra Silva
+F. Mayer
+T. Sandgren
+(2) A. Murray
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1) R. Nadal
+D. Lajovic
+T. Daniel
+T. Paul
+Y. Sugita
+G. Blancaneaux
+Q
+(26) R. Gasquet
+(22) F. Fognini
+Q
+V. Troicki
+N. Gombos
+J. Struff
+A. Dolgopolov
+R. Harrison
+(15) T. Berdych
+(9) D. Goffin
+J. Benneteau
+S. Darcis
+G. Pella
+Q
+D. Young
+J. Chardy
+(18) G. Monfils
+(27) P. Cuevas
+D. Dzumhur
+Q
+N. Kicker
+A. Bedene
+A. Rublev
+Q
+(7) G. Dimitrov
+(3) R. Federer
+F. Tiafoe
+B. Kavcic
+M. Youzhny
+F. Verdasco
+V. Pospisil
+A. Kuznetsov
+(31) F. Lopez
+(17) S. Querrey
+Q
+Q
+S. Giraldo
+M. Jaziri
+T. Monteiro
+J. Millman
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+A. Seppi
+D. Brown
+T. Bellucci
+P. Kypson
+Q
+H. Laaksonen
+(24) J. del Potro
+(30) A. Mannarino
+R. Berkanis
+B. Fratangelo
+I. Karlovic
+M. Baghdatis
+T. Fritz
+A. de Minaur
+(6) D. Thiem
+(5) M. Cilic
+G. Simon
+C. Eubanks
+D. Sela
+Q
+E.Escobedo
+Y. Lu
+(25) K. Khachanov
+(23) M. Zverev
+T. Kwiatowski
+P. Kohlschreiber
+B. Paire
+H. Zeballos
+H. Chung
+P. Herbert
+(10) J. Isner
+(13) J. Sock
+J. Thompson
+Q
+T. Fabbiano
+J. Sousa
+P. Lorenzi
+B. Tomic
+(19) G. Muller
+(28) K. Anderson
+Q
+A. Giannessi
+E. Gulbis
+J. Vesely
+B. Coric
+Q
+(4) A. Zverev
+(8) J. Tsonga
+M. Copil
+Q
+D. Medvedev
+N. Almagro
+S. Johnson
+K. Edmund
+(32) R. Haase
+(20) A. Ramos-Vinolas
+D. Istomin
+M. Fucsovics
+Q
+D. Tursunov
+Q
+Q
+(12) P. Carreno Busta
+(16) L. Pouille
+R. Bemelmans
+J. Donalson
+N. Basilashvili
+A. Haider-Maurer
+E. Donskoy
+Q
+(21) D. Ferrer
+(29) D. Schwartzman
+C. Berlocq
+T. Kokkinakis
+J. Tipsarevic
+R. Dutra Silva
+F. Mayer
+T. Sandgren
+(2) A. Murray
 Cincinnati  64  0  127  2
 Mierzo
 (4) Alexander Zverev
@@ -255,8 +767,8 @@ Diego Schwartzman
 Karen Khachanov
 BYE
 (LL) Thomas Fabbiano
-
-
+(7) Grigor Dimitrov
+    Nick Kyrgios
 (7) Grigor Dimitrov
     Nick Kyrgios
     David Ferrer
