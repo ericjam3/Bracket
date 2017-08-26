@@ -280,23 +280,23 @@ Mierzo
 (24) J. del Potro
 (30) A. Mannarino
 (25) K. Khachanov
-(23) M. Zverev
+    H. Chung
 (13) J. Sock
 (4) A. Zverev
-    S. Johnson
+    D. Medvedev
 (12) P. Carreno Busta
 (21) D. Ferrer
 (5) M. Cilic
 (1) R. Nadal
-(26) R. Gasquet
+    Y. Sugita
 (22) F. Fognini
 (15) T. Berdych
 (9) D. Goffin
 (18) G. Monfils
-    N. Kicker
+    D. Dzumhur
 (7) G. Dimitrov
 (3) R. Federer
-    F. Verdasco
+(31) F. Lopez
     T. Smyczek
 (14) N. Kyrgios
 (11 ) R. Bautista Agut
@@ -312,7 +312,7 @@ Mierzo
 (28) K. Anderson
 (4) A. Zverev
     D. Medvedev
-    S. Johnson
+    K. Edmund
 (20) A. Ramos-Vinolas
 (12) P. Carreno Busta
     J. Donaldson
@@ -331,7 +331,7 @@ Mierzo
     S. Darcis
     D. Young
 (18) G. Monfils
-(27) P. Cuevas
+    D. Dzumhur
     N. Kicker
     A. Rublev
 (7) G. Dimitrov
