@@ -579,6 +579,7 @@ class Bracket_Home(tk.Frame):
 
         leaderboard = {}
         backup = {}
+        # Just in case there are no picks to present (don't want it to bomb out)
         noPicks = 1
         for pick in self.controller.brackets[name]["entries"]:
             noPicks = 0
@@ -595,6 +596,27 @@ class Bracket_Home(tk.Frame):
                     score += points
             leaderboard[pick] = score
             backup[pick] = score
+
+        pprs = {}
+        for pick in self.controller.brackets[name]["entries"]:
+            wrongo = {}
+            ppr = 0
+            points = 10
+            next = (self.controller.brackets[name]["numTeams"] / 2) - 1
+            for i in range(self.controller.brackets[name]["numTeams"] - 1, 0, -1):
+                if i == next:
+                    points *= 2
+                    next = (next - 1) / 2
+                if (self.controller.brackets[name]["entries"][pick][i].get() !=
+                        self.controller.brackets[name]["actual"][i].get() and
+                        self.controller.brackets[name]["actual"][i].get() != ""):
+                    wrongo[self.controller.brackets[name]["entries"][pick][i].get()] = 1
+                elif self.controller.brackets[name]["actual"][i].get() == "" and (
+                        self.controller.brackets[name]["entries"][pick][i].get() not in wrongo):
+                    ppr += points
+
+            pprs[pick] = ppr
+
         if (noPicks == 0):
             self.brackets = []
             for i in range(len(backup)):
@@ -611,6 +633,7 @@ class Bracket_Home(tk.Frame):
             if self.controller.brackets[name]["edit"] == 0:
                 Label(self, text="SCORE:").grid(row=2, column=2, padx=10)
                 Label(self, text="RANK:").grid(row=2, column=0, sticky="E")
+                Label(self, text="PPR:").grid(row=2, column=3, padx=10)
             rank = 1
             for i in range(len(self.brackets)):
                 label = Label(self, text=self.brackets[i], foreground="blue")
@@ -619,7 +642,8 @@ class Bracket_Home(tk.Frame):
                     if i != 0 and (backup[self.brackets[i]] != backup[self.brackets[i-1]]):
                         rank = i + 1
 
-                    Label(self, text=str(rank) + "    ").grid(row = i + 3, column=0, sticky="E")
+                    Label(self, text=str(rank) + "    ").grid(row=i+3, column=0, sticky="E")
+                    Label(self, text=str(pprs[self.brackets[i]])).grid(row=i+3, column=3)
                     label.bind("<Button-1>", self.view_button)
                 else:
                     label.bind("<Button-1>", self.make_button)
