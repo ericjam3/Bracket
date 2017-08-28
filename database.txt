@@ -1,4 +1,260 @@
-United States Open  128  0  255  5
+United States Open  128  0  255  6
+Kathleen A.
+(1) R. Nadal
+(1) R. Nadal
+(4) A. Zverev
+(1) R. Nadal
+(3) R. Federer
+(4) A. Zverev
+(8) J. Tsonga
+(1) R. Nadal
+(7) G. Dimitrov
+(3) R. Federer
+(6) D. Thiem
+(10) J. Isner
+(4) A. Zverev
+(8) J. Tsonga
+    T. Sandgren
+(1) R. Nadal
+(15) T. Berdych
+(9) D. Goffin
+(7) G. Dimitrov
+(3) R. Federer
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+(6) D. Thiem
+(17) Querrey
+(10) J. Isner
+(13) J. Sock
+(4) A. Zverev
+(8) J. Tsonga
+(12) P. Carreno Busta
+(21) D. Ferrer
+    T. Sandgren
+(1) R. Nadal
+    Y. Sugita
+(22) F. Fognini
+(15) T. Berdych
+(9) D. Goffin
+(18) G. Monfils
+(27) P. Cuevas
+(7) G. Dimitrov
+(3) R. Federer
+    A. Kuznetsov
+    T. Smyczek
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+    A. Menendez-Maceiras
+    I. Karlovic
+(6) D. Thiem
+(17) Querrey
+(25) K. Khachanov
+(23) M. Zverev
+(10) J. Isner
+(13) J. Sock
+(19) G. Muller
+(28) K. Anderson
+(4) A. Zverev
+(8) J. Tsonga
+    K. Edmund
+(20) A. Ramos-Vinolas
+(12) P. Carreno Busta
+(16) L. Pouille
+(21) D. Ferrer
+    J. Tipsarevic
+    T. Sandgren
+(1) R. Nadal
+    T. Paul
+    Y. Sugita
+    L. Mayer
+(22) F. Fognini
+    N. Gombos
+    A. Dolgopolov
+(15) T. Berdych
+(9) D. Goffin
+    S. Darcis
+    D. Young
+(18) G. Monfils
+(27) P. Cuevas
+    C. M. Stebe
+    A. Rublev
+(7) G. Dimitrov
+(3) R. Federer
+    B. Kavcic
+    F. Verdasco
+    A. Kuznetsov
+    T. Smyczek
+    V. Millot
+    M. Jaziri
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+    D. Brown
+    A. Menendez-Maceiras
+    H. Laaksonen
+(30) A. Mannarino
+    I. Karlovic
+    M. Baghdatis
+(6) D. Thiem
+(17) Querrey
+    D. Sela
+    E.Escobedo
+(25) K. Khachanov
+(23) M. Zverev
+    B. Paire
+    H. Chung
+(10) J. Isner
+(13) J. Sock
+    T. Fabbiano
+    J. Sousa
+(19) G. Muller
+(28) K. Anderson
+    A. Giannessi
+    J. Vesely
+(4) A. Zverev
+(8) J. Tsonga
+    D. Shapovalov
+    S. Johnson
+    K. Edmund
+(20) A. Ramos-Vinolas
+    N. Mahut
+    D. Tursunov
+(12) P. Carreno Busta
+(16) L. Pouille
+    N. Basilashvili
+    E. Donskoy
+(21) D. Ferrer
+(29) D. Schwartzman
+    J. Tipsarevic
+    R. Dutra Silva
+    T. Sandgren
+(1) R. Nadal
+D. Lajovic
+T. Daniel
+T. Paul
+Y. Sugita
+G. Blancaneaux
+L. Mayer
+(26) R. Gasquet
+(22) F. Fognini
+S. Travaglia
+V. Troicki
+N. Gombos
+J. Struff
+A. Dolgopolov
+R. Harrison
+(15) T. Berdych
+(9) D. Goffin
+J. Benneteau
+S. Darcis
+G. Pella
+M. Marterer
+D. Young
+J. Chardy
+(18) G. Monfils
+(27) P. Cuevas
+D. Dzumhur
+C. M. Stebe
+N. Kicker
+A. Bedene
+A. Rublev
+V. Safranek
+(7) G. Dimitrov
+(3) R. Federer
+F. Tiafoe
+B. Kavcic
+M. Youzhny
+F. Verdasco
+V. Pospisil
+A. Kuznetsov
+(31) F. Lopez
+(33) P. Kohlschreiber
+T. Smyczek
+V. Millot
+S. Giraldo
+M. Jaziri
+T. Monteiro
+J. Millman
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+A. Seppi
+D. Brown
+T. Bellucci
+P. Kypson
+A. Menendez-Maceiras
+H. Laaksonen
+(24) J. del Potro
+(30) A. Mannarino
+R. Berankis
+B. Fratangelo
+I. Karlovic
+M. Baghdatis
+T. Fritz
+A. de Minaur
+(6) D. Thiem
+(17) Querrey
+G. Simon
+C. Eubanks
+D. Sela
+R. Albot
+E.Escobedo
+Y. Lu
+(25) K. Khachanov
+(23) M. Zverev
+T. Kwiatowski
+L. Lacko
+B. Paire
+H. Zeballos
+H. Chung
+P. Herbert
+(10) J. Isner
+(13) J. Sock
+J. Thompson
+J.P. Smith
+T. Fabbiano
+J. Sousa
+P. Lorenzi
+B. Tomic
+(19) G. Muller
+(28) K. Anderson
+J.C. Aragone
+A. Giannessi
+E. Gulbis
+J. Vesely
+B. Coric
+D. King
+(4) A. Zverev
+(8) J. Tsonga
+M. Copil
+D. Shapovalov
+D. Medvedev
+N. Almagro
+S. Johnson
+K. Edmund
+(32) R. Haase
+(20) A. Ramos-Vinolas
+D. Istomin
+M. Fucsovics
+N. Mahut
+D. Tursunov
+C. Norrie
+E. King
+(12) P. Carreno Busta
+(16) L. Pouille
+R. Bemelmans
+J. Donaldson
+N. Basilashvili
+A. Haider-Maurer
+E. Donskoy
+M. Kukushkin
+(21) D. Ferrer
+(29) D. Schwartzman
+C. Berlocq
+T. Kokkinakis
+J. Tipsarevic
+R. Dutra Silva
+F. Mayer
+T. Sandgren
+(5) M. Cilic
 Robby
 (3) R. Federer
 (3) R. Federer
@@ -511,262 +767,6 @@ R. Dutra Silva
 F. Mayer
 T. Sandgren
 (5) M. Cilic
-Mierzo
-(3) R. Federer
-(3) R. Federer
-(4) A. Zverev
-(1) R. Nadal
-(3) R. Federer
-(4) A. Zverev
-(21) D. Ferrer
-(1) R. Nadal
-(7) G. Dimitrov
-(3) R. Federer
-(24) J. del Potro
-(25) K. Khachanov
-(4) A. Zverev
-(12) P. Carreno Busta
-(21) D. Ferrer
-(1) R. Nadal
-(22) F. Fognini
-(18) G. Monfils
-(7) G. Dimitrov
-(3) R. Federer
-(14) N. Kyrgios
-(24) J. del Potro
-(30) A. Mannarino
-(25) K. Khachanov
-    H. Chung
-(13) J. Sock
-(4) A. Zverev
-    D. Medvedev
-(12) P. Carreno Busta
-(21) D. Ferrer
-(5) M. Cilic
-(1) R. Nadal
-    Y. Sugita
-(22) F. Fognini
-(15) T. Berdych
-(9) D. Goffin
-(18) G. Monfils
-    D. Dzumhur
-(7) G. Dimitrov
-(3) R. Federer
-(31) F. Lopez
-    T. Smyczek
-(14) N. Kyrgios
-(11 ) R. Bautista Agut
-(24) J. del Potro
-(30) A. Mannarino
-(6) D. Thiem
-(17) Querrey
-(25) K. Khachanov
-(23) M. Zverev
-    H. Chung
-(13) J. Sock
-(19) G. Muller
-(28) K. Anderson
-(4) A. Zverev
-    D. Medvedev
-    K. Edmund
-(20) A. Ramos-Vinolas
-(12) P. Carreno Busta
-    J. Donaldson
-(21) D. Ferrer
-(29) D. Schwartzman
-(5) M. Cilic
-(1) R. Nadal
-    T. Paul
-    Y. Sugita
-(26) R. Gasquet
-(22) F. Fognini
-    V. Troicki
-    A. Dolgopolov
-(15) T. Berdych
-(9) D. Goffin
-    S. Darcis
-    D. Young
-(18) G. Monfils
-    D. Dzumhur
-    N. Kicker
-    A. Rublev
-(7) G. Dimitrov
-(3) R. Federer
-    M. Youzhny
-    F. Verdasco
-(31) F. Lopez
-    T. Smyczek
-    S. Giraldo
-    T. Monteiro
-(14) N. Kyrgios
-(11 ) R. Bautista Agut
-    D. Brown
-    P. Kypson
-(24) J. del Potro
-(30) A. Mannarino
-    I. Karlovic
-    T. Fritz
-(6) D. Thiem
-(17) Querrey
-    D. Sela
-    E.Escobedo
-(25) K. Khachanov
-(23) M. Zverev
-    B. Paire
-    H. Chung
-(10) J. Isner
-(13) J. Sock
-    T. Fabbiano
-    J. Sousa
-(19) G. Muller
-(28) K. Anderson
-    E. Gulbis
-    B. Coric
-(4) A. Zverev
-(8) J. Tsonga
-    D. Medvedev
-    S. Johnson
-    K. Edmund
-(20) A. Ramos-Vinolas
-    N. Mahut
-    D. Tursunov
-(12) P. Carreno Busta
-(16) L. Pouille
-    J. Donaldson
-    A. Haider-Maurer
-(21) D. Ferrer
-(29) D. Schwartzman
-    T. Kokkinakis
-    R. Dutra Silva
-(5) M. Cilic
-(1) R. Nadal
-D. Lajovic
-T. Daniel
-T. Paul
-Y. Sugita
-G. Blancaneaux
-L. Mayer
-(26) R. Gasquet
-(22) F. Fognini
-S. Travaglia
-V. Troicki
-N. Gombos
-J. Struff
-A. Dolgopolov
-R. Harrison
-(15) T. Berdych
-(9) D. Goffin
-J. Benneteau
-S. Darcis
-G. Pella
-M. Marterer
-D. Young
-J. Chardy
-(18) G. Monfils
-(27) P. Cuevas
-D. Dzumhur
-C. M. Stebe
-N. Kicker
-A. Bedene
-A. Rublev
-V. Safranek
-(7) G. Dimitrov
-(3) R. Federer
-F. Tiafoe
-B. Kavcic
-M. Youzhny
-F. Verdasco
-V. Pospisil
-A. Kuznetsov
-(31) F. Lopez
-(33) P. Kohlschreiber
-T. Smyczek
-V. Millot
-S. Giraldo
-M. Jaziri
-T. Monteiro
-J. Millman
-(14) N. Kyrgios
-(11 ) R. Bautista Agut
-A. Seppi
-D. Brown
-T. Bellucci
-P. Kypson
-A. Menendez-Maceiras
-H. Laaksonen
-(24) J. del Potro
-(30) A. Mannarino
-R. Berankis
-B. Fratangelo
-I. Karlovic
-M. Baghdatis
-T. Fritz
-A. de Minaur
-(6) D. Thiem
-(17) Querrey
-G. Simon
-C. Eubanks
-D. Sela
-R. Albot
-E.Escobedo
-Y. Lu
-(25) K. Khachanov
-(23) M. Zverev
-T. Kwiatowski
-L. Lacko
-B. Paire
-H. Zeballos
-H. Chung
-P. Herbert
-(10) J. Isner
-(13) J. Sock
-J. Thompson
-J.P. Smith
-T. Fabbiano
-J. Sousa
-P. Lorenzi
-B. Tomic
-(19) G. Muller
-(28) K. Anderson
-J.C. Aragone
-A. Giannessi
-E. Gulbis
-J. Vesely
-B. Coric
-D. King
-(4) A. Zverev
-(8) J. Tsonga
-M. Copil
-D. Shapovalov
-D. Medvedev
-N. Almagro
-S. Johnson
-K. Edmund
-(32) R. Haase
-(20) A. Ramos-Vinolas
-D. Istomin
-M. Fucsovics
-N. Mahut
-D. Tursunov
-C. Norrie
-E. King
-(12) P. Carreno Busta
-(16) L. Pouille
-R. Bemelmans
-J. Donaldson
-N. Basilashvili
-A. Haider-Maurer
-E. Donskoy
-M. Kukushkin
-(21) D. Ferrer
-(29) D. Schwartzman
-C. Berlocq
-T. Kokkinakis
-J. Tipsarevic
-R. Dutra Silva
-F. Mayer
-T. Sandgren
-(5) M. Cilic
 Hench
 (3) R. Federer
 (3) R. Federer
@@ -1150,6 +1150,262 @@ Joyce
 (29) D. Schwartzman
     T. Kokkinakis
     F. Mayer
+(5) M. Cilic
+(1) R. Nadal
+D. Lajovic
+T. Daniel
+T. Paul
+Y. Sugita
+G. Blancaneaux
+L. Mayer
+(26) R. Gasquet
+(22) F. Fognini
+S. Travaglia
+V. Troicki
+N. Gombos
+J. Struff
+A. Dolgopolov
+R. Harrison
+(15) T. Berdych
+(9) D. Goffin
+J. Benneteau
+S. Darcis
+G. Pella
+M. Marterer
+D. Young
+J. Chardy
+(18) G. Monfils
+(27) P. Cuevas
+D. Dzumhur
+C. M. Stebe
+N. Kicker
+A. Bedene
+A. Rublev
+V. Safranek
+(7) G. Dimitrov
+(3) R. Federer
+F. Tiafoe
+B. Kavcic
+M. Youzhny
+F. Verdasco
+V. Pospisil
+A. Kuznetsov
+(31) F. Lopez
+(33) P. Kohlschreiber
+T. Smyczek
+V. Millot
+S. Giraldo
+M. Jaziri
+T. Monteiro
+J. Millman
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+A. Seppi
+D. Brown
+T. Bellucci
+P. Kypson
+A. Menendez-Maceiras
+H. Laaksonen
+(24) J. del Potro
+(30) A. Mannarino
+R. Berankis
+B. Fratangelo
+I. Karlovic
+M. Baghdatis
+T. Fritz
+A. de Minaur
+(6) D. Thiem
+(17) Querrey
+G. Simon
+C. Eubanks
+D. Sela
+R. Albot
+E.Escobedo
+Y. Lu
+(25) K. Khachanov
+(23) M. Zverev
+T. Kwiatowski
+L. Lacko
+B. Paire
+H. Zeballos
+H. Chung
+P. Herbert
+(10) J. Isner
+(13) J. Sock
+J. Thompson
+J.P. Smith
+T. Fabbiano
+J. Sousa
+P. Lorenzi
+B. Tomic
+(19) G. Muller
+(28) K. Anderson
+J.C. Aragone
+A. Giannessi
+E. Gulbis
+J. Vesely
+B. Coric
+D. King
+(4) A. Zverev
+(8) J. Tsonga
+M. Copil
+D. Shapovalov
+D. Medvedev
+N. Almagro
+S. Johnson
+K. Edmund
+(32) R. Haase
+(20) A. Ramos-Vinolas
+D. Istomin
+M. Fucsovics
+N. Mahut
+D. Tursunov
+C. Norrie
+E. King
+(12) P. Carreno Busta
+(16) L. Pouille
+R. Bemelmans
+J. Donaldson
+N. Basilashvili
+A. Haider-Maurer
+E. Donskoy
+M. Kukushkin
+(21) D. Ferrer
+(29) D. Schwartzman
+C. Berlocq
+T. Kokkinakis
+J. Tipsarevic
+R. Dutra Silva
+F. Mayer
+T. Sandgren
+(5) M. Cilic
+Mierzo
+(3) R. Federer
+(3) R. Federer
+(4) A. Zverev
+(1) R. Nadal
+(3) R. Federer
+(4) A. Zverev
+(21) D. Ferrer
+(1) R. Nadal
+(7) G. Dimitrov
+(3) R. Federer
+(24) J. del Potro
+(25) K. Khachanov
+(4) A. Zverev
+(12) P. Carreno Busta
+(21) D. Ferrer
+(1) R. Nadal
+(22) F. Fognini
+(18) G. Monfils
+(7) G. Dimitrov
+(3) R. Federer
+(14) N. Kyrgios
+(24) J. del Potro
+(30) A. Mannarino
+(25) K. Khachanov
+    H. Chung
+(13) J. Sock
+(4) A. Zverev
+    D. Medvedev
+(12) P. Carreno Busta
+(21) D. Ferrer
+(5) M. Cilic
+(1) R. Nadal
+    Y. Sugita
+(22) F. Fognini
+(15) T. Berdych
+(9) D. Goffin
+(18) G. Monfils
+    D. Dzumhur
+(7) G. Dimitrov
+(3) R. Federer
+(31) F. Lopez
+    T. Smyczek
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+(24) J. del Potro
+(30) A. Mannarino
+(6) D. Thiem
+(17) Querrey
+(25) K. Khachanov
+(23) M. Zverev
+    H. Chung
+(13) J. Sock
+(19) G. Muller
+(28) K. Anderson
+(4) A. Zverev
+    D. Medvedev
+    K. Edmund
+(20) A. Ramos-Vinolas
+(12) P. Carreno Busta
+    J. Donaldson
+(21) D. Ferrer
+(29) D. Schwartzman
+(5) M. Cilic
+(1) R. Nadal
+    T. Paul
+    Y. Sugita
+(26) R. Gasquet
+(22) F. Fognini
+    V. Troicki
+    A. Dolgopolov
+(15) T. Berdych
+(9) D. Goffin
+    S. Darcis
+    D. Young
+(18) G. Monfils
+    D. Dzumhur
+    N. Kicker
+    A. Rublev
+(7) G. Dimitrov
+(3) R. Federer
+    M. Youzhny
+    F. Verdasco
+(31) F. Lopez
+    T. Smyczek
+    S. Giraldo
+    T. Monteiro
+(14) N. Kyrgios
+(11 ) R. Bautista Agut
+    D. Brown
+    P. Kypson
+(24) J. del Potro
+(30) A. Mannarino
+    I. Karlovic
+    T. Fritz
+(6) D. Thiem
+(17) Querrey
+    D. Sela
+    E.Escobedo
+(25) K. Khachanov
+(23) M. Zverev
+    B. Paire
+    H. Chung
+(10) J. Isner
+(13) J. Sock
+    T. Fabbiano
+    J. Sousa
+(19) G. Muller
+(28) K. Anderson
+    E. Gulbis
+    B. Coric
+(4) A. Zverev
+(8) J. Tsonga
+    D. Medvedev
+    S. Johnson
+    K. Edmund
+(20) A. Ramos-Vinolas
+    N. Mahut
+    D. Tursunov
+(12) P. Carreno Busta
+(16) L. Pouille
+    J. Donaldson
+    A. Haider-Maurer
+(21) D. Ferrer
+(29) D. Schwartzman
+    T. Kokkinakis
+    R. Dutra Silva
 (5) M. Cilic
 (1) R. Nadal
 D. Lajovic
