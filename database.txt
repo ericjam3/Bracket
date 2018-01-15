@@ -511,7 +511,7 @@ Kwon, Soonwoo (KOR)
 Struff, Jan-Lennard (GER)
 Bedene, Aljaz (SLO)
 [2] Federer, Roger (SUI)
-Alex Jewell
+Ben Hill
 
 
 
@@ -1791,7 +1791,7 @@ Kwon, Soonwoo (KOR)
 Struff, Jan-Lennard (GER)
 Bedene, Aljaz (SLO)
 [2] Federer, Roger (SUI)
-Ben Hill
+Alex Jewell
 
 
 
@@ -2048,133 +2048,133 @@ Struff, Jan-Lennard (GER)
 Bedene, Aljaz (SLO)
 [2] Federer, Roger (SUI)
 Eric Mier
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[2] Federer, Roger (SUI)
+[3] Dimitrov, Grigor (BUL)
+[2] Federer, Roger (SUI)
+[1] Nadal, Rafel (ESP)
+[3] Dimitrov, Grigor (BUL)
+[4] Zverev, Alexader (GER)
+[2] Federer, Roger (SUI)
+[1] Nadal, Rafel (ESP)
+[10] Carreno Busta, Pablo (ESP)
+[3] Dimitrov, Grigor (BUL)
+[8] Sock, Jack (USA)
+[5] Thiem, Dominic (AUT)
+[4] Zverev, Alexader (GER)
+[12] del Potro, Juan Martin (ARG)
+[2] Federer, Roger (SUI)
+[1] Nadal, Rafel (ESP)
+[24] Schwartzman, Diego (ARG)
+[10] Carreno Busta, Pablo (ESP)
+[6] Cilic, Marin (CRO)
+[3] Dimitrov, Grigor (BUL)
+[17] Kyrgios, Nick (AUS)
+[18] Pouille, Lucas (FRA)
+[8] Sock, Jack (USA)
+[5] Thiem, Dominic (AUT)
+[20] Bautista Agut, Roberto (ESP)
+    Donaldson, Jarod (USA)
+[4] Zverev, Alexader (GER)
+[7] Goffin, David (BEL)
+[12] del Potro, Juan Martin (ARG)
+[13] Querrey, Sam (USA)
+[2] Federer, Roger (SUI)
+[1] Nadal, Rafel (ESP)
+    Coric, Borna (CRO)
+[24] Schwartzman, Diego (ARG)
+    Dolgopolov, Alexandr (UKR)
+[10] Carreno Busta, Pablo (ESP)
+[23] Muller, Gilles (LUX)
+    Harrison, Ryan (USA)
+[6] Cilic, Marin (CRO)
+[3] Dimitrov, Grigor (BUL)
+    Ferrer, David (ESP)
+[17] Kyrgios, Nick (AUS)
+    Shapovalov, Dennis (CAN)
+[11] Anderson, Kevin (RSA)
+[18] Pouille, Lucas (FRA)
+    Seppi, Andreas (ITA)
+[8] Sock, Jack (USA)
+[5] Thiem, Dominic (AUT)
+[26] Mannarino, Adrian (FRA)
+[20] Bautista Agut, Roberto (ESP)
+[9] Wawrinka, Stan (SUI)
+    Monfils, Gael (FRA)
+    Donaldson, Jarod (USA)
+[32] Zverev, Mischa (GER)
+[4] Zverev, Alexader (GER)
+[7] Goffin, David (BEL)
+[25] Fognini, Fabio (ITA)
+[19] Berdych, Thomas (CZE)
+[12] del Potro, Juan Martin (ARG)
+[13] Querrey, Sam (USA)
+[22] Raonic, Milos (CAN)
+[29] Gasquet, Richard (FRA)
+[2] Federer, Roger (SUI)
+[1] Nadal, Rafel (ESP)
+    Mayer, Leonardo (ARG)
+    Coric, Borna (CRO)
+[28] Dzumhur, Damir (BIH)
+[24] Schwartzman, Diego (ARG)
+    Hayls, Quentin (FRA)
+    Dolgopolov, Alexandr (UKR)
+[16] Isner, John (USA)
+[10] Carreno Busta, Pablo (ESP)
+    Simon, Gilles (FRA)
+    Jaziri, Malek (TUN)
+[23] Muller, Gilles (LUX)
+[31] Cuevas, Pablo (URU)
+    Harrison, Ryan (USA)
+    Brown, Dustin (GER)
+[6] Cilic, Marin (CRO)
+[3] Dimitrov, Grigor (BUL)
+    McDonald, Mackenzie (USA)
+    Bhambri, Yuki (IND)
+    Ferrer, David (ESP)
+[17] Kyrgios, Nick (AUS)
+    Troicki, Victor (SRB)
+    Shapovalov, Dennis (CAN)
+[15] Tsonga, Jo-Wilfried (FRA)
+[11] Anderson, Kevin (RSA)
+    Herbert, Pierre Hughes (FRA)
+    Basilashvili, Nikoloz (GEO)
+[18] Pouille, Lucas (FRA)
+[27] Kohlschreiber, Philip (27)
+    Seppi, Andreas (ITA)
+    Karlovic, Ivo (CRO)
+[8] Sock, Jack (USA)
+[5] Thiem, Dominic (AUT)
+    Johnson, Steve (USA)
+    Vesely, Jiri (CZE)
+[26] Mannarino, Adrian (FRA)
+[20] Bautista Agut, Roberto (ESP)
+    Marterer, Maximilian (GER)
+    Sandgren, Tennys (USA)
+[9] Wawrinka, Stan (SUI)
+[14] Djokovic, Novak (SRB)
+    Monfils, Gael (FRA)
+    Smyczek, Timothy (USA)
+    Donaldson, Jarod (USA)
+[32] Zverev, Mischa (GER)
+    Medvedev, Daniil (RUS)
+    Kukushkin, Mikhail (KAZ)
+[4] Zverev, Alexader (GER)
+[7] Goffin, David (BEL)
+    Daniel, Taro (JPN)
+    Donskoy, Evgeni (RUS)
+[25] Fognini, Fabio (ITA)
+[19] Berdych, Thomas (CZE)
+    Paire, Benoit (FRA)
+    Khachanov, Karen (RUS)
+[12] del Potro, Juan Martin (ARG)
+[13] Querrey, Sam (USA)
+    Fucsovics, Marton (HUN)
+    Thompson, Jordan (AUS)
+[22] Raonic, Milos (CAN)
+[29] Gasquet, Richard (FRA)
+    Sonego, Lorenzo (ITA)
+    Struff, Jan-Lennard (GER)
+[2] Federer, Roger (SUI)
 [1] Nadal, Rafel (ESP)
 Estrella Burgos, Victor (DOM)
 Jarry, Nicolas (CHI)
