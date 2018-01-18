@@ -1,4 +1,4 @@
-Australian Open 2018  128  0  255  9
+Australian Open 2018  128  0  255  8
 Jonathan Hentschel
 [2] Federer, Roger (SUI)
 [3] Dimitrov, Grigor (BUL)
@@ -127,262 +127,6 @@ Jonathan Hentschel
     Sonego, Lorenzo (ITA)
     Struff, Jan-Lennard (GER)
 [2] Federer, Roger (SUI)
-[1] Nadal, Rafel (ESP)
-Estrella Burgos, Victor (DOM)
-Jarry, Nicolas (CHI)
-Mayer, Leonardo (ARG)
-Millman, Jon (AUS)
-Coric, Borna (CRO)
-Lorenzi, Paolo (ITA)
-[28] Dzumhur, Damir (BIH)
-[24] Schwartzman, Diego (ARG)
-Lajovic, Dusan (SRB)
-Ruud, Casper (NOR)
-Hayls, Quentin (FRA)
-Dolgopolov, Alexandr (UKR)
-Haider-Maurer, Andreas (AUT)
-Ebden, Matthew (AUS)
-[16] Isner, John (USA)
-[10] Carreno Busta, Pablo (ESP)
-Kluber, Jason (AUS)
-Simon, Gilles (FRA)
-Copil, Marius (ROU)
-Caruso, Salvatore (ITA)
-Jaziri, Malek (TUN)
-Delbonis, Federico (ARG)
-[23] Muller, Gilles (LUX)
-[31] Cuevas, Pablo (URU)
-Youzhny, Mikhail (RUS)
-Sela, Dudi (ISR)
-Harrison, Ryan (USA)
-Brown, Dustin (GER)
-Sousa, Jao (POR)
-Pospisil, Vasek (CAN)
-[6] Cilic, Marin (CRO)
-[3] Dimitrov, Grigor (BUL)
-Novak, Dennis (AUT)
-McDonald, Mackenzie (USA)
-Ymer, Elias (SWE)
-Baghdatis, Marcos (CYP)
-Bhambri, Yuki (IND)
-Ferrer, David (ESP)
-[30] Rublev, Andrey (RUS)
-[17] Kyrgios, Nick (AUS)
-Dutra Silva, Rogerio (BRA)
-Troicki, Victor (SRB)
-Bolt, Alex (AUS)
-Tsitsipas, Stefanos (GRE)
-Shapovalov, Dennis (CAN)
-King, Kevin (USA)
-[15] Tsonga, Jo-Wilfried (FRA)
-[11] Anderson, Kevin (RSA)
-Edmund, Kyle (GBR)
-Herbert, Pierre Hughes (FRA)
-Istomin, Dennis (UZB)
-Melzer, Gurgen (AUT)
-Basilashvili, Nikoloz (GEO)
-Bemelmans, Ruben (BEL)
-[18] Pouille, Lucas (FRA)
-[27] Kohlschreiber, Philip (27)
-Nishioka, Yoshihito (JPN)
-Seppi, Andreas (ITA)
-Moutet, Corentin (FRA)
-Karlovic, Ivo (CRO)
-Djere, Laslo (SRB)
-Sugita, Yuichi (JPN)
-[8] Sock, Jack (USA)
-[5] Thiem, Dominic (AUT)
-Pella, Guida (ARG)
-Johnson, Steve (USA)
-Kudla, Denis (USA)
-Safranek, Vadav (CZE)
-Vesely, Jiri (CZE)
-Berrettini, Matteo (ITA)
-[26] Mannarino, Adrian (FRA)
-[20] Bautista Agut, Roberto (ESP)
-Verdasco, Fernando (ESP)
-Stebe, Cedrik-Marcel (GER)
-Marterer, Maximilian (GER)
-Chardy, Jeremy (FRA)
-Sandgren, Tennys (USA)
-Berankis, Ricardis (LTU)
-[9] Wawrinka, Stan (SUI)
-[14] Djokovic, Novak (SRB)
-Young, Donald (USA)
-Monfils, Gael (FRA)
-Munar, Jaume (ESP)
-Smyczek, Timothy (USA)
-Popyrin, Alexei (AUS)
-Donaldson, Jarod (USA)
-[21] Ramos-Vinolas, Albert (ESP)
-[32] Zverev, Mischa (GER)
-Chung, Hyeon (KOR)
-Kokkinakis, Thanasi (AUS)
-Medvedev, Daniil (RUS)
-Kukushkin, Mikhail (KAZ)
-Gojowczyk, Peter (GER)
-Fabbiano, Thomas (ITA)
-[4] Zverev, Alexader (GER)
-[7] Goffin, David (BEL)
-Bachinger, Matthias (GER)
-Benneteau, Julian (FRA)
-Daniel, Taro (JPN)
-Donskoy, Evgeni (RUS)
-Mayer, Florian (GER)
-Zeballos, Horatio (ARG)
-[25] Fognini, Fabio (ITA)
-[19] Berdych, Thomas (CZE)
-de Minaur, Alex (AUS)
-Garcia-Lopez, Guillermo (ESP)
-Paire, Benoit (FRA)
-Khachanov, Karen (RUS)
-Polansky, Peter (CAN)
-Tiafoe, Frances (USA)
-[12] del Potro, Juan Martin (ARG)
-[13] Querrey, Sam (USA)
-Lopez, Feliciano (ESP)
-Albot, Radu (MDA)
-Fucsovics, Marton (HUN)
-Kicker, Nick (ARG)
-Thompson, Jordan (AUS)
-Lacko, Lukas (CRO)
-[22] Raonic, Milos (CAN)
-[29] Gasquet, Richard (FRA)
-Kavcic, Blaz (SLO)
-Sonego, Lorenzo (ITA)
-Haase, Robin (NED)
-Kwon, Soonwoo (KOR)
-Struff, Jan-Lennard (GER)
-Bedene, Aljaz (SLO)
-[2] Federer, Roger (SUI)
-Extra
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [1] Nadal, Rafel (ESP)
 Estrella Burgos, Victor (DOM)
 Jarry, Nicolas (CHI)
@@ -2350,22 +2094,22 @@ Bedene, Aljaz (SLO)
     Basilashvili, Nikoloz (GEO)
     Seppi, Andreas (ITA)
     Karlovic, Ivo (CRO)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[5] Thiem, Dominic (AUT)
+[26] Mannarino, Adrian (FRA)
+    Marterer, Maximilian (GER)
+    Sandgren, Tennys (USA)
+[14] Djokovic, Novak (SRB)
+[21] Ramos-Vinolas, Albert (ESP)
+    Chung, Hyeon (KOR)
+[4] Zverev, Alexader (GER)
+    Benneteau, Julian (FRA)
+[25] Fognini, Fabio (ITA)
+[19] Berdych, Thomas (CZE)
+[12] del Potro, Juan Martin (ARG)
+    Fucsovics, Marton (HUN)
+    Kicker, Nick (ARG)
+[29] Gasquet, Richard (FRA)
+[2] Federer, Roger (SUI)
 [1] Nadal, Rafel (ESP)
     Mayer, Leonardo (ARG)
     Millman, Jon (AUS)
@@ -2407,7 +2151,7 @@ Bedene, Aljaz (SLO)
     Sandgren, Tennys (USA)
 [9] Wawrinka, Stan (SUI)
 [14] Djokovic, Novak (SRB)
-    Munar, Jaume (ESP)
+    Monfils, Gael (FRA)
     Smyczek, Timothy (USA)
 [21] Ramos-Vinolas, Albert (ESP)
     Chung, Hyeon (KOR)
