@@ -2944,133 +2944,133 @@ BYE
 BYE
 French Open 2018  128  0  255  1
 Hench
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(1) R Nadal
+(1) R Nadal
+(7) D Thiem
+(1) R Nadal
+(18) F Fognini
+(10) P Carreno Busta
+(7) D Thiem
+(1) R Nadal
+(11) D Schwartzman
+(18) F Fognini
+(5) JM del Potro
+(10) P Carreno Busta
+(20) N Djokovic
+(7) D Thiem
+(2) A Zverev
+(1) R Nadal
+(24) D Shapavalov
+(11) D Schwartzman
+(6) K Anderson
+(3) M Cilic
+(18) F Fognini
+(17) T Berdych
+(5) JM del Potro
+(8) D Goffin
+(10) P Carreno Busta
+(20) N Djokovic
+(4) G Dimitrov
+(7) D Thiem
+(19) K Nishikori
+(23) S Wawrinka
+(2) A Zverev
+(1) R Nadal
+(27) R Gasquet
+(24) D Shapavalov
+(14) J Sock
+(11) D Schwartzman
+    B Coric
+(28) F Lopez
+(6) K Anderson
+(3) M Cilic
+(25) A Mannarino
+(18) F Fognini
+(16) K Edmund
+    Y Sugita
+(17) T Berdych
+(31) A Ramos Vinolas
+(5) JM del Potro
+(8) D Goffin
+(32) G Monfils
+    M Copil
+(10) P Carreno Busta
+(13) R Baustista Agut
+(20) N Djokovic
+(30) F Verdasco
+(4) G Dimitrov
+(7) D Thiem
+    E Gulbis
+(19) K Nishikori
+(12) S Querrey
+    C Norrie
+(23) S Wawrinka
+(26) D Dzumhur
+(2) A Zverev
+(1) R Nadal
+    J Sousa
+    M Youzhny
+(27) R Gasquet
+(24) D Shapavalov
+    R Harrison
+    Y Bhambri
+(14) J Sock
+(11) D Schwartzman
+    A Pavlasek
+    T Fabbiano
+    B Coric
+(28) F Lopez
+    F Mayer
+    P Cuevas
+(6) K Anderson
+(3) M Cilic
+    T Sandgren
+    E Donskoy
+(25) A Mannarino
+(18) F Fognini
+    D Sela
+    M Fucosovics
+(16) K Edmund
+(9) J Isner
+    Y Sugita
+    P-H Herbert
+(17) T Berdych
+(31) A Ramos Vinolas
+    J Thompson
+    L Mayer
+(5) JM del Potro
+(8) D Goffin
+    I Karlovic
+    M Klizan
+(32) G Monfils
+(21) N Kyrgios
+    M Copil
+    F Delbonis
+(10) P Carreno Busta
+(13) R Baustista Agut
+    S Giraldo
+    D Ferrer
+(20) N Djokovic
+(30) F Verdasco
+    G Andreozzi
+    J Donaldson
+(4) G Dimitrov
+(7) D Thiem
+    S Tsitsipas
+    M Berrettini
+    E Gulbis
+(19) K Nishikori
+    B Paire
+    N Basilashvilli
+(12) S Querrey
+(15) L Pouille
+    C Norrie
+    K Khachanov
+(23) S Wawrinka
+(26) D Dzumhur
+    R Albot
+    D Lajovic
+(2) A Zverev
 (1) R Nadal
 A Dolgopolov
 J Sousa
