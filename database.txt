@@ -254,6 +254,262 @@ Molleker, Rudolf
 Struff, Jan-Lennard
 BYE
 (2) Lucas Pouille
+Toronto 2018  64  0  127  1
+Hench
+(6) M. Cilic
+(6) M. Cilic
+    M. Raonic
+(6) M. Cilic
+(3) J.M. del Potro
+    M. Raonic
+(2) A. Zverev
+(1) R. Nadal
+(6) M. Cilic
+(3) J.M. del Potro
+(8) J. Isner
+    M. Raonic
+(4) K. Anderson
+(9) N. Djokovic
+(2) A. Zverev
+(1) R. Nadal
+    S. Wawrinka
+    S. Querrey
+(6) M. Cilic
+(3) J.M. del Potro
+    D. Shapovalov
+    K. Khachanov
+(8) J. Isner
+(5) G. Dimitrov
+    M. Raonic
+    I. Ivashka
+(4) K. Anderson
+    S. Tsitsipas
+(9) N. Djokovic
+    L. Pouille
+(2) A. Zverev
+(1) R. Nadal
+    B. Paire
+    J. Sousa
+    S. Wawrinka
+    K. Edmund
+    S. Querrey
+    B. Coric
+(6) M. Cilic
+(3) J.M. del Potro
+    K. Nishikori
+    D. Shapovalov
+(14) F. Fognini
+(12) P. Carreno Busta
+    K. Khachanov
+    A. Ramos-Vinolas
+(8) J. Isner
+(5) G. Dimitrov
+    F. Verdasco
+    F. Tiafoe
+    M. Raonic
+    R. Harrison
+    I. Ivashka
+    A. Rublev
+(4) K. Anderson
+(7) D. Thiem
+    S. Tsitsipas
+    P. Polansky
+(9) N. Djokovic
+    D. Medvedev
+    L. Pouille
+    B. Klahn
+(2) A. Zverev
+(1) R. Nadal
+Bye
+J. Donaldson
+B. Paire
+J. Sousa
+M. Fucsovics
+S. Wawrinka
+(16) N. Krygios
+(11) D. Schwartzman
+K. Edmund
+S. Querrey
+A. Mannarino
+V. Pospisil
+B. Coric
+Bye
+(6) M. Cilic
+(3) J.M. del Potro
+Bye
+K. Nishikori
+R. Haase
+J. Chardy
+D. Shapovalov
+S. Johnson
+(14) F. Fognini
+(12) P. Carreno Busta
+Y. Nishioka
+F. Krajinovic
+K. Khachanov
+A. Ramos-Vinolas
+P.H. Herbert
+Bye
+(8) J. Isner
+(5) G. Dimitrov
+Bye
+P. Gojowczyk
+F. Verdasco
+F. Tiafoe
+M. Cecchinato
+M. Raonic
+(10) D. Goffin
+M. McDonald
+R. Harrison
+Y. Sugita
+I. Ivashka
+E. Donskoy
+A. Rublev
+Bye
+(4) K. Anderson
+(7) D. Thiem
+Bye
+D. Dzumhur
+S. Tsitsipas
+P. Polansky
+M. Ebden
+M. Basic
+(9) N. Djokovic
+(13) J. Sock
+D. Medvedev
+F. Auger-Aliassime
+L. Pouille
+B. Klahn
+D. Ferrer
+Bye
+(2) A. Zverev
+
+
+
+
+
+
+
+(1) R. Nadal
+(6) M. Cilic
+    R. Haase
+    K. Khachanov
+(5) G. Dimitrov
+(4) K. Anderson
+    S. Tsitsipas
+(2) A. Zverev
+(1) R. Nadal
+    S. Wawrinka
+(11) D. Schwartzman
+(6) M. Cilic
+    R. Haase
+    D. Shapovalov
+    K. Khachanov
+(8) J. Isner
+(5) G. Dimitrov
+    F. Tiafoe
+    I. Ivashka
+(4) K. Anderson
+    S. Tsitsipas
+(9) N. Djokovic
+    D. Medvedev
+(2) A. Zverev
+(1) R. Nadal
+    B. Paire
+    M. Fucsovics
+    S. Wawrinka
+(11) D. Schwartzman
+    S. Querrey
+    B. Coric
+(6) M. Cilic
+(3) J.M. del Potro
+    R. Haase
+    D. Shapovalov
+(14) F. Fognini
+(12) P. Carreno Busta
+    K. Khachanov
+    P.H. Herbert
+(8) J. Isner
+(5) G. Dimitrov
+    F. Verdasco
+    F. Tiafoe
+    M. Raonic
+    R. Harrison
+    I. Ivashka
+    E. Donskoy
+(4) K. Anderson
+(7) D. Thiem
+    S. Tsitsipas
+    P. Polansky
+(9) N. Djokovic
+    D. Medvedev
+    F. Auger-Aliassime
+    B. Klahn
+(2) A. Zverev
+(1) R. Nadal
+Bye
+J. Donaldson
+B. Paire
+J. Sousa
+M. Fucsovics
+S. Wawrinka
+(16) N. Krygios
+(11) D. Schwartzman
+K. Edmund
+S. Querrey
+A. Mannarino
+V. Pospisil
+B. Coric
+Bye
+(6) M. Cilic
+(3) J.M. del Potro
+Bye
+K. Nishikori
+R. Haase
+J. Chardy
+D. Shapovalov
+S. Johnson
+(14) F. Fognini
+(12) P. Carreno Busta
+Y. Nishioka
+F. Krajinovic
+K. Khachanov
+A. Ramos-Vinolas
+P.H. Herbert
+Bye
+(8) J. Isner
+(5) G. Dimitrov
+Bye
+P. Gojowczyk
+F. Verdasco
+F. Tiafoe
+M. Cecchinato
+M. Raonic
+(10) D. Goffin
+M. McDonald
+R. Harrison
+Y. Sugita
+I. Ivashka
+E. Donskoy
+A. Rublev
+Bye
+(4) K. Anderson
+(7) D. Thiem
+Bye
+D. Dzumhur
+S. Tsitsipas
+P. Polansky
+M. Ebden
+M. Basic
+(9) N. Djokovic
+(13) J. Sock
+D. Medvedev
+F. Auger-Aliassime
+L. Pouille
+B. Klahn
+D. Ferrer
+Bye
+(2) A. Zverev
 Halle  32  0  63  1
 Hench
 (1) Federer, Roger
@@ -3198,6 +3454,390 @@ BYE
 BYE
 BYE
 BYE
+U.S. Open 2018  128  1  255  0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1) Rafael Nadal
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+(2) Roger Federer
+Cincinnati 2018  64  1  127  0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1) Rafael Nadal
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+BYE
+(2) Roger Federer
 French Open 2018  128  0  255  1
 Hench
 (1) R Nadal
@@ -5503,21 +6143,21 @@ V. Pospisil
 M. Kukushkin
 D. Sela
 R. Nadal (2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    N. Djokovic (12)
+    K. Anderson (8)
+    N. Djokovic (12)
+    K. Anderson (8)
+    J. Isner (9)
+    N. Djokovic (12)
+    R. Nadal (2)
+    R. Federer (1)
+    K. Anderson (8)
+    M. Raonic (13)
+    J. Isner (9)
+    N. Djokovic (12)
+    K. Nishikori (24)
+    J. del Potro (5)
+    R. Nadal (2)
     R. Federer (1)
     A. Mannarino (22)
     G. Monfils
