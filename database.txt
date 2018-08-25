@@ -3982,7 +3982,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -4038,7 +4038,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -4238,7 +4238,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -4294,7 +4294,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -4494,7 +4494,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -4550,7 +4550,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -4750,7 +4750,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -4806,7 +4806,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -5006,7 +5006,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -5062,7 +5062,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -5262,7 +5262,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -5318,7 +5318,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -5518,7 +5518,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -5574,7 +5574,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -5774,7 +5774,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -5830,7 +5830,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -5888,133 +5888,133 @@ Q
 Y. Nisioka
 (2) R. Federer
 Eric
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(1) R. Nadal
+(1) R. Nadal
+(6) N. Djokovic
+(1) R. Nadal
+(3) J. del Potro
+(7) M. Cilic
+(6) N. Djokovic
+(1) R. Nadal
+(5) K. Anderson
+(3) J. del Potro
+    S. Wawrinka
+(7) M. Cilic
+(13). D. Schwartzman
+(6) N. Djokovic
+(2) R. Federer
+(1) R. Nadal
+(16) K. Edmund
+(19) R. Bautista Agut
+(5) K. Anderson
+(3) J. del Potro
+(15) S. Tsitsipas
+(11) J. Isner
+    S. Wawrinka
+(7) M. Cilic
+(10) D. Goffin
+(13). D. Schwartzman
+(4) A. Zverev
+(6) N. Djokovic
+(12) P. Carreno Busta
+(23) H. Chung
+(2) R. Federer
+(1) R. Nadal
+(27) K. Khachanov
+(18) J. Sock
+(16) K. Edmund
+    S. Johnson
+(19) R. Bautista Agut
+(28) D. Shapovalov
+(5) K. Anderson
+(3) J. del Potro
+(31) F. Verdasco
+(20) B. Coric
+(15) S. Tsitsipas
+(11) J. Isner
+(24) D. Dzumhur
+(25) M. Raonic
+    S. Wawrinka
+(7) M. Cilic
+(29) A. Mannarino
+(22) M. Cecchinato
+(10) D. Goffin
+(13). D. Schwartzman
+    G. Monfils
+(32) F. Krajinovic
+(4) A. Zverev
+(6) N. Djokovic
+    Y. Sugita
+(17) L. Pouille
+(12) P. Carreno Busta
+(14) F. Fognini
+(23) H. Chung
+(30) N. Kyrgios
+(2) R. Federer
+(1) R. Nadal
+    V. Pospisil
+    G. Muller
+(27) K. Khachanov
+(18) J. Sock
+    A. Bedene
+    G. Pella
+(16) K. Edmund
+(9) D. Thiem
+    S. Johnson
+    T. Fritz
+(19) R. Bautista Agut
+(28) D. Shapovalov
+    S. Querrey
+    A. Rublev
+(5) K. Anderson
+(3) J. del Potro
+    D. Kudla
+    A. Murray
+(31) F. Verdasco
+(20) B. Coric
+    R. Carballes Baena
+    D. Medvedev
+(15) S. Tsitsipas
+(11) J. Isner
+    N. Jarry
+    C. Norrie
+(24) D. Dzumhur
+(25) M. Raonic
+    G. Simon
+    Q
+    S. Wawrinka
+(7) M. Cilic
+    P. Cuevas
+    T. Daniel
+(29) A. Mannarino
+(22) M. Cecchinato
+    T. Smyczek
+    R. Haase
+(10) D. Goffin
+(13). D. Schwartzman
+    G. Garcia-Lopez
+    G. Monfils
+(21) K. Nishikori
+(32) F. Krajinovic
+    P. Kohlschreiber
+    J. Vessely
+(4) A. Zverev
+(6) N. Djokovic
+    T. Sandgren
+    L. Mayer
+    Y. Sugita
+(17) L. Pouille
+    M. Baghdatis
+    J. Sousa
+(12) P. Carreno Busta
+(14) F. Fognini
+    J. Millman
+    N. Rubin
+(23) H. Chung
+(30) N. Kyrgios
+    P. Hughes-Herbert
+    B. Paire
+(2) R. Federer
 (1) R. Nadal
 D. Ferrer
 V. Pospisil
@@ -6030,7 +6030,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -6086,7 +6086,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -6286,7 +6286,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -6342,7 +6342,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
@@ -6541,7 +6541,7 @@ N. Basilashvili
 Q
 G. Pella
 P. Lorenzi
-(16) K. Edmind
+(16) K. Edmund
 (9) D. Thiem
 M. Basic
 D. Istomin
@@ -6597,7 +6597,7 @@ Q
 A. de Minaur
 T. Daniel
 F. Tiafoe
-(2 ) A. Mannarino
+(29) A. Mannarino
 (22) M. Cecchinato
 J. Benneteau
 T. Smyczek
